@@ -1,0 +1,381 @@
+Match Number,Round Number,Date,Location,Home Team,Away Team,Result,SeasonStartYear,Season
+1,1,16/08/2024 20:00,Old Trafford,Man United,Fulham,1 - 0,2024,2024-25
+2,1,17/08/2024 12:30,Portman Road,Ipswich,Liverpool,0 - 2,2024,2024-25
+3,1,17/08/2024 15:00,Emirates Stadium,Arsenal,Wolves,2 - 0,2024,2024-25
+4,1,17/08/2024 15:00,Goodison Park,Everton,Brighton,0 - 3,2024,2024-25
+5,1,17/08/2024 15:00,St. James' Park,Newcastle,Southampton,1 - 0,2024,2024-25
+6,1,17/08/2024 15:00,The City Ground,Nott'm Forest,Bournemouth,1 - 1,2024,2024-25
+7,1,17/08/2024 17:30,London Stadium,West Ham,Aston Villa,1 - 2,2024,2024-25
+8,1,18/08/2024 14:00,Gtech Community Stadium,Brentford,Crystal Palace,2 - 1,2024,2024-25
+9,1,18/08/2024 16:30,Stamford Bridge,Chelsea,Man City,0 - 2,2024,2024-25
+10,1,19/08/2024 20:00,King Power Stadium,Leicester,Tottenham,1 - 1,2024,2024-25
+13,2,24/08/2024 12:30,American Express Stadium,Brighton,Man United,2 - 1,2024,2024-25
+14,2,24/08/2024 15:00,Selhurst Park,Crystal Palace,West Ham,0 - 2,2024,2024-25
+15,2,24/08/2024 15:00,Craven Cottage,Fulham,Leicester,2 - 1,2024,2024-25
+17,2,24/08/2024 15:00,Etihad Stadium,Man City,Ipswich,4 - 1,2024,2024-25
+18,2,24/08/2024 15:00,St. Mary's Stadium,Southampton,Nott'm Forest,0 - 1,2024,2024-25
+19,2,24/08/2024 15:00,Tottenham Hotspur Stadium,Tottenham,Everton,4 - 0,2024,2024-25
+11,2,24/08/2024 17:30,Villa Park,Aston Villa,Arsenal,0 - 2,2024,2024-25
+12,2,25/08/2024 14:00,Vitality Stadium,Bournemouth,Newcastle,1 - 1,2024,2024-25
+20,2,25/08/2024 14:00,Molineux Stadium,Wolves,Chelsea,2 - 6,2024,2024-25
+16,2,25/08/2024 16:30,Anfield,Liverpool,Brentford,2 - 0,2024,2024-25
+21,3,31/08/2024 12:30,Emirates Stadium,Arsenal,Brighton,1 - 1,2024,2024-25
+22,3,31/08/2024 15:00,Gtech Community Stadium,Brentford,Southampton,3 - 1,2024,2024-25
+24,3,31/08/2024 15:00,Goodison Park,Everton,Bournemouth,2 - 3,2024,2024-25
+25,3,31/08/2024 15:00,Portman Road,Ipswich,Fulham,1 - 1,2024,2024-25
+26,3,31/08/2024 15:00,King Power Stadium,Leicester,Aston Villa,1 - 2,2024,2024-25
+29,3,31/08/2024 15:00,The City Ground,Nott'm Forest,Wolves,1 - 1,2024,2024-25
+30,3,31/08/2024 17:30,London Stadium,West Ham,Man City,1 - 3,2024,2024-25
+23,3,01/09/2024 13:30,Stamford Bridge,Chelsea,Crystal Palace,1 - 1,2024,2024-25
+28,3,01/09/2024 13:30,St. James' Park,Newcastle,Tottenham,2 - 1,2024,2024-25
+27,3,01/09/2024 16:00,Old Trafford,Man United,Liverpool,0 - 3,2024,2024-25
+38,4,14/09/2024 12:30,St. Mary's Stadium,Southampton,Man United,0 - 3,2024,2024-25
+33,4,14/09/2024 15:00,American Express Stadium,Brighton,Ipswich,0 - 0,2024,2024-25
+34,4,14/09/2024 15:00,Selhurst Park,Crystal Palace,Leicester,2 - 2,2024,2024-25
+35,4,14/09/2024 15:00,Craven Cottage,Fulham,West Ham,1 - 1,2024,2024-25
+36,4,14/09/2024 15:00,Anfield,Liverpool,Nott'm Forest,0 - 1,2024,2024-25
+37,4,14/09/2024 15:00,Etihad Stadium,Man City,Brentford,2 - 1,2024,2024-25
+31,4,14/09/2024 17:30,Villa Park,Aston Villa,Everton,3 - 2,2024,2024-25
+32,4,14/09/2024 20:00,Vitality Stadium,Bournemouth,Chelsea,0 - 1,2024,2024-25
+39,4,15/09/2024 14:00,Tottenham Hotspur Stadium,Tottenham,Arsenal,0 - 1,2024,2024-25
+40,4,15/09/2024 16:30,Molineux Stadium,Wolves,Newcastle,1 - 2,2024,2024-25
+50,5,21/09/2024 12:30,London Stadium,West Ham,Chelsea,0 - 3,2024,2024-25
+41,5,21/09/2024 15:00,Villa Park,Aston Villa,Wolves,3 - 1,2024,2024-25
+44,5,21/09/2024 15:00,Craven Cottage,Fulham,Newcastle,3 - 1,2024,2024-25
+45,5,21/09/2024 15:00,King Power Stadium,Leicester,Everton,1 - 1,2024,2024-25
+46,5,21/09/2024 15:00,Anfield,Liverpool,Bournemouth,3 - 0,2024,2024-25
+48,5,21/09/2024 15:00,St. Mary's Stadium,Southampton,Ipswich,1 - 1,2024,2024-25
+49,5,21/09/2024 15:00,Tottenham Hotspur Stadium,Tottenham,Brentford,3 - 1,2024,2024-25
+43,5,21/09/2024 17:30,Selhurst Park,Crystal Palace,Man United,0 - 0,2024,2024-25
+42,5,22/09/2024 14:00,American Express Stadium,Brighton,Nott'm Forest,2 - 2,2024,2024-25
+47,5,22/09/2024 16:30,Etihad Stadium,Man City,Arsenal,2 - 2,2024,2024-25
+58,6,28/09/2024 12:30,St. James' Park,Newcastle,Man City,1 - 1,2024,2024-25
+51,6,28/09/2024 15:00,Emirates Stadium,Arsenal,Leicester,4 - 2,2024,2024-25
+53,6,28/09/2024 15:00,Gtech Community Stadium,Brentford,West Ham,1 - 1,2024,2024-25
+54,6,28/09/2024 15:00,Stamford Bridge,Chelsea,Brighton,4 - 2,2024,2024-25
+55,6,28/09/2024 15:00,Goodison Park,Everton,Crystal Palace,2 - 1,2024,2024-25
+59,6,28/09/2024 15:00,The City Ground,Nott'm Forest,Fulham,0 - 1,2024,2024-25
+60,6,28/09/2024 17:30,Molineux Stadium,Wolves,Liverpool,1 - 2,2024,2024-25
+56,6,29/09/2024 14:00,Portman Road,Ipswich,Aston Villa,2 - 2,2024,2024-25
+57,6,29/09/2024 16:30,Old Trafford,Man United,Tottenham,0 - 3,2024,2024-25
+52,6,30/09/2024 20:00,Vitality Stadium,Bournemouth,Southampton,3 - 1,2024,2024-25
+66,7,05/10/2024 12:30,Selhurst Park,Crystal Palace,Liverpool,0 - 1,2024,2024-25
+61,7,05/10/2024 15:00,Emirates Stadium,Arsenal,Southampton,3 - 1,2024,2024-25
+63,7,05/10/2024 15:00,Gtech Community Stadium,Brentford,Wolves,5 - 3,2024,2024-25
+68,7,05/10/2024 15:00,King Power Stadium,Leicester,Bournemouth,1 - 0,2024,2024-25
+69,7,05/10/2024 15:00,Etihad Stadium,Man City,Fulham,3 - 2,2024,2024-25
+70,7,05/10/2024 15:00,London Stadium,West Ham,Ipswich,4 - 1,2024,2024-25
+67,7,05/10/2024 17:30,Goodison Park,Everton,Newcastle,0 - 0,2024,2024-25
+62,7,06/10/2024 14:00,Villa Park,Aston Villa,Man United,0 - 0,2024,2024-25
+65,7,06/10/2024 14:00,Stamford Bridge,Chelsea,Nott'm Forest,1 - 1,2024,2024-25
+64,7,06/10/2024 16:30,American Express Stadium,Brighton,Tottenham,3 - 2,2024,2024-25
+79,8,19/10/2024 12:30,Tottenham Hotspur Stadium,Tottenham,West Ham,4 - 1,2024,2024-25
+72,8,19/10/2024 15:00,Craven Cottage,Fulham,Aston Villa,1 - 3,2024,2024-25
+75,8,19/10/2024 15:00,Old Trafford,Man United,Brentford,2 - 1,2024,2024-25
+76,8,19/10/2024 15:00,St. James' Park,Newcastle,Brighton,0 - 1,2024,2024-25
+78,8,19/10/2024 15:00,St. Mary's Stadium,Southampton,Leicester,2 - 3,2024,2024-25
+73,8,19/10/2024 15:15,Portman Road,Ipswich,Everton,0 - 2,2024,2024-25
+71,8,19/10/2024 17:30,Vitality Stadium,Bournemouth,Arsenal,2 - 0,2024,2024-25
+80,8,20/10/2024 14:00,Molineux Stadium,Wolves,Man City,1 - 2,2024,2024-25
+74,8,20/10/2024 16:30,Anfield,Liverpool,Chelsea,2 - 1,2024,2024-25
+77,8,21/10/2024 20:00,The City Ground,Nott'm Forest,Crystal Palace,1 - 0,2024,2024-25
+88,9,25/10/2024 20:00,King Power Stadium,Leicester,Nott'm Forest,1 - 3,2024,2024-25
+82,9,26/10/2024 15:00,Villa Park,Aston Villa,Bournemouth,1 - 1,2024,2024-25
+83,9,26/10/2024 15:00,Gtech Community Stadium,Brentford,Ipswich,4 - 3,2024,2024-25
+84,9,26/10/2024 15:00,American Express Stadium,Brighton,Wolves,2 - 2,2024,2024-25
+89,9,26/10/2024 15:00,Etihad Stadium,Man City,Southampton,1 - 0,2024,2024-25
+87,9,26/10/2024 17:30,Goodison Park,Everton,Fulham,1 - 1,2024,2024-25
+85,9,27/10/2024 14:00,Stamford Bridge,Chelsea,Newcastle,2 - 1,2024,2024-25
+86,9,27/10/2024 14:00,Selhurst Park,Crystal Palace,Tottenham,1 - 0,2024,2024-25
+90,9,27/10/2024 14:00,London Stadium,West Ham,Man United,2 - 1,2024,2024-25
+81,9,27/10/2024 16:30,Emirates Stadium,Arsenal,Liverpool,2 - 2,2024,2024-25
+96,10,02/11/2024 12:30,St. James' Park,Newcastle,Arsenal,1 - 0,2024,2024-25
+91,10,02/11/2024 15:00,Vitality Stadium,Bournemouth,Man City,2 - 1,2024,2024-25
+93,10,02/11/2024 15:00,Portman Road,Ipswich,Leicester,1 - 1,2024,2024-25
+94,10,02/11/2024 15:00,Anfield,Liverpool,Brighton,2 - 1,2024,2024-25
+97,10,02/11/2024 15:00,The City Ground,Nott'm Forest,West Ham,3 - 0,2024,2024-25
+98,10,02/11/2024 15:00,St. Mary's Stadium,Southampton,Everton,1 - 0,2024,2024-25
+100,10,02/11/2024 17:30,Molineux Stadium,Wolves,Crystal Palace,2 - 2,2024,2024-25
+99,10,03/11/2024 14:00,Tottenham Hotspur Stadium,Tottenham,Aston Villa,4 - 1,2024,2024-25
+95,10,03/11/2024 16:30,Old Trafford,Man United,Chelsea,1 - 1,2024,2024-25
+92,10,04/11/2024 20:00,Craven Cottage,Fulham,Brentford,2 - 1,2024,2024-25
+101,11,09/11/2024 15:00,Gtech Community Stadium,Brentford,Bournemouth,3 - 2,2024,2024-25
+104,11,09/11/2024 15:00,Selhurst Park,Crystal Palace,Fulham,0 - 2,2024,2024-25
+109,11,09/11/2024 15:00,London Stadium,West Ham,Everton,0 - 0,2024,2024-25
+110,11,09/11/2024 15:00,Molineux Stadium,Wolves,Southampton,2 - 0,2024,2024-25
+102,11,09/11/2024 17:30,American Express Stadium,Brighton,Man City,2 - 1,2024,2024-25
+105,11,09/11/2024 20:00,Anfield,Liverpool,Aston Villa,2 - 0,2024,2024-25
+106,11,10/11/2024 14:00,Old Trafford,Man United,Leicester,3 - 0,2024,2024-25
+107,11,10/11/2024 14:00,The City Ground,Nott'm Forest,Newcastle,1 - 3,2024,2024-25
+108,11,10/11/2024 14:00,Tottenham Hotspur Stadium,Tottenham,Ipswich,1 - 2,2024,2024-25
+103,11,10/11/2024 16:30,Stamford Bridge,Chelsea,Arsenal,1 - 1,2024,2024-25
+117,12,23/11/2024 12:30,King Power Stadium,Leicester,Chelsea,1 - 2,2024,2024-25
+111,12,23/11/2024 15:00,Emirates Stadium,Arsenal,Nott'm Forest,3 - 0,2024,2024-25
+112,12,23/11/2024 15:00,Villa Park,Aston Villa,Crystal Palace,2 - 2,2024,2024-25
+113,12,23/11/2024 15:00,Vitality Stadium,Bournemouth,Brighton,1 - 2,2024,2024-25
+114,12,23/11/2024 15:00,Goodison Park,Everton,Brentford,0 - 0,2024,2024-25
+115,12,23/11/2024 15:00,Craven Cottage,Fulham,Wolves,1 - 4,2024,2024-25
+118,12,23/11/2024 17:30,Etihad Stadium,Man City,Tottenham,0 - 4,2024,2024-25
+120,12,24/11/2024 14:00,St. Mary's Stadium,Southampton,Liverpool,2 - 3,2024,2024-25
+116,12,24/11/2024 16:30,Portman Road,Ipswich,Man United,1 - 1,2024,2024-25
+119,12,25/11/2024 20:00,St. James' Park,Newcastle,West Ham,0 - 2,2024,2024-25
+122,13,29/11/2024 20:00,American Express Stadium,Brighton,Southampton,1 - 1,2024,2024-25
+121,13,30/11/2024 15:00,Gtech Community Stadium,Brentford,Leicester,4 - 1,2024,2024-25
+124,13,30/11/2024 15:00,Selhurst Park,Crystal Palace,Newcastle,1 - 1,2024,2024-25
+127,13,30/11/2024 15:00,The City Ground,Nott'm Forest,Ipswich,1 - 0,2024,2024-25
+130,13,30/11/2024 15:00,Molineux Stadium,Wolves,Bournemouth,2 - 4,2024,2024-25
+129,13,30/11/2024 17:30,London Stadium,West Ham,Arsenal,2 - 5,2024,2024-25
+123,13,01/12/2024 13:30,Stamford Bridge,Chelsea,Aston Villa,3 - 0,2024,2024-25
+126,13,01/12/2024 13:30,Old Trafford,Man United,Everton,4 - 0,2024,2024-25
+128,13,01/12/2024 13:30,Tottenham Hotspur Stadium,Tottenham,Fulham,1 - 1,2024,2024-25
+125,13,01/12/2024 16:00,Anfield,Liverpool,Man City,2 - 0,2024,2024-25
+136,14,03/12/2024 19:30,Portman Road,Ipswich,Crystal Palace,0 - 1,2024,2024-25
+137,14,03/12/2024 20:15,King Power Stadium,Leicester,West Ham,3 - 1,2024,2024-25
+134,14,04/12/2024 19:30,Goodison Park,Everton,Wolves,4 - 0,2024,2024-25
+138,14,04/12/2024 19:30,Etihad Stadium,Man City,Nott'm Forest,3 - 0,2024,2024-25
+139,14,04/12/2024 19:30,St. James' Park,Newcastle,Liverpool,3 - 3,2024,2024-25
+140,14,04/12/2024 19:30,St. Mary's Stadium,Southampton,Chelsea,1 - 5,2024,2024-25
+131,14,04/12/2024 20:15,Emirates Stadium,Arsenal,Man United,2 - 0,2024,2024-25
+132,14,04/12/2024 20:15,Villa Park,Aston Villa,Brentford,3 - 1,2024,2024-25
+135,14,05/12/2024 19:30,Craven Cottage,Fulham,Brighton,3 - 1,2024,2024-25
+133,14,05/12/2024 20:15,Vitality Stadium,Bournemouth,Tottenham,1 - 0,2024,2024-25
+141,15,07/12/2024 15:00,Villa Park,Aston Villa,Southampton,1 - 0,2024,2024-25
+142,15,07/12/2024 15:00,Gtech Community Stadium,Brentford,Newcastle,4 - 2,2024,2024-25
+143,15,07/12/2024 15:00,Selhurst Park,Crystal Palace,Man City,2 - 2,2024,2024-25
+148,15,07/12/2024 17:30,Old Trafford,Man United,Nott'm Forest,2 - 3,2024,2024-25
+145,15,08/12/2024 14:00,Craven Cottage,Fulham,Arsenal,1 - 1,2024,2024-25
+146,15,08/12/2024 14:00,Portman Road,Ipswich,Bournemouth,1 - 2,2024,2024-25
+147,15,08/12/2024 14:00,King Power Stadium,Leicester,Brighton,2 - 2,2024,2024-25
+149,15,08/12/2024 16:30,Tottenham Hotspur Stadium,Tottenham,Chelsea,3 - 4,2024,2024-25
+150,15,09/12/2024 20:00,London Stadium,West Ham,Wolves,2 - 1,2024,2024-25
+144,15,12/02/2025 19:30,Goodison Park,Everton,Liverpool,2 - 2,2024,2024-25
+151,16,14/12/2024 15:00,Emirates Stadium,Arsenal,Everton,0 - 0,2024,2024-25
+155,16,14/12/2024 15:00,Anfield,Liverpool,Fulham,2 - 2,2024,2024-25
+157,16,14/12/2024 15:00,St. James' Park,Newcastle,Leicester,4 - 0,2024,2024-25
+160,16,14/12/2024 15:00,Molineux Stadium,Wolves,Ipswich,1 - 2,2024,2024-25
+158,16,14/12/2024 17:30,The City Ground,Nott'm Forest,Aston Villa,2 - 1,2024,2024-25
+153,16,15/12/2024 14:00,American Express Stadium,Brighton,Crystal Palace,1 - 3,2024,2024-25
+156,16,15/12/2024 16:30,Etihad Stadium,Man City,Man United,1 - 2,2024,2024-25
+154,16,15/12/2024 19:00,Stamford Bridge,Chelsea,Brentford,2 - 1,2024,2024-25
+159,16,15/12/2024 19:00,St. Mary's Stadium,Southampton,Tottenham,0 - 5,2024,2024-25
+152,16,16/12/2024 20:00,Vitality Stadium,Bournemouth,West Ham,1 - 1,2024,2024-25
+161,17,21/12/2024 12:30,Villa Park,Aston Villa,Man City,2 - 1,2024,2024-25
+162,17,21/12/2024 15:00,Gtech Community Stadium,Brentford,Nott'm Forest,0 - 2,2024,2024-25
+166,17,21/12/2024 15:00,Portman Road,Ipswich,Newcastle,0 - 4,2024,2024-25
+170,17,21/12/2024 15:00,London Stadium,West Ham,Brighton,1 - 1,2024,2024-25
+163,17,21/12/2024 17:30,Selhurst Park,Crystal Palace,Arsenal,1 - 5,2024,2024-25
+164,17,22/12/2024 14:00,Goodison Park,Everton,Chelsea,0 - 0,2024,2024-25
+165,17,22/12/2024 14:00,Craven Cottage,Fulham,Southampton,0 - 0,2024,2024-25
+167,17,22/12/2024 14:00,King Power Stadium,Leicester,Wolves,0 - 3,2024,2024-25
+168,17,22/12/2024 14:00,Old Trafford,Man United,Bournemouth,0 - 3,2024,2024-25
+169,17,22/12/2024 16:30,Tottenham Hotspur Stadium,Tottenham,Liverpool,3 - 6,2024,2024-25
+176,18,26/12/2024 12:30,Etihad Stadium,Man City,Everton,1 - 1,2024,2024-25
+172,18,26/12/2024 15:00,Vitality Stadium,Bournemouth,Crystal Palace,0 - 0,2024,2024-25
+174,18,26/12/2024 15:00,Stamford Bridge,Chelsea,Fulham,1 - 2,2024,2024-25
+177,18,26/12/2024 15:00,St. James' Park,Newcastle,Aston Villa,3 - 0,2024,2024-25
+178,18,26/12/2024 15:00,The City Ground,Nott'm Forest,Tottenham,1 - 0,2024,2024-25
+179,18,26/12/2024 15:00,St. Mary's Stadium,Southampton,West Ham,0 - 1,2024,2024-25
+180,18,26/12/2024 17:30,Molineux Stadium,Wolves,Man United,2 - 0,2024,2024-25
+175,18,26/12/2024 20:00,Anfield,Liverpool,Leicester,3 - 1,2024,2024-25
+173,18,27/12/2024 19:30,American Express Stadium,Brighton,Brentford,0 - 0,2024,2024-25
+171,18,27/12/2024 20:15,Emirates Stadium,Arsenal,Ipswich,1 - 0,2024,2024-25
+187,19,29/12/2024 14:30,King Power Stadium,Leicester,Man City,0 - 2,2024,2024-25
+183,19,29/12/2024 15:00,Selhurst Park,Crystal Palace,Southampton,2 - 1,2024,2024-25
+184,19,29/12/2024 15:00,Goodison Park,Everton,Nott'm Forest,0 - 2,2024,2024-25
+185,19,29/12/2024 15:00,Craven Cottage,Fulham,Bournemouth,2 - 2,2024,2024-25
+189,19,29/12/2024 15:00,Tottenham Hotspur Stadium,Tottenham,Wolves,2 - 2,2024,2024-25
+190,19,29/12/2024 17:15,London Stadium,West Ham,Liverpool,0 - 5,2024,2024-25
+181,19,30/12/2024 19:45,Villa Park,Aston Villa,Brighton,2 - 2,2024,2024-25
+186,19,30/12/2024 19:45,Portman Road,Ipswich,Chelsea,2 - 0,2024,2024-25
+188,19,30/12/2024 20:00,Old Trafford,Man United,Newcastle,0 - 2,2024,2024-25
+182,19,01/01/2025 17:30,Gtech Community Stadium,Brentford,Arsenal,1 - 3,2024,2024-25
+199,20,04/01/2025 12:30,Tottenham Hotspur Stadium,Tottenham,Newcastle,1 - 2,2024,2024-25
+191,20,04/01/2025 15:00,Villa Park,Aston Villa,Leicester,2 - 1,2024,2024-25
+192,20,04/01/2025 15:00,Vitality Stadium,Bournemouth,Everton,1 - 0,2024,2024-25
+194,20,04/01/2025 15:00,Selhurst Park,Crystal Palace,Chelsea,1 - 1,2024,2024-25
+197,20,04/01/2025 15:00,Etihad Stadium,Man City,West Ham,4 - 1,2024,2024-25
+198,20,04/01/2025 15:00,St. Mary's Stadium,Southampton,Brentford,0 - 5,2024,2024-25
+193,20,04/01/2025 17:30,American Express Stadium,Brighton,Arsenal,1 - 1,2024,2024-25
+195,20,05/01/2025 14:00,Craven Cottage,Fulham,Ipswich,2 - 2,2024,2024-25
+196,20,05/01/2025 16:30,Anfield,Liverpool,Man United,2 - 2,2024,2024-25
+200,20,06/01/2025 20:00,Molineux Stadium,Wolves,Nott'm Forest,0 - 3,2024,2024-25
+202,21,14/01/2025 19:30,Gtech Community Stadium,Brentford,Man City,2 - 2,2024,2024-25
+207,21,14/01/2025 19:30,London Stadium,West Ham,Fulham,3 - 2,2024,2024-25
+208,21,14/01/2025 19:30,Stamford Bridge,Chelsea,Bournemouth,2 - 2,2024,2024-25
+206,21,14/01/2025 20:00,The City Ground,Nott'm Forest,Liverpool,1 - 1,2024,2024-25
+203,21,15/01/2025 19:30,Goodison Park,Everton,Aston Villa,0 - 1,2024,2024-25
+205,21,15/01/2025 19:30,King Power Stadium,Leicester,Crystal Palace,0 - 2,2024,2024-25
+209,21,15/01/2025 19:30,St. James' Park,Newcastle,Wolves,3 - 0,2024,2024-25
+201,21,15/01/2025 20:00,Emirates Stadium,Arsenal,Tottenham,2 - 1,2024,2024-25
+204,21,16/01/2025 19:30,Portman Road,Ipswich,Brighton,0 - 2,2024,2024-25
+210,21,16/01/2025 20:00,Old Trafford,Man United,Southampton,3 - 1,2024,2024-25
+218,22,18/01/2025 12:30,St. James' Park,Newcastle,Bournemouth,1 - 4,2024,2024-25
+212,22,18/01/2025 15:00,Gtech Community Stadium,Brentford,Liverpool,0 - 2,2024,2024-25
+216,22,18/01/2025 15:00,King Power Stadium,Leicester,Fulham,0 - 2,2024,2024-25
+220,22,18/01/2025 15:00,London Stadium,West Ham,Crystal Palace,0 - 2,2024,2024-25
+211,22,18/01/2025 17:30,Emirates Stadium,Arsenal,Aston Villa,2 - 2,2024,2024-25
+214,22,19/01/2025 14:00,Goodison Park,Everton,Tottenham,3 - 2,2024,2024-25
+217,22,19/01/2025 14:00,Old Trafford,Man United,Brighton,1 - 3,2024,2024-25
+219,22,19/01/2025 14:00,The City Ground,Nott'm Forest,Southampton,3 - 2,2024,2024-25
+215,22,19/01/2025 16:30,Portman Road,Ipswich,Man City,0 - 6,2024,2024-25
+213,22,20/01/2025 20:00,Stamford Bridge,Chelsea,Wolves,3 - 1,2024,2024-25
+222,23,25/01/2025 15:00,Vitality Stadium,Bournemouth,Nott'm Forest,5 - 0,2024,2024-25
+223,23,25/01/2025 15:00,American Express Stadium,Brighton,Everton,0 - 1,2024,2024-25
+226,23,25/01/2025 15:00,Anfield,Liverpool,Ipswich,4 - 1,2024,2024-25
+228,23,25/01/2025 15:00,St. Mary's Stadium,Southampton,Newcastle,1 - 3,2024,2024-25
+230,23,25/01/2025 15:00,Molineux Stadium,Wolves,Arsenal,0 - 1,2024,2024-25
+227,23,25/01/2025 17:30,Etihad Stadium,Man City,Chelsea,3 - 1,2024,2024-25
+224,23,26/01/2025 14:00,Selhurst Park,Crystal Palace,Brentford,1 - 2,2024,2024-25
+229,23,26/01/2025 14:00,Tottenham Hotspur Stadium,Tottenham,Leicester,1 - 2,2024,2024-25
+221,23,26/01/2025 16:30,Villa Park,Aston Villa,West Ham,1 - 1,2024,2024-25
+225,23,26/01/2025 19:00,Craven Cottage,Fulham,Man United,0 - 1,2024,2024-25
+239,24,01/02/2025 12:30,The City Ground,Nott'm Forest,Brighton,7 - 0,2024,2024-25
+232,24,01/02/2025 15:00,Vitality Stadium,Bournemouth,Liverpool,0 - 2,2024,2024-25
+235,24,01/02/2025 15:00,Goodison Park,Everton,Leicester,4 - 0,2024,2024-25
+236,24,01/02/2025 15:00,Portman Road,Ipswich,Southampton,1 - 2,2024,2024-25
+238,24,01/02/2025 15:00,St. James' Park,Newcastle,Fulham,1 - 2,2024,2024-25
+240,24,01/02/2025 17:30,Molineux Stadium,Wolves,Aston Villa,2 - 0,2024,2024-25
+233,24,02/02/2025 14:00,Gtech Community Stadium,Brentford,Tottenham,0 - 2,2024,2024-25
+237,24,02/02/2025 14:00,Old Trafford,Man United,Crystal Palace,0 - 2,2024,2024-25
+231,24,02/02/2025 16:30,Emirates Stadium,Arsenal,Man City,5 - 1,2024,2024-25
+234,24,03/02/2025 20:00,Stamford Bridge,Chelsea,West Ham,2 - 1,2024,2024-25
+242,25,14/02/2025 20:00,American Express Stadium,Brighton,Chelsea,3 - 0,2024,2024-25
+245,25,15/02/2025 12:30,King Power Stadium,Leicester,Arsenal,0 - 2,2024,2024-25
+241,25,15/02/2025 15:00,Villa Park,Aston Villa,Ipswich,1 - 1,2024,2024-25
+244,25,15/02/2025 15:00,Craven Cottage,Fulham,Nott'm Forest,2 - 1,2024,2024-25
+247,25,15/02/2025 15:00,Etihad Stadium,Man City,Newcastle,4 - 0,2024,2024-25
+248,25,15/02/2025 15:00,St. Mary's Stadium,Southampton,Bournemouth,1 - 3,2024,2024-25
+250,25,15/02/2025 15:00,London Stadium,West Ham,Brentford,0 - 1,2024,2024-25
+243,25,15/02/2025 17:30,Selhurst Park,Crystal Palace,Everton,1 - 2,2024,2024-25
+246,25,16/02/2025 14:00,Anfield,Liverpool,Wolves,2 - 1,2024,2024-25
+249,25,16/02/2025 16:30,Tottenham Hotspur Stadium,Tottenham,Man United,1 - 0,2024,2024-25
+257,26,21/02/2025 20:00,King Power Stadium,Leicester,Brentford,0 - 4,2024,2024-25
+254,26,22/02/2025 12:30,Goodison Park,Everton,Man United,2 - 2,2024,2024-25
+251,26,22/02/2025 15:00,Emirates Stadium,Arsenal,West Ham,0 - 1,2024,2024-25
+253,26,22/02/2025 15:00,Vitality Stadium,Bournemouth,Wolves,0 - 1,2024,2024-25
+255,26,22/02/2025 15:00,Craven Cottage,Fulham,Crystal Palace,0 - 2,2024,2024-25
+256,26,22/02/2025 15:00,Portman Road,Ipswich,Tottenham,1 - 4,2024,2024-25
+260,26,22/02/2025 15:00,St. Mary's Stadium,Southampton,Brighton,0 - 4,2024,2024-25
+252,26,22/02/2025 17:30,Villa Park,Aston Villa,Chelsea,2 - 1,2024,2024-25
+259,26,23/02/2025 14:00,St. James' Park,Newcastle,Nott'm Forest,4 - 3,2024,2024-25
+258,26,23/02/2025 16:30,Etihad Stadium,Man City,Liverpool,0 - 2,2024,2024-25
+262,27,25/02/2025 19:30,American Express Stadium,Brighton,Bournemouth,2 - 1,2024,2024-25
+266,27,25/02/2025 19:30,Molineux Stadium,Wolves,Fulham,1 - 2,2024,2024-25
+267,27,25/02/2025 19:30,Selhurst Park,Crystal Palace,Aston Villa,4 - 1,2024,2024-25
+268,27,25/02/2025 20:15,Stamford Bridge,Chelsea,Southampton,4 - 0,2024,2024-25
+261,27,26/02/2025 19:30,Gtech Community Stadium,Brentford,Everton,1 - 1,2024,2024-25
+263,27,26/02/2025 19:30,The City Ground,Nott'm Forest,Arsenal,0 - 0,2024,2024-25
+264,27,26/02/2025 19:30,Tottenham Hotspur Stadium,Tottenham,Man City,0 - 1,2024,2024-25
+270,27,26/02/2025 19:30,Old Trafford,Man United,Ipswich,3 - 2,2024,2024-25
+269,27,26/02/2025 20:15,Anfield,Liverpool,Newcastle,2 - 0,2024,2024-25
+265,27,27/02/2025 20:00,London Stadium,West Ham,Leicester,2 - 0,2024,2024-25
+277,28,08/03/2025 12:30,The City Ground,Nott'm Forest,Man City,1 - 0,2024,2024-25
+272,28,08/03/2025 15:00,American Express Stadium,Brighton,Fulham,2 - 1,2024,2024-25
+274,28,08/03/2025 15:00,Selhurst Park,Crystal Palace,Ipswich,1 - 0,2024,2024-25
+275,28,08/03/2025 15:00,Anfield,Liverpool,Southampton,3 - 1,2024,2024-25
+271,28,08/03/2025 17:30,Gtech Community Stadium,Brentford,Aston Villa,0 - 1,2024,2024-25
+280,28,08/03/2025 20:00,Molineux Stadium,Wolves,Everton,1 - 1,2024,2024-25
+273,28,09/03/2025 14:00,Stamford Bridge,Chelsea,Leicester,1 - 0,2024,2024-25
+278,28,09/03/2025 14:00,Tottenham Hotspur Stadium,Tottenham,Bournemouth,2 - 2,2024,2024-25
+276,28,09/03/2025 16:30,Old Trafford,Man United,Arsenal,1 - 1,2024,2024-25
+279,28,10/03/2025 20:00,London Stadium,West Ham,Newcastle,0 - 1,2024,2024-25
+282,29,19/02/2025 19:30,Villa Park,Aston Villa,Liverpool,2 - 2,2024,2024-25
+284,29,15/03/2025 15:00,Goodison Park,Everton,West Ham,1 - 1,2024,2024-25
+286,29,15/03/2025 15:00,Portman Road,Ipswich,Nott'm Forest,2 - 4,2024,2024-25
+288,29,15/03/2025 15:00,Etihad Stadium,Man City,Brighton,2 - 2,2024,2024-25
+290,29,15/03/2025 15:00,St. Mary's Stadium,Southampton,Wolves,1 - 2,2024,2024-25
+283,29,15/03/2025 17:30,Vitality Stadium,Bournemouth,Brentford,1 - 2,2024,2024-25
+281,29,16/03/2025 13:30,Emirates Stadium,Arsenal,Chelsea,1 - 0,2024,2024-25
+285,29,16/03/2025 13:30,Craven Cottage,Fulham,Tottenham,2 - 0,2024,2024-25
+287,29,16/03/2025 19:00,King Power Stadium,Leicester,Man United,0 - 3,2024,2024-25
+289,29,16/04/2025 19:30,St. James' Park,Newcastle,Crystal Palace,5 - 0,2024,2024-25
+291,30,01/04/2025 19:45,Emirates Stadium,Arsenal,Fulham,2 - 1,2024,2024-25
+295,30,01/04/2025 19:45,Molineux Stadium,Wolves,West Ham,1 - 0,2024,2024-25
+294,30,01/04/2025 20:00,The City Ground,Nott'm Forest,Man United,1 - 0,2024,2024-25
+292,30,02/04/2025 19:45,Vitality Stadium,Bournemouth,Ipswich,1 - 2,2024,2024-25
+293,30,02/04/2025 19:45,American Express Stadium,Brighton,Aston Villa,0 - 3,2024,2024-25
+297,30,02/04/2025 19:45,Etihad Stadium,Man City,Leicester,2 - 0,2024,2024-25
+298,30,02/04/2025 19:45,St. James' Park,Newcastle,Brentford,2 - 1,2024,2024-25
+299,30,02/04/2025 19:45,St. Mary's Stadium,Southampton,Crystal Palace,1 - 1,2024,2024-25
+300,30,02/04/2025 20:00,Anfield,Liverpool,Everton,1 - 0,2024,2024-25
+296,30,03/04/2025 20:00,Stamford Bridge,Chelsea,Tottenham,1 - 0,2024,2024-25
+304,31,05/04/2025 12:30,Goodison Park,Everton,Arsenal,1 - 1,2024,2024-25
+303,31,05/04/2025 15:00,Selhurst Park,Crystal Palace,Brighton,2 - 1,2024,2024-25
+306,31,05/04/2025 15:00,Portman Road,Ipswich,Wolves,1 - 2,2024,2024-25
+310,31,05/04/2025 15:00,London Stadium,West Ham,Bournemouth,2 - 2,2024,2024-25
+301,31,05/04/2025 17:30,Villa Park,Aston Villa,Nott'm Forest,2 - 1,2024,2024-25
+302,31,06/04/2025 14:00,Gtech Community Stadium,Brentford,Chelsea,0 - 0,2024,2024-25
+305,31,06/04/2025 14:00,Craven Cottage,Fulham,Liverpool,3 - 2,2024,2024-25
+309,31,06/04/2025 14:00,Tottenham Hotspur Stadium,Tottenham,Southampton,3 - 1,2024,2024-25
+308,31,06/04/2025 16:30,Old Trafford,Man United,Man City,0 - 0,2024,2024-25
+307,31,07/04/2025 20:00,King Power Stadium,Leicester,Newcastle,0 - 3,2024,2024-25
+316,32,12/04/2025 12:30,Etihad Stadium,Man City,Crystal Palace,5 - 2,2024,2024-25
+313,32,12/04/2025 15:00,American Express Stadium,Brighton,Leicester,2 - 2,2024,2024-25
+318,32,12/04/2025 15:00,The City Ground,Nott'm Forest,Everton,0 - 1,2024,2024-25
+319,32,12/04/2025 15:00,St. Mary's Stadium,Southampton,Aston Villa,0 - 3,2024,2024-25
+311,32,12/04/2025 17:30,Emirates Stadium,Arsenal,Brentford,1 - 1,2024,2024-25
+314,32,13/04/2025 14:00,Stamford Bridge,Chelsea,Ipswich,2 - 2,2024,2024-25
+315,32,13/04/2025 14:00,Anfield,Liverpool,West Ham,2 - 1,2024,2024-25
+320,32,13/04/2025 14:00,Molineux Stadium,Wolves,Tottenham,4 - 2,2024,2024-25
+317,32,13/04/2025 16:30,St. James' Park,Newcastle,Man United,4 - 1,2024,2024-25
+312,32,14/04/2025 20:00,Vitality Stadium,Bournemouth,Fulham,1 - 0,2024,2024-25
+322,33,19/04/2025 15:00,Gtech Community Stadium,Brentford,Brighton,4 - 2,2024,2024-25
+323,33,19/04/2025 15:00,Selhurst Park,Crystal Palace,Bournemouth,0 - 0,2024,2024-25
+324,33,19/04/2025 15:00,Goodison Park,Everton,Man City,0 - 2,2024,2024-25
+330,33,19/04/2025 15:00,London Stadium,West Ham,Southampton,1 - 1,2024,2024-25
+321,33,19/04/2025 17:30,Villa Park,Aston Villa,Newcastle,4 - 1,2024,2024-25
+325,33,20/04/2025 14:00,Craven Cottage,Fulham,Chelsea,1 - 2,2024,2024-25
+326,33,20/04/2025 14:00,Portman Road,Ipswich,Arsenal,0 - 4,2024,2024-25
+328,33,20/04/2025 14:00,Old Trafford,Man United,Wolves,0 - 1,2024,2024-25
+327,33,20/04/2025 16:30,King Power Stadium,Leicester,Liverpool,0 - 1,2024,2024-25
+329,33,21/04/2025 20:00,Tottenham Hotspur Stadium,Tottenham,Nott'm Forest,1 - 2,2024,2024-25
+336,34,22/04/2025 20:00,Etihad Stadium,Man City,Aston Villa,2 - 1,2024,2024-25
+331,34,23/04/2025 20:00,Emirates Stadium,Arsenal,Crystal Palace,2 - 2,2024,2024-25
+334,34,26/04/2025 12:30,Stamford Bridge,Chelsea,Everton,1 - 0,2024,2024-25
+333,34,26/04/2025 15:00,American Express Stadium,Brighton,West Ham,3 - 2,2024,2024-25
+337,34,26/04/2025 15:00,St. James' Park,Newcastle,Ipswich,3 - 0,2024,2024-25
+339,34,26/04/2025 15:00,St. Mary's Stadium,Southampton,Fulham,1 - 2,2024,2024-25
+340,34,26/04/2025 15:00,Molineux Stadium,Wolves,Leicester,3 - 0,2024,2024-25
+332,34,27/04/2025 14:00,Vitality Stadium,Bournemouth,Man United,1 - 1,2024,2024-25
+335,34,27/04/2025 16:30,Anfield,Liverpool,Tottenham,5 - 1,2024,2024-25
+338,34,01/05/2025 19:30,The City Ground,Nott'm Forest,Brentford,0 - 2,2024,2024-25
+349,35,02/05/2025 20:00,Etihad Stadium,Man City,Wolves,1 - 0,2024,2024-25
+342,35,03/05/2025 12:30,Villa Park,Aston Villa,Fulham,1 - 0,2024,2024-25
+347,35,03/05/2025 15:00,Goodison Park,Everton,Ipswich,2 - 2,2024,2024-25
+348,35,03/05/2025 15:00,King Power Stadium,Leicester,Southampton,2 - 0,2024,2024-25
+341,35,03/05/2025 17:30,Emirates Stadium,Arsenal,Bournemouth,1 - 2,2024,2024-25
+343,35,04/05/2025 14:00,Gtech Community Stadium,Brentford,Man United,4 - 3,2024,2024-25
+344,35,04/05/2025 14:00,American Express Stadium,Brighton,Newcastle,1 - 1,2024,2024-25
+350,35,04/05/2025 14:00,London Stadium,West Ham,Tottenham,1 - 1,2024,2024-25
+345,35,04/05/2025 16:30,Stamford Bridge,Chelsea,Liverpool,3 - 1,2024,2024-25
+346,35,05/05/2025 20:00,Selhurst Park,Crystal Palace,Nott'm Forest,1 - 1,2024,2024-25
+352,36,10/05/2025 15:00,Craven Cottage,Fulham,Everton,1 - 3,2024,2024-25
+353,36,10/05/2025 15:00,Portman Road,Ipswich,Brentford,0 - 1,2024,2024-25
+358,36,10/05/2025 15:00,St. Mary's Stadium,Southampton,Man City,0 - 0,2024,2024-25
+360,36,10/05/2025 15:00,Molineux Stadium,Wolves,Brighton,0 - 2,2024,2024-25
+351,36,10/05/2025 17:30,Vitality Stadium,Bournemouth,Aston Villa,0 - 1,2024,2024-25
+356,36,11/05/2025 12:00,St. James' Park,Newcastle,Chelsea,2 - 0,2024,2024-25
+355,36,11/05/2025 14:15,Old Trafford,Man United,West Ham,0 - 2,2024,2024-25
+357,36,11/05/2025 14:15,The City Ground,Nott'm Forest,Leicester,2 - 2,2024,2024-25
+359,36,11/05/2025 14:15,Tottenham Hotspur Stadium,Tottenham,Crystal Palace,0 - 2,2024,2024-25
+354,36,11/05/2025 16:30,Anfield,Liverpool,Arsenal,2 - 2,2024,2024-25
+362,37,16/05/2025 19:30,Villa Park,Aston Villa,Tottenham,2 - 0,2024,2024-25
+365,37,16/05/2025 20:15,Stamford Bridge,Chelsea,Man United,1 - 0,2024,2024-25
+367,37,18/05/2025 12:00,Goodison Park,Everton,Southampton,2 - 0,2024,2024-25
+370,37,18/05/2025 14:15,London Stadium,West Ham,Nott'm Forest,1 - 2,2024,2024-25
+363,37,18/05/2025 15:00,Gtech Community Stadium,Brentford,Fulham,2 - 3,2024,2024-25
+368,37,18/05/2025 15:00,King Power Stadium,Leicester,Ipswich,2 - 0,2024,2024-25
+361,37,18/05/2025 16:30,Emirates Stadium,Arsenal,Newcastle,1 - 0,2024,2024-25
+364,37,19/05/2025 20:00,American Express Stadium,Brighton,Liverpool,3 - 2,2024,2024-25
+366,37,20/05/2025 20:00,Selhurst Park,Crystal Palace,Wolves,4 - 2,2024,2024-25
+369,37,20/05/2025 20:00,Etihad Stadium,Man City,Bournemouth,3 - 1,2024,2024-25
+371,38,25/05/2025 16:00,Vitality Stadium,Bournemouth,Leicester,2 - 0,2024,2024-25
+372,38,25/05/2025 16:00,Craven Cottage,Fulham,Man City,0 - 2,2024,2024-25
+373,38,25/05/2025 16:00,Portman Road,Ipswich,West Ham,1 - 3,2024,2024-25
+374,38,25/05/2025 16:00,Anfield,Liverpool,Crystal Palace,1 - 1,2024,2024-25
+375,38,25/05/2025 16:00,Old Trafford,Man United,Aston Villa,2 - 0,2024,2024-25
+376,38,25/05/2025 16:00,St. James' Park,Newcastle,Everton,0 - 1,2024,2024-25
+377,38,25/05/2025 16:00,The City Ground,Nott'm Forest,Chelsea,0 - 1,2024,2024-25
+378,38,25/05/2025 16:00,St. Mary's Stadium,Southampton,Arsenal,1 - 2,2024,2024-25
+379,38,25/05/2025 16:00,Tottenham Hotspur Stadium,Tottenham,Brighton,1 - 4,2024,2024-25
+380,38,25/05/2025 16:00,Molineux Stadium,Wolves,Brentford,1 - 1,2024,2024-25

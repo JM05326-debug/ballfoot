@@ -1,0 +1,381 @@
+Match Number,Round Number,Date,Location,Home Team,Away Team,Result,SeasonStartYear,Season
+1,1,21/08/2026 20:00,Emirates Stadium,Arsenal,Coventry,3 - 0,2026,2026-27
+2,1,22/08/2026 12:30,MKM Stadium,Hull,Man United,2 - 0,2026,2026-27
+3,1,22/08/2026 15:00,Hill Dickinson Stadium,Everton,Crystal Palace,2 - 0,2026,2026-27
+4,1,22/08/2026 15:00,Portman Road,Ipswich,Sunderland,2 - 1,2026,2026-27
+5,1,22/08/2026 15:00,The City Ground,Nott'm Forest,Leeds,0 - 1,2026,2026-27
+6,1,22/08/2026 17:30,Gtech Community Stadium,Brentford,Tottenham,3 - 0,2026,2026-27
+7,1,23/08/2026 14:00,American Express Stadium,Brighton,Aston Villa,,2026,2026-27
+8,1,23/08/2026 14:00,Etihad Stadium,Man City,Bournemouth,,2026,2026-27
+9,1,23/08/2026 16:30,St. James' Park,Newcastle,Liverpool,,2026,2026-27
+10,1,24/08/2026 20:00,Craven Cottage,Fulham,Chelsea,,2026,2026-27
+15,2,28/08/2026 20:00,Selhurst Park,Crystal Palace,Man City,,2026,2026-27
+17,2,29/08/2026 12:30,Anfield,Liverpool,Nott'm Forest,,2026,2026-27
+11,2,29/08/2026 15:00,Vitality Stadium,Bournemouth,Everton,,2026,2026-27
+14,2,29/08/2026 15:00,Coventry Building Society Arena,Coventry,Hull,,2026,2026-27
+20,2,29/08/2026 17:30,Tottenham Hotspur Stadium,Tottenham,Newcastle,,2026,2026-27
+13,2,30/08/2026 14:00,Stamford Bridge,Chelsea,Brighton,,2026,2026-27
+16,2,30/08/2026 14:00,Elland Road,Leeds,Brentford,,2026,2026-27
+19,2,30/08/2026 14:00,Stadium of Light,Sunderland,Fulham,,2026,2026-27
+18,2,30/08/2026 16:30,Old Trafford,Man United,Ipswich,,2026,2026-27
+12,2,31/08/2026 20:00,Villa Park,Aston Villa,Arsenal,,2026,2026-27
+27,3,04/09/2026 20:00,Portman Road,Ipswich,Liverpool,,2026,2026-27
+29,3,05/09/2026 12:30,St. James' Park,Newcastle,Bournemouth,,2026,2026-27
+22,3,05/09/2026 15:00,Gtech Community Stadium,Brentford,Sunderland,,2026,2026-27
+23,3,05/09/2026 15:00,American Express Stadium,Brighton,Leeds,,2026,2026-27
+25,3,05/09/2026 15:00,Craven Cottage,Fulham,Crystal Palace,,2026,2026-27
+28,3,05/09/2026 15:00,Etihad Stadium,Man City,Coventry,,2026,2026-27
+30,3,05/09/2026 15:00,The City Ground,Nott'm Forest,Tottenham,,2026,2026-27
+26,3,05/09/2026 17:30,MKM Stadium,Hull,Aston Villa,,2026,2026-27
+24,3,06/09/2026 14:00,Hill Dickinson Stadium,Everton,Man United,,2026,2026-27
+21,3,06/09/2026 16:30,Emirates Stadium,Arsenal,Chelsea,,2026,2026-27
+31,4,12/09/2026 15:00,Vitality Stadium,Bournemouth,Brentford,,2026,2026-27
+32,4,12/09/2026 15:00,Villa Park,Aston Villa,Nott'm Forest,,2026,2026-27
+33,4,12/09/2026 15:00,Stamford Bridge,Chelsea,Hull,,2026,2026-27
+35,4,12/09/2026 15:00,Selhurst Park,Crystal Palace,Ipswich,,2026,2026-27
+37,4,12/09/2026 15:00,Anfield,Liverpool,Fulham,,2026,2026-27
+40,4,12/09/2026 17:30,Tottenham Hotspur Stadium,Tottenham,Everton,,2026,2026-27
+39,4,12/09/2026 20:00,Stadium of Light,Sunderland,Arsenal,,2026,2026-27
+34,4,13/09/2026 14:00,Coventry Building Society Arena,Coventry,Brighton,,2026,2026-27
+38,4,13/09/2026 16:30,Old Trafford,Man United,Man City,,2026,2026-27
+36,4,14/09/2026 20:00,Elland Road,Leeds,Newcastle,,2026,2026-27
+42,5,18/09/2026 20:00,Gtech Community Stadium,Brentford,Chelsea,,2026,2026-27
+50,5,19/09/2026 12:30,Tottenham Hotspur Stadium,Tottenham,Aston Villa,,2026,2026-27
+43,5,19/09/2026 15:00,American Express Stadium,Brighton,Arsenal,,2026,2026-27
+44,5,19/09/2026 15:00,Hill Dickinson Stadium,Everton,Ipswich,,2026,2026-27
+46,5,19/09/2026 15:00,Elland Road,Leeds,Crystal Palace,,2026,2026-27
+47,5,19/09/2026 15:00,Etihad Stadium,Man City,Sunderland,,2026,2026-27
+48,5,19/09/2026 15:00,St. James' Park,Newcastle,Hull,,2026,2026-27
+49,5,19/09/2026 17:30,The City Ground,Nott'm Forest,Coventry,,2026,2026-27
+41,5,20/09/2026 14:00,Vitality Stadium,Bournemouth,Liverpool,,2026,2026-27
+45,5,20/09/2026 16:30,Craven Cottage,Fulham,Man United,,2026,2026-27
+51,6,10/10/2026 12:30,Emirates Stadium,Arsenal,Leeds,,2026,2026-27
+52,6,10/10/2026 15:00,Villa Park,Aston Villa,Brentford,,2026,2026-27
+53,6,10/10/2026 15:00,Stamford Bridge,Chelsea,Bournemouth,,2026,2026-27
+57,6,10/10/2026 15:00,Portman Road,Ipswich,Fulham,,2026,2026-27
+60,6,10/10/2026 15:00,Stadium of Light,Sunderland,Brighton,,2026,2026-27
+59,6,10/10/2026 17:30,Old Trafford,Man United,Tottenham,,2026,2026-27
+55,6,11/10/2026 14:00,Selhurst Park,Crystal Palace,Nott'm Forest,,2026,2026-27
+56,6,11/10/2026 14:00,MKM Stadium,Hull,Everton,,2026,2026-27
+58,6,11/10/2026 16:30,Anfield,Liverpool,Man City,,2026,2026-27
+54,6,12/10/2026 20:00,Coventry Building Society Arena,Coventry,Newcastle,,2026,2026-27
+64,7,17/10/2026 12:30,Hill Dickinson Stadium,Everton,Chelsea,,2026,2026-27
+62,7,17/10/2026 15:00,Gtech Community Stadium,Brentford,Liverpool,,2026,2026-27
+65,7,17/10/2026 15:00,Craven Cottage,Fulham,Hull,,2026,2026-27
+67,7,17/10/2026 15:00,Etihad Stadium,Man City,Ipswich,,2026,2026-27
+68,7,17/10/2026 17:30,St. James' Park,Newcastle,Aston Villa,,2026,2026-27
+61,7,18/10/2026 14:00,Vitality Stadium,Bournemouth,Sunderland,,2026,2026-27
+63,7,18/10/2026 14:00,American Express Stadium,Brighton,Crystal Palace,,2026,2026-27
+66,7,18/10/2026 14:00,Elland Road,Leeds,Man United,,2026,2026-27
+69,7,18/10/2026 16:30,The City Ground,Nott'm Forest,Arsenal,,2026,2026-27
+70,7,19/10/2026 20:00,Tottenham Hotspur Stadium,Tottenham,Coventry,,2026,2026-27
+77,8,23/10/2026 20:00,Portman Road,Ipswich,Nott'm Forest,,2026,2026-27
+72,8,24/10/2026 12:30,Villa Park,Aston Villa,Man City,,2026,2026-27
+71,8,24/10/2026 15:00,Emirates Stadium,Arsenal,Everton,,2026,2026-27
+74,8,24/10/2026 15:00,Coventry Building Society Arena,Coventry,Fulham,,2026,2026-27
+78,8,24/10/2026 15:00,Anfield,Liverpool,Brighton,,2026,2026-27
+73,8,24/10/2026 17:30,Stamford Bridge,Chelsea,Tottenham,,2026,2026-27
+75,8,25/10/2026 14:00,Selhurst Park,Crystal Palace,Newcastle,,2026,2026-27
+76,8,25/10/2026 14:00,MKM Stadium,Hull,Brentford,,2026,2026-27
+79,8,25/10/2026 14:00,Old Trafford,Man United,Bournemouth,,2026,2026-27
+80,8,25/10/2026 16:30,Stadium of Light,Sunderland,Leeds,,2026,2026-27
+84,9,31/10/2026 12:30,Stamford Bridge,Chelsea,Man United,,2026,2026-27
+81,9,31/10/2026 15:00,Vitality Stadium,Bournemouth,Leeds,,2026,2026-27
+83,9,31/10/2026 15:00,Gtech Community Stadium,Brentford,Nott'm Forest,,2026,2026-27
+85,9,31/10/2026 15:00,Coventry Building Society Arena,Coventry,Sunderland,,2026,2026-27
+86,9,31/10/2026 15:00,MKM Stadium,Hull,Ipswich,,2026,2026-27
+88,9,31/10/2026 15:00,Etihad Stadium,Man City,Brighton,,2026,2026-27
+90,9,31/10/2026 17:30,Tottenham Hotspur Stadium,Tottenham,Crystal Palace,,2026,2026-27
+82,9,01/11/2026 14:00,Villa Park,Aston Villa,Fulham,,2026,2026-27
+87,9,01/11/2026 16:30,Anfield,Liverpool,Arsenal,,2026,2026-27
+89,9,02/11/2026 20:00,St. James' Park,Newcastle,Everton,,2026,2026-27
+91,10,07/11/2026 15:00,Emirates Stadium,Arsenal,Hull,,2026,2026-27
+92,10,07/11/2026 15:00,American Express Stadium,Brighton,Brentford,,2026,2026-27
+93,10,07/11/2026 15:00,Selhurst Park,Crystal Palace,Liverpool,,2026,2026-27
+94,10,07/11/2026 15:00,Hill Dickinson Stadium,Everton,Coventry,,2026,2026-27
+95,10,07/11/2026 15:00,Craven Cottage,Fulham,Newcastle,,2026,2026-27
+96,10,07/11/2026 15:00,Portman Road,Ipswich,Bournemouth,,2026,2026-27
+97,10,07/11/2026 15:00,Elland Road,Leeds,Tottenham,,2026,2026-27
+98,10,07/11/2026 15:00,Old Trafford,Man United,Aston Villa,,2026,2026-27
+99,10,07/11/2026 15:00,The City Ground,Nott'm Forest,Man City,,2026,2026-27
+100,10,07/11/2026 15:00,Stadium of Light,Sunderland,Chelsea,,2026,2026-27
+101,11,21/11/2026 15:00,Vitality Stadium,Bournemouth,Nott'm Forest,,2026,2026-27
+102,11,21/11/2026 15:00,Villa Park,Aston Villa,Sunderland,,2026,2026-27
+103,11,21/11/2026 15:00,Gtech Community Stadium,Brentford,Everton,,2026,2026-27
+104,11,21/11/2026 15:00,Stamford Bridge,Chelsea,Leeds,,2026,2026-27
+105,11,21/11/2026 15:00,Coventry Building Society Arena,Coventry,Crystal Palace,,2026,2026-27
+106,11,21/11/2026 15:00,MKM Stadium,Hull,Brighton,,2026,2026-27
+107,11,21/11/2026 15:00,Anfield,Liverpool,Man United,,2026,2026-27
+108,11,21/11/2026 15:00,Etihad Stadium,Man City,Fulham,,2026,2026-27
+109,11,21/11/2026 15:00,St. James' Park,Newcastle,Arsenal,,2026,2026-27
+110,11,21/11/2026 15:00,Tottenham Hotspur Stadium,Tottenham,Ipswich,,2026,2026-27
+111,12,28/11/2026 15:00,Emirates Stadium,Arsenal,Man City,,2026,2026-27
+112,12,28/11/2026 15:00,American Express Stadium,Brighton,Newcastle,,2026,2026-27
+113,12,28/11/2026 15:00,Selhurst Park,Crystal Palace,Hull,,2026,2026-27
+114,12,28/11/2026 15:00,Hill Dickinson Stadium,Everton,Liverpool,,2026,2026-27
+115,12,28/11/2026 15:00,Craven Cottage,Fulham,Bournemouth,,2026,2026-27
+116,12,28/11/2026 15:00,Portman Road,Ipswich,Aston Villa,,2026,2026-27
+117,12,28/11/2026 15:00,Elland Road,Leeds,Coventry,,2026,2026-27
+118,12,28/11/2026 15:00,Old Trafford,Man United,Brentford,,2026,2026-27
+119,12,28/11/2026 15:00,The City Ground,Nott'm Forest,Chelsea,,2026,2026-27
+120,12,28/11/2026 15:00,Stadium of Light,Sunderland,Tottenham,,2026,2026-27
+121,13,02/12/2026 20:00,Vitality Stadium,Bournemouth,Brighton,,2026,2026-27
+122,13,02/12/2026 20:00,Villa Park,Aston Villa,Everton,,2026,2026-27
+123,13,02/12/2026 20:00,Gtech Community Stadium,Brentford,Arsenal,,2026,2026-27
+124,13,02/12/2026 20:00,Stamford Bridge,Chelsea,Crystal Palace,,2026,2026-27
+125,13,02/12/2026 20:00,Coventry Building Society Arena,Coventry,Ipswich,,2026,2026-27
+126,13,02/12/2026 20:00,MKM Stadium,Hull,Nott'm Forest,,2026,2026-27
+127,13,02/12/2026 20:00,Anfield,Liverpool,Sunderland,,2026,2026-27
+128,13,02/12/2026 20:00,Etihad Stadium,Man City,Leeds,,2026,2026-27
+129,13,02/12/2026 20:00,St. James' Park,Newcastle,Man United,,2026,2026-27
+130,13,02/12/2026 20:00,Tottenham Hotspur Stadium,Tottenham,Fulham,,2026,2026-27
+131,14,05/12/2026 15:00,Vitality Stadium,Bournemouth,Hull,,2026,2026-27
+132,14,05/12/2026 15:00,Villa Park,Aston Villa,Crystal Palace,,2026,2026-27
+133,14,05/12/2026 15:00,Gtech Community Stadium,Brentford,Man City,,2026,2026-27
+134,14,05/12/2026 15:00,Stamford Bridge,Chelsea,Liverpool,,2026,2026-27
+135,14,05/12/2026 15:00,Hill Dickinson Stadium,Everton,Fulham,,2026,2026-27
+136,14,05/12/2026 15:00,Elland Road,Leeds,Ipswich,,2026,2026-27
+137,14,05/12/2026 15:00,Old Trafford,Man United,Coventry,,2026,2026-27
+138,14,05/12/2026 15:00,St. James' Park,Newcastle,Sunderland,,2026,2026-27
+139,14,05/12/2026 15:00,The City Ground,Nott'm Forest,Brighton,,2026,2026-27
+140,14,05/12/2026 15:00,Tottenham Hotspur Stadium,Tottenham,Arsenal,,2026,2026-27
+141,15,12/12/2026 15:00,Emirates Stadium,Arsenal,Bournemouth,,2026,2026-27
+142,15,12/12/2026 15:00,American Express Stadium,Brighton,Everton,,2026,2026-27
+143,15,12/12/2026 15:00,Coventry Building Society Arena,Coventry,Aston Villa,,2026,2026-27
+144,15,12/12/2026 15:00,Selhurst Park,Crystal Palace,Man United,,2026,2026-27
+145,15,12/12/2026 15:00,Craven Cottage,Fulham,Brentford,,2026,2026-27
+146,15,12/12/2026 15:00,MKM Stadium,Hull,Tottenham,,2026,2026-27
+147,15,12/12/2026 15:00,Portman Road,Ipswich,Newcastle,,2026,2026-27
+148,15,12/12/2026 15:00,Anfield,Liverpool,Leeds,,2026,2026-27
+149,15,12/12/2026 15:00,Etihad Stadium,Man City,Chelsea,,2026,2026-27
+150,15,12/12/2026 15:00,Stadium of Light,Sunderland,Nott'm Forest,,2026,2026-27
+151,16,19/12/2026 15:00,Vitality Stadium,Bournemouth,Coventry,,2026,2026-27
+152,16,19/12/2026 15:00,Emirates Stadium,Arsenal,Man United,,2026,2026-27
+153,16,19/12/2026 15:00,Gtech Community Stadium,Brentford,Newcastle,,2026,2026-27
+154,16,19/12/2026 15:00,American Express Stadium,Brighton,Ipswich,,2026,2026-27
+155,16,19/12/2026 15:00,Stamford Bridge,Chelsea,Aston Villa,,2026,2026-27
+156,16,19/12/2026 15:00,Elland Road,Leeds,Fulham,,2026,2026-27
+157,16,19/12/2026 15:00,Anfield,Liverpool,Tottenham,,2026,2026-27
+158,16,19/12/2026 15:00,Etihad Stadium,Man City,Hull,,2026,2026-27
+159,16,19/12/2026 15:00,The City Ground,Nott'm Forest,Everton,,2026,2026-27
+160,16,19/12/2026 15:00,Stadium of Light,Sunderland,Crystal Palace,,2026,2026-27
+161,17,26/12/2026 15:00,Villa Park,Aston Villa,Leeds,,2026,2026-27
+162,17,26/12/2026 15:00,Coventry Building Society Arena,Coventry,Chelsea,,2026,2026-27
+163,17,26/12/2026 15:00,Selhurst Park,Crystal Palace,Arsenal,,2026,2026-27
+164,17,26/12/2026 15:00,Hill Dickinson Stadium,Everton,Sunderland,,2026,2026-27
+165,17,26/12/2026 15:00,Craven Cottage,Fulham,Brighton,,2026,2026-27
+166,17,26/12/2026 15:00,MKM Stadium,Hull,Liverpool,,2026,2026-27
+167,17,26/12/2026 15:00,Portman Road,Ipswich,Brentford,,2026,2026-27
+168,17,26/12/2026 15:00,Old Trafford,Man United,Nott'm Forest,,2026,2026-27
+169,17,26/12/2026 15:00,St. James' Park,Newcastle,Man City,,2026,2026-27
+170,17,26/12/2026 15:00,Tottenham Hotspur Stadium,Tottenham,Bournemouth,,2026,2026-27
+171,18,30/12/2026 20:00,Villa Park,Aston Villa,Liverpool,,2026,2026-27
+172,18,30/12/2026 20:00,Coventry Building Society Arena,Coventry,Brentford,,2026,2026-27
+173,18,30/12/2026 20:00,Selhurst Park,Crystal Palace,Bournemouth,,2026,2026-27
+174,18,30/12/2026 20:00,Hill Dickinson Stadium,Everton,Man City,,2026,2026-27
+175,18,30/12/2026 20:00,Craven Cottage,Fulham,Arsenal,,2026,2026-27
+176,18,30/12/2026 20:00,MKM Stadium,Hull,Leeds,,2026,2026-27
+177,18,30/12/2026 20:00,Portman Road,Ipswich,Chelsea,,2026,2026-27
+178,18,30/12/2026 20:00,Old Trafford,Man United,Sunderland,,2026,2026-27
+179,18,30/12/2026 20:00,St. James' Park,Newcastle,Nott'm Forest,,2026,2026-27
+180,18,30/12/2026 20:00,Tottenham Hotspur Stadium,Tottenham,Brighton,,2026,2026-27
+181,19,02/01/2027 15:00,Vitality Stadium,Bournemouth,Aston Villa,,2026,2026-27
+182,19,02/01/2027 15:00,Emirates Stadium,Arsenal,Ipswich,,2026,2026-27
+183,19,02/01/2027 15:00,Gtech Community Stadium,Brentford,Crystal Palace,,2026,2026-27
+184,19,02/01/2027 15:00,American Express Stadium,Brighton,Man United,,2026,2026-27
+185,19,02/01/2027 15:00,Stamford Bridge,Chelsea,Newcastle,,2026,2026-27
+186,19,02/01/2027 15:00,Elland Road,Leeds,Everton,,2026,2026-27
+187,19,02/01/2027 15:00,Anfield,Liverpool,Coventry,,2026,2026-27
+188,19,02/01/2027 15:00,Etihad Stadium,Man City,Tottenham,,2026,2026-27
+189,19,02/01/2027 15:00,The City Ground,Nott'm Forest,Fulham,,2026,2026-27
+190,19,02/01/2027 15:00,Stadium of Light,Sunderland,Hull,,2026,2026-27
+191,20,06/01/2027 20:00,Emirates Stadium,Arsenal,Brentford,,2026,2026-27
+192,20,06/01/2027 20:00,American Express Stadium,Brighton,Bournemouth,,2026,2026-27
+193,20,06/01/2027 20:00,Selhurst Park,Crystal Palace,Chelsea,,2026,2026-27
+194,20,06/01/2027 20:00,Hill Dickinson Stadium,Everton,Aston Villa,,2026,2026-27
+195,20,06/01/2027 20:00,Craven Cottage,Fulham,Tottenham,,2026,2026-27
+196,20,06/01/2027 20:00,Portman Road,Ipswich,Coventry,,2026,2026-27
+197,20,06/01/2027 20:00,Elland Road,Leeds,Man City,,2026,2026-27
+198,20,06/01/2027 20:00,Old Trafford,Man United,Newcastle,,2026,2026-27
+199,20,06/01/2027 20:00,The City Ground,Nott'm Forest,Hull,,2026,2026-27
+200,20,06/01/2027 20:00,Stadium of Light,Sunderland,Liverpool,,2026,2026-27
+201,21,16/01/2027 15:00,Vitality Stadium,Bournemouth,Ipswich,,2026,2026-27
+202,21,16/01/2027 15:00,Villa Park,Aston Villa,Man United,,2026,2026-27
+203,21,16/01/2027 15:00,Gtech Community Stadium,Brentford,Brighton,,2026,2026-27
+204,21,16/01/2027 15:00,Stamford Bridge,Chelsea,Sunderland,,2026,2026-27
+205,21,16/01/2027 15:00,Coventry Building Society Arena,Coventry,Everton,,2026,2026-27
+206,21,16/01/2027 15:00,MKM Stadium,Hull,Arsenal,,2026,2026-27
+207,21,16/01/2027 15:00,Anfield,Liverpool,Crystal Palace,,2026,2026-27
+208,21,16/01/2027 15:00,Etihad Stadium,Man City,Nott'm Forest,,2026,2026-27
+209,21,16/01/2027 15:00,St. James' Park,Newcastle,Fulham,,2026,2026-27
+210,21,16/01/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Leeds,,2026,2026-27
+211,22,23/01/2027 15:00,Emirates Stadium,Arsenal,Newcastle,,2026,2026-27
+212,22,23/01/2027 15:00,American Express Stadium,Brighton,Man City,,2026,2026-27
+213,22,23/01/2027 15:00,Selhurst Park,Crystal Palace,Tottenham,,2026,2026-27
+214,22,23/01/2027 15:00,Hill Dickinson Stadium,Everton,Brentford,,2026,2026-27
+215,22,23/01/2027 15:00,Craven Cottage,Fulham,Aston Villa,,2026,2026-27
+216,22,23/01/2027 15:00,Portman Road,Ipswich,Hull,,2026,2026-27
+217,22,23/01/2027 15:00,Elland Road,Leeds,Chelsea,,2026,2026-27
+218,22,23/01/2027 15:00,Old Trafford,Man United,Liverpool,,2026,2026-27
+219,22,23/01/2027 15:00,The City Ground,Nott'm Forest,Bournemouth,,2026,2026-27
+220,22,23/01/2027 15:00,Stadium of Light,Sunderland,Coventry,,2026,2026-27
+221,23,30/01/2027 15:00,Vitality Stadium,Bournemouth,Fulham,,2026,2026-27
+222,23,30/01/2027 15:00,Villa Park,Aston Villa,Ipswich,,2026,2026-27
+223,23,30/01/2027 15:00,Gtech Community Stadium,Brentford,Man United,,2026,2026-27
+224,23,30/01/2027 15:00,Stamford Bridge,Chelsea,Nott'm Forest,,2026,2026-27
+225,23,30/01/2027 15:00,Coventry Building Society Arena,Coventry,Leeds,,2026,2026-27
+226,23,30/01/2027 15:00,MKM Stadium,Hull,Crystal Palace,,2026,2026-27
+227,23,30/01/2027 15:00,Anfield,Liverpool,Everton,,2026,2026-27
+228,23,30/01/2027 15:00,Etihad Stadium,Man City,Arsenal,,2026,2026-27
+229,23,30/01/2027 15:00,St. James' Park,Newcastle,Brighton,,2026,2026-27
+230,23,30/01/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Sunderland,,2026,2026-27
+231,24,06/02/2027 15:00,Emirates Stadium,Arsenal,Liverpool,,2026,2026-27
+232,24,06/02/2027 15:00,American Express Stadium,Brighton,Hull,,2026,2026-27
+233,24,06/02/2027 15:00,Selhurst Park,Crystal Palace,Coventry,,2026,2026-27
+234,24,06/02/2027 15:00,Hill Dickinson Stadium,Everton,Newcastle,,2026,2026-27
+235,24,06/02/2027 15:00,Craven Cottage,Fulham,Man City,,2026,2026-27
+236,24,06/02/2027 15:00,Portman Road,Ipswich,Tottenham,,2026,2026-27
+237,24,06/02/2027 15:00,Elland Road,Leeds,Bournemouth,,2026,2026-27
+238,24,06/02/2027 15:00,Old Trafford,Man United,Chelsea,,2026,2026-27
+239,24,06/02/2027 15:00,The City Ground,Nott'm Forest,Brentford,,2026,2026-27
+240,24,06/02/2027 15:00,Stadium of Light,Sunderland,Aston Villa,,2026,2026-27
+241,25,10/02/2027 20:00,Villa Park,Aston Villa,Bournemouth,,2026,2026-27
+242,25,10/02/2027 20:00,Coventry Building Society Arena,Coventry,Liverpool,,2026,2026-27
+243,25,10/02/2027 20:00,Selhurst Park,Crystal Palace,Brentford,,2026,2026-27
+244,25,10/02/2027 20:00,Hill Dickinson Stadium,Everton,Leeds,,2026,2026-27
+245,25,10/02/2027 20:00,Craven Cottage,Fulham,Nott'm Forest,,2026,2026-27
+246,25,10/02/2027 20:00,MKM Stadium,Hull,Sunderland,,2026,2026-27
+247,25,10/02/2027 20:00,Portman Road,Ipswich,Arsenal,,2026,2026-27
+248,25,10/02/2027 20:00,Old Trafford,Man United,Brighton,,2026,2026-27
+249,25,10/02/2027 20:00,St. James' Park,Newcastle,Chelsea,,2026,2026-27
+250,25,10/02/2027 20:00,Tottenham Hotspur Stadium,Tottenham,Man City,,2026,2026-27
+251,26,20/02/2027 15:00,Vitality Stadium,Bournemouth,Crystal Palace,,2026,2026-27
+252,26,20/02/2027 15:00,Emirates Stadium,Arsenal,Fulham,,2026,2026-27
+253,26,20/02/2027 15:00,Gtech Community Stadium,Brentford,Coventry,,2026,2026-27
+254,26,20/02/2027 15:00,American Express Stadium,Brighton,Tottenham,,2026,2026-27
+255,26,20/02/2027 15:00,Stamford Bridge,Chelsea,Ipswich,,2026,2026-27
+256,26,20/02/2027 15:00,Elland Road,Leeds,Aston Villa,,2026,2026-27
+257,26,20/02/2027 15:00,Anfield,Liverpool,Hull,,2026,2026-27
+258,26,20/02/2027 15:00,Etihad Stadium,Man City,Newcastle,,2026,2026-27
+259,26,20/02/2027 15:00,The City Ground,Nott'm Forest,Man United,,2026,2026-27
+260,26,20/02/2027 15:00,Stadium of Light,Sunderland,Everton,,2026,2026-27
+261,27,27/02/2027 15:00,Villa Park,Aston Villa,Chelsea,,2026,2026-27
+262,27,27/02/2027 15:00,Coventry Building Society Arena,Coventry,Bournemouth,,2026,2026-27
+263,27,27/02/2027 15:00,Selhurst Park,Crystal Palace,Sunderland,,2026,2026-27
+264,27,27/02/2027 15:00,Hill Dickinson Stadium,Everton,Nott'm Forest,,2026,2026-27
+265,27,27/02/2027 15:00,Craven Cottage,Fulham,Leeds,,2026,2026-27
+266,27,27/02/2027 15:00,MKM Stadium,Hull,Man City,,2026,2026-27
+267,27,27/02/2027 15:00,Portman Road,Ipswich,Brighton,,2026,2026-27
+268,27,27/02/2027 15:00,Old Trafford,Man United,Arsenal,,2026,2026-27
+269,27,27/02/2027 15:00,St. James' Park,Newcastle,Brentford,,2026,2026-27
+270,27,27/02/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Liverpool,,2026,2026-27
+271,28,03/03/2027 20:00,Vitality Stadium,Bournemouth,Tottenham,,2026,2026-27
+272,28,03/03/2027 20:00,Emirates Stadium,Arsenal,Crystal Palace,,2026,2026-27
+273,28,03/03/2027 20:00,Gtech Community Stadium,Brentford,Ipswich,,2026,2026-27
+274,28,03/03/2027 20:00,American Express Stadium,Brighton,Fulham,,2026,2026-27
+275,28,03/03/2027 20:00,Stamford Bridge,Chelsea,Coventry,,2026,2026-27
+276,28,03/03/2027 20:00,Elland Road,Leeds,Hull,,2026,2026-27
+277,28,03/03/2027 20:00,Anfield,Liverpool,Aston Villa,,2026,2026-27
+278,28,03/03/2027 20:00,Etihad Stadium,Man City,Everton,,2026,2026-27
+279,28,03/03/2027 20:00,The City Ground,Nott'm Forest,Newcastle,,2026,2026-27
+280,28,03/03/2027 20:00,Stadium of Light,Sunderland,Man United,,2026,2026-27
+281,29,13/03/2027 15:00,Vitality Stadium,Bournemouth,Newcastle,,2026,2026-27
+282,29,13/03/2027 15:00,Villa Park,Aston Villa,Hull,,2026,2026-27
+283,29,13/03/2027 15:00,Stamford Bridge,Chelsea,Arsenal,,2026,2026-27
+284,29,13/03/2027 15:00,Coventry Building Society Arena,Coventry,Man City,,2026,2026-27
+285,29,13/03/2027 15:00,Selhurst Park,Crystal Palace,Fulham,,2026,2026-27
+286,29,13/03/2027 15:00,Elland Road,Leeds,Brighton,,2026,2026-27
+287,29,13/03/2027 15:00,Anfield,Liverpool,Ipswich,,2026,2026-27
+288,29,13/03/2027 15:00,Old Trafford,Man United,Everton,,2026,2026-27
+289,29,13/03/2027 15:00,Stadium of Light,Sunderland,Brentford,,2026,2026-27
+290,29,13/03/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Nott'm Forest,,2026,2026-27
+291,30,20/03/2027 15:00,Emirates Stadium,Arsenal,Sunderland,,2026,2026-27
+292,30,20/03/2027 15:00,Gtech Community Stadium,Brentford,Bournemouth,,2026,2026-27
+293,30,20/03/2027 15:00,American Express Stadium,Brighton,Coventry,,2026,2026-27
+294,30,20/03/2027 15:00,Hill Dickinson Stadium,Everton,Tottenham,,2026,2026-27
+295,30,20/03/2027 15:00,Craven Cottage,Fulham,Liverpool,,2026,2026-27
+296,30,20/03/2027 15:00,MKM Stadium,Hull,Chelsea,,2026,2026-27
+297,30,20/03/2027 15:00,Portman Road,Ipswich,Crystal Palace,,2026,2026-27
+298,30,20/03/2027 15:00,Etihad Stadium,Man City,Man United,,2026,2026-27
+299,30,20/03/2027 15:00,St. James' Park,Newcastle,Leeds,,2026,2026-27
+300,30,20/03/2027 15:00,The City Ground,Nott'm Forest,Aston Villa,,2026,2026-27
+301,31,10/04/2027 15:00,Vitality Stadium,Bournemouth,Man City,,2026,2026-27
+302,31,10/04/2027 15:00,Villa Park,Aston Villa,Brighton,,2026,2026-27
+303,31,10/04/2027 15:00,Stamford Bridge,Chelsea,Fulham,,2026,2026-27
+304,31,10/04/2027 15:00,Coventry Building Society Arena,Coventry,Arsenal,,2026,2026-27
+305,31,10/04/2027 15:00,Selhurst Park,Crystal Palace,Everton,,2026,2026-27
+306,31,10/04/2027 15:00,Elland Road,Leeds,Nott'm Forest,,2026,2026-27
+307,31,10/04/2027 15:00,Anfield,Liverpool,Newcastle,,2026,2026-27
+308,31,10/04/2027 15:00,Old Trafford,Man United,Hull,,2026,2026-27
+309,31,10/04/2027 15:00,Stadium of Light,Sunderland,Ipswich,,2026,2026-27
+310,31,10/04/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Brentford,,2026,2026-27
+311,32,17/04/2027 15:00,Emirates Stadium,Arsenal,Aston Villa,,2026,2026-27
+312,32,17/04/2027 15:00,Gtech Community Stadium,Brentford,Leeds,,2026,2026-27
+313,32,17/04/2027 15:00,American Express Stadium,Brighton,Chelsea,,2026,2026-27
+314,32,17/04/2027 15:00,Hill Dickinson Stadium,Everton,Bournemouth,,2026,2026-27
+315,32,17/04/2027 15:00,Craven Cottage,Fulham,Sunderland,,2026,2026-27
+316,32,17/04/2027 15:00,MKM Stadium,Hull,Coventry,,2026,2026-27
+317,32,17/04/2027 15:00,Portman Road,Ipswich,Man United,,2026,2026-27
+318,32,17/04/2027 15:00,Etihad Stadium,Man City,Crystal Palace,,2026,2026-27
+319,32,17/04/2027 15:00,St. James' Park,Newcastle,Tottenham,,2026,2026-27
+320,32,17/04/2027 15:00,The City Ground,Nott'm Forest,Liverpool,,2026,2026-27
+321,33,24/04/2027 15:00,Vitality Stadium,Bournemouth,Arsenal,,2026,2026-27
+322,33,24/04/2027 15:00,Villa Park,Aston Villa,Coventry,,2026,2026-27
+323,33,24/04/2027 15:00,Gtech Community Stadium,Brentford,Fulham,,2026,2026-27
+324,33,24/04/2027 15:00,Stamford Bridge,Chelsea,Man City,,2026,2026-27
+325,33,24/04/2027 15:00,Hill Dickinson Stadium,Everton,Brighton,,2026,2026-27
+326,33,24/04/2027 15:00,Elland Road,Leeds,Liverpool,,2026,2026-27
+327,33,24/04/2027 15:00,Old Trafford,Man United,Crystal Palace,,2026,2026-27
+328,33,24/04/2027 15:00,St. James' Park,Newcastle,Ipswich,,2026,2026-27
+329,33,24/04/2027 15:00,The City Ground,Nott'm Forest,Sunderland,,2026,2026-27
+330,33,24/04/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Hull,,2026,2026-27
+331,34,01/05/2027 15:00,Emirates Stadium,Arsenal,Tottenham,,2026,2026-27
+332,34,01/05/2027 15:00,American Express Stadium,Brighton,Nott'm Forest,,2026,2026-27
+333,34,01/05/2027 15:00,Coventry Building Society Arena,Coventry,Man United,,2026,2026-27
+334,34,01/05/2027 15:00,Selhurst Park,Crystal Palace,Aston Villa,,2026,2026-27
+335,34,01/05/2027 15:00,Craven Cottage,Fulham,Everton,,2026,2026-27
+336,34,01/05/2027 15:00,MKM Stadium,Hull,Bournemouth,,2026,2026-27
+337,34,01/05/2027 15:00,Portman Road,Ipswich,Leeds,,2026,2026-27
+338,34,01/05/2027 15:00,Anfield,Liverpool,Chelsea,,2026,2026-27
+339,34,01/05/2027 15:00,Etihad Stadium,Man City,Brentford,,2026,2026-27
+340,34,01/05/2027 15:00,Stadium of Light,Sunderland,Newcastle,,2026,2026-27
+341,35,08/05/2027 15:00,Vitality Stadium,Bournemouth,Man United,,2026,2026-27
+342,35,08/05/2027 15:00,Gtech Community Stadium,Brentford,Aston Villa,,2026,2026-27
+343,35,08/05/2027 15:00,American Express Stadium,Brighton,Sunderland,,2026,2026-27
+344,35,08/05/2027 15:00,Hill Dickinson Stadium,Everton,Hull,,2026,2026-27
+345,35,08/05/2027 15:00,Craven Cottage,Fulham,Ipswich,,2026,2026-27
+346,35,08/05/2027 15:00,Elland Road,Leeds,Arsenal,,2026,2026-27
+347,35,08/05/2027 15:00,Etihad Stadium,Man City,Liverpool,,2026,2026-27
+348,35,08/05/2027 15:00,St. James' Park,Newcastle,Coventry,,2026,2026-27
+349,35,08/05/2027 15:00,The City Ground,Nott'm Forest,Crystal Palace,,2026,2026-27
+350,35,08/05/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Chelsea,,2026,2026-27
+351,36,15/05/2027 15:00,Emirates Stadium,Arsenal,Nott'm Forest,,2026,2026-27
+352,36,15/05/2027 15:00,Villa Park,Aston Villa,Newcastle,,2026,2026-27
+353,36,15/05/2027 15:00,Stamford Bridge,Chelsea,Everton,,2026,2026-27
+354,36,15/05/2027 15:00,Coventry Building Society Arena,Coventry,Tottenham,,2026,2026-27
+355,36,15/05/2027 15:00,Selhurst Park,Crystal Palace,Brighton,,2026,2026-27
+356,36,15/05/2027 15:00,MKM Stadium,Hull,Fulham,,2026,2026-27
+357,36,15/05/2027 15:00,Portman Road,Ipswich,Man City,,2026,2026-27
+358,36,15/05/2027 15:00,Anfield,Liverpool,Brentford,,2026,2026-27
+359,36,15/05/2027 15:00,Old Trafford,Man United,Leeds,,2026,2026-27
+360,36,15/05/2027 15:00,Stadium of Light,Sunderland,Bournemouth,,2026,2026-27
+361,37,23/05/2027 15:00,Vitality Stadium,Bournemouth,Chelsea,,2026,2026-27
+362,37,23/05/2027 15:00,Gtech Community Stadium,Brentford,Hull,,2026,2026-27
+363,37,23/05/2027 15:00,American Express Stadium,Brighton,Liverpool,,2026,2026-27
+364,37,23/05/2027 15:00,Hill Dickinson Stadium,Everton,Arsenal,,2026,2026-27
+365,37,23/05/2027 15:00,Craven Cottage,Fulham,Coventry,,2026,2026-27
+366,37,23/05/2027 15:00,Elland Road,Leeds,Sunderland,,2026,2026-27
+367,37,23/05/2027 15:00,Etihad Stadium,Man City,Aston Villa,,2026,2026-27
+368,37,23/05/2027 15:00,St. James' Park,Newcastle,Crystal Palace,,2026,2026-27
+369,37,23/05/2027 15:00,The City Ground,Nott'm Forest,Ipswich,,2026,2026-27
+370,37,23/05/2027 15:00,Tottenham Hotspur Stadium,Tottenham,Man United,,2026,2026-27
+371,38,30/05/2027 16:00,Emirates Stadium,Arsenal,Brighton,,2026,2026-27
+372,38,30/05/2027 16:00,Villa Park,Aston Villa,Tottenham,,2026,2026-27
+373,38,30/05/2027 16:00,Stamford Bridge,Chelsea,Brentford,,2026,2026-27
+374,38,30/05/2027 16:00,Coventry Building Society Arena,Coventry,Nott'm Forest,,2026,2026-27
+375,38,30/05/2027 16:00,Selhurst Park,Crystal Palace,Leeds,,2026,2026-27
+376,38,30/05/2027 16:00,MKM Stadium,Hull,Newcastle,,2026,2026-27
+377,38,30/05/2027 16:00,Portman Road,Ipswich,Everton,,2026,2026-27
+378,38,30/05/2027 16:00,Anfield,Liverpool,Bournemouth,,2026,2026-27
+379,38,30/05/2027 16:00,Old Trafford,Man United,Fulham,,2026,2026-27
+380,38,30/05/2027 16:00,Stadium of Light,Sunderland,Man City,,2026,2026-27

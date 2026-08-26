@@ -1,0 +1,381 @@
+Match Number,Round Number,Date,Location,Home Team,Away Team,Result,SeasonStartYear,Season
+1,1,09/08/2019 20:00,Anfield,Liverpool,Norwich,4 - 1,2019,2019-20
+2,1,10/08/2019 12:30,London Stadium,West Ham,Man City,0 - 5,2019,2019-20
+3,1,10/08/2019 15:00,Vitality Stadium,Bournemouth,Sheffield United,1 - 1,2019,2019-20
+4,1,10/08/2019 15:00,Turf Moor,Burnley,Southampton,3 - 0,2019,2019-20
+5,1,10/08/2019 15:00,Selhurst Park,Crystal Palace,Everton,0 - 0,2019,2019-20
+7,1,10/08/2019 15:00,Vicarage Road,Watford,Brighton,0 - 3,2019,2019-20
+8,1,10/08/2019 17:30,Tottenham Hotspur Stadium,Tottenham,Aston Villa,3 - 1,2019,2019-20
+6,1,11/08/2019 14:00,King Power Stadium,Leicester,Wolves,0 - 0,2019,2019-20
+9,1,11/08/2019 14:00,St. James' Park,Newcastle,Arsenal,0 - 1,2019,2019-20
+10,1,11/08/2019 16:30,Old Trafford,Man United,Chelsea,4 - 0,2019,2019-20
+11,2,17/08/2019 12:30,Emirates Stadium,Arsenal,Burnley,2 - 1,2019,2019-20
+12,2,17/08/2019 15:00,Villa Park,Aston Villa,Bournemouth,1 - 2,2019,2019-20
+13,2,17/08/2019 15:00,Amex Stadium,Brighton,West Ham,1 - 1,2019,2019-20
+15,2,17/08/2019 15:00,Goodison Park,Everton,Watford,1 - 0,2019,2019-20
+17,2,17/08/2019 15:00,Carrow Road,Norwich,Newcastle,3 - 1,2019,2019-20
+19,2,17/08/2019 15:00,St. Mary's Stadium,Southampton,Liverpool,1 - 2,2019,2019-20
+16,2,17/08/2019 17:30,Etihad Stadium,Man City,Tottenham,2 - 2,2019,2019-20
+18,2,18/08/2019 14:00,Bramall Lane,Sheffield United,Crystal Palace,1 - 0,2019,2019-20
+14,2,18/08/2019 16:30,Stamford Bridge,Chelsea,Leicester,1 - 1,2019,2019-20
+20,2,19/08/2019 20:00,Molineux Stadium,Wolves,Man United,1 - 1,2019,2019-20
+22,3,23/08/2019 20:00,Villa Park,Aston Villa,Everton,2 - 0,2019,2019-20
+26,3,24/08/2019 12:30,Carrow Road,Norwich,Chelsea,2 - 3,2019,2019-20
+23,3,24/08/2019 15:00,Amex Stadium,Brighton,Southampton,0 - 2,2019,2019-20
+25,3,24/08/2019 15:00,Old Trafford,Man United,Crystal Palace,1 - 2,2019,2019-20
+27,3,24/08/2019 15:00,Bramall Lane,Sheffield United,Leicester,1 - 2,2019,2019-20
+29,3,24/08/2019 15:00,Vicarage Road,Watford,West Ham,1 - 3,2019,2019-20
+24,3,24/08/2019 17:30,Anfield,Liverpool,Arsenal,3 - 1,2019,2019-20
+21,3,25/08/2019 14:00,Vitality Stadium,Bournemouth,Man City,1 - 3,2019,2019-20
+28,3,25/08/2019 16:30,Tottenham Hotspur Stadium,Tottenham,Newcastle,0 - 1,2019,2019-20
+30,3,25/08/2019 16:30,Molineux Stadium,Wolves,Burnley,1 - 1,2019,2019-20
+39,4,31/08/2019 12:30,St. Mary's Stadium,Southampton,Man United,1 - 1,2019,2019-20
+33,4,31/08/2019 15:00,Stamford Bridge,Chelsea,Sheffield United,2 - 2,2019,2019-20
+34,4,31/08/2019 15:00,Selhurst Park,Crystal Palace,Aston Villa,1 - 0,2019,2019-20
+36,4,31/08/2019 15:00,King Power Stadium,Leicester,Bournemouth,3 - 1,2019,2019-20
+37,4,31/08/2019 15:00,Etihad Stadium,Man City,Brighton,4 - 0,2019,2019-20
+38,4,31/08/2019 15:00,St. James' Park,Newcastle,Watford,1 - 1,2019,2019-20
+40,4,31/08/2019 15:00,London Stadium,West Ham,Norwich,2 - 0,2019,2019-20
+32,4,31/08/2019 17:30,Turf Moor,Burnley,Liverpool,0 - 3,2019,2019-20
+35,4,01/09/2019 14:00,Goodison Park,Everton,Wolves,3 - 2,2019,2019-20
+31,4,01/09/2019 16:30,Emirates Stadium,Arsenal,Tottenham,2 - 2,2019,2019-20
+44,5,14/09/2019 12:30,Anfield,Liverpool,Newcastle,3 - 1,2019,2019-20
+43,5,14/09/2019 15:00,Amex Stadium,Brighton,Burnley,1 - 1,2019,2019-20
+45,5,14/09/2019 15:00,Old Trafford,Man United,Leicester,1 - 0,2019,2019-20
+47,5,14/09/2019 15:00,Bramall Lane,Sheffield United,Southampton,0 - 1,2019,2019-20
+48,5,14/09/2019 15:00,Tottenham Hotspur Stadium,Tottenham,Crystal Palace,4 - 0,2019,2019-20
+50,5,14/09/2019 15:00,Molineux Stadium,Wolves,Chelsea,2 - 5,2019,2019-20
+46,5,14/09/2019 17:30,Carrow Road,Norwich,Man City,3 - 2,2019,2019-20
+41,5,15/09/2019 14:00,Vitality Stadium,Bournemouth,Everton,3 - 1,2019,2019-20
+49,5,15/09/2019 16:30,Vicarage Road,Watford,Arsenal,2 - 2,2019,2019-20
+42,5,16/09/2019 20:00,Villa Park,Aston Villa,West Ham,0 - 0,2019,2019-20
+59,6,20/09/2019 20:00,St. Mary's Stadium,Southampton,Bournemouth,1 - 3,2019,2019-20
+56,6,21/09/2019 12:30,King Power Stadium,Leicester,Tottenham,2 - 1,2019,2019-20
+52,6,21/09/2019 15:00,Turf Moor,Burnley,Norwich,2 - 0,2019,2019-20
+55,6,21/09/2019 15:00,Goodison Park,Everton,Sheffield United,0 - 2,2019,2019-20
+57,6,21/09/2019 15:00,Etihad Stadium,Man City,Watford,8 - 0,2019,2019-20
+58,6,21/09/2019 17:30,St. James' Park,Newcastle,Brighton,0 - 0,2019,2019-20
+54,6,22/09/2019 14:00,Selhurst Park,Crystal Palace,Wolves,1 - 1,2019,2019-20
+60,6,22/09/2019 14:00,London Stadium,West Ham,Man United,2 - 0,2019,2019-20
+51,6,22/09/2019 16:30,Emirates Stadium,Arsenal,Aston Villa,3 - 2,2019,2019-20
+53,6,22/09/2019 16:30,Stamford Bridge,Chelsea,Liverpool,1 - 2,2019,2019-20
+68,7,28/09/2019 12:30,Bramall Lane,Sheffield United,Liverpool,0 - 1,2019,2019-20
+61,7,28/09/2019 15:00,Vitality Stadium,Bournemouth,West Ham,2 - 2,2019,2019-20
+62,7,28/09/2019 15:00,Villa Park,Aston Villa,Burnley,2 - 2,2019,2019-20
+63,7,28/09/2019 15:00,Stamford Bridge,Chelsea,Brighton,2 - 0,2019,2019-20
+64,7,28/09/2019 15:00,Selhurst Park,Crystal Palace,Norwich,2 - 0,2019,2019-20
+69,7,28/09/2019 15:00,Tottenham Hotspur Stadium,Tottenham,Southampton,2 - 1,2019,2019-20
+70,7,28/09/2019 15:00,Molineux Stadium,Wolves,Watford,2 - 0,2019,2019-20
+65,7,28/09/2019 17:30,Goodison Park,Everton,Man City,1 - 3,2019,2019-20
+66,7,29/09/2019 16:30,King Power Stadium,Leicester,Newcastle,5 - 0,2019,2019-20
+67,7,30/09/2019 20:00,Old Trafford,Man United,Arsenal,1 - 1,2019,2019-20
+72,8,05/10/2019 12:30,Amex Stadium,Brighton,Tottenham,3 - 0,2019,2019-20
+73,8,05/10/2019 15:00,Turf Moor,Burnley,Everton,1 - 0,2019,2019-20
+74,8,05/10/2019 15:00,Anfield,Liverpool,Leicester,2 - 1,2019,2019-20
+77,8,05/10/2019 15:00,Carrow Road,Norwich,Aston Villa,1 - 5,2019,2019-20
+79,8,05/10/2019 15:00,Vicarage Road,Watford,Sheffield United,0 - 0,2019,2019-20
+80,8,05/10/2019 17:30,London Stadium,West Ham,Crystal Palace,1 - 2,2019,2019-20
+71,8,06/10/2019 14:00,Emirates Stadium,Arsenal,Bournemouth,1 - 0,2019,2019-20
+75,8,06/10/2019 14:00,Etihad Stadium,Man City,Wolves,0 - 2,2019,2019-20
+78,8,06/10/2019 14:00,St. Mary's Stadium,Southampton,Chelsea,1 - 4,2019,2019-20
+76,8,06/10/2019 16:30,St. James' Park,Newcastle,Man United,1 - 0,2019,2019-20
+85,9,19/10/2019 12:30,Goodison Park,Everton,West Ham,2 - 0,2019,2019-20
+81,9,19/10/2019 15:00,Vitality Stadium,Bournemouth,Norwich,0 - 0,2019,2019-20
+82,9,19/10/2019 15:00,Villa Park,Aston Villa,Brighton,2 - 1,2019,2019-20
+83,9,19/10/2019 15:00,Stamford Bridge,Chelsea,Newcastle,1 - 0,2019,2019-20
+86,9,19/10/2019 15:00,King Power Stadium,Leicester,Burnley,2 - 1,2019,2019-20
+89,9,19/10/2019 15:00,Tottenham Hotspur Stadium,Tottenham,Watford,1 - 1,2019,2019-20
+90,9,19/10/2019 15:00,Molineux Stadium,Wolves,Southampton,1 - 1,2019,2019-20
+84,9,19/10/2019 17:30,Selhurst Park,Crystal Palace,Man City,0 - 2,2019,2019-20
+87,9,20/10/2019 16:30,Old Trafford,Man United,Liverpool,1 - 1,2019,2019-20
+88,9,21/10/2019 20:00,Bramall Lane,Sheffield United,Arsenal,1 - 0,2019,2019-20
+98,10,25/10/2019 20:00,St. Mary's Stadium,Southampton,Leicester,0 - 9,2019,2019-20
+95,10,26/10/2019 12:30,Etihad Stadium,Man City,Aston Villa,3 - 0,2019,2019-20
+92,10,26/10/2019 15:00,Amex Stadium,Brighton,Everton,3 - 2,2019,2019-20
+99,10,26/10/2019 15:00,Vicarage Road,Watford,Bournemouth,0 - 0,2019,2019-20
+100,10,26/10/2019 15:00,London Stadium,West Ham,Sheffield United,1 - 1,2019,2019-20
+93,10,26/10/2019 17:30,Turf Moor,Burnley,Chelsea,2 - 4,2019,2019-20
+96,10,27/10/2019 14:00,St. James' Park,Newcastle,Wolves,1 - 1,2019,2019-20
+91,10,27/10/2019 16:30,Emirates Stadium,Arsenal,Crystal Palace,2 - 2,2019,2019-20
+94,10,27/10/2019 16:30,Anfield,Liverpool,Tottenham,2 - 1,2019,2019-20
+97,10,27/10/2019 16:30,Carrow Road,Norwich,Man United,1 - 3,2019,2019-20
+101,11,02/11/2019 12:30,Vitality Stadium,Bournemouth,Man United,1 - 0,2019,2019-20
+102,11,02/11/2019 15:00,Emirates Stadium,Arsenal,Wolves,1 - 1,2019,2019-20
+103,11,02/11/2019 15:00,Villa Park,Aston Villa,Liverpool,1 - 2,2019,2019-20
+104,11,02/11/2019 15:00,Amex Stadium,Brighton,Norwich,2 - 0,2019,2019-20
+107,11,02/11/2019 15:00,Etihad Stadium,Man City,Southampton,2 - 1,2019,2019-20
+108,11,02/11/2019 15:00,Bramall Lane,Sheffield United,Burnley,3 - 0,2019,2019-20
+110,11,02/11/2019 15:00,London Stadium,West Ham,Newcastle,2 - 3,2019,2019-20
+109,11,02/11/2019 17:30,Vicarage Road,Watford,Chelsea,1 - 2,2019,2019-20
+105,11,03/11/2019 14:00,Selhurst Park,Crystal Palace,Leicester,0 - 2,2019,2019-20
+106,11,03/11/2019 16:30,Goodison Park,Everton,Tottenham,1 - 1,2019,2019-20
+117,12,08/11/2019 20:00,Carrow Road,Norwich,Watford,0 - 2,2019,2019-20
+112,12,09/11/2019 12:30,Stamford Bridge,Chelsea,Crystal Palace,2 - 0,2019,2019-20
+111,12,09/11/2019 15:00,Turf Moor,Burnley,West Ham,3 - 0,2019,2019-20
+116,12,09/11/2019 15:00,St. James' Park,Newcastle,Bournemouth,2 - 1,2019,2019-20
+118,12,09/11/2019 15:00,St. Mary's Stadium,Southampton,Everton,1 - 2,2019,2019-20
+119,12,09/11/2019 15:00,Tottenham Hotspur Stadium,Tottenham,Sheffield United,1 - 1,2019,2019-20
+113,12,09/11/2019 17:30,King Power Stadium,Leicester,Arsenal,2 - 0,2019,2019-20
+115,12,10/11/2019 14:00,Old Trafford,Man United,Brighton,3 - 1,2019,2019-20
+120,12,10/11/2019 14:00,Molineux Stadium,Wolves,Aston Villa,2 - 1,2019,2019-20
+114,12,10/11/2019 16:30,Anfield,Liverpool,Man City,3 - 1,2019,2019-20
+130,13,23/11/2019 12:30,London Stadium,West Ham,Tottenham,2 - 3,2019,2019-20
+121,13,23/11/2019 15:00,Vitality Stadium,Bournemouth,Wolves,1 - 2,2019,2019-20
+122,13,23/11/2019 15:00,Emirates Stadium,Arsenal,Southampton,2 - 2,2019,2019-20
+124,13,23/11/2019 15:00,Amex Stadium,Brighton,Leicester,0 - 2,2019,2019-20
+125,13,23/11/2019 15:00,Selhurst Park,Crystal Palace,Liverpool,1 - 2,2019,2019-20
+126,13,23/11/2019 15:00,Goodison Park,Everton,Norwich,0 - 2,2019,2019-20
+129,13,23/11/2019 15:00,Vicarage Road,Watford,Burnley,0 - 3,2019,2019-20
+127,13,23/11/2019 17:30,Etihad Stadium,Man City,Chelsea,2 - 1,2019,2019-20
+128,13,24/11/2019 16:30,Bramall Lane,Sheffield United,Man United,3 - 3,2019,2019-20
+123,13,25/11/2019 20:00,Villa Park,Aston Villa,Newcastle,2 - 0,2019,2019-20
+136,14,30/11/2019 12:30,St. James' Park,Newcastle,Man City,2 - 2,2019,2019-20
+131,14,30/11/2019 15:00,Turf Moor,Burnley,Crystal Palace,0 - 2,2019,2019-20
+132,14,30/11/2019 15:00,Stamford Bridge,Chelsea,West Ham,0 - 1,2019,2019-20
+134,14,30/11/2019 15:00,Anfield,Liverpool,Brighton,2 - 1,2019,2019-20
+139,14,30/11/2019 15:00,Tottenham Hotspur Stadium,Tottenham,Bournemouth,3 - 2,2019,2019-20
+138,14,30/11/2019 17:30,St. Mary's Stadium,Southampton,Watford,2 - 1,2019,2019-20
+137,14,01/12/2019 14:00,Carrow Road,Norwich,Arsenal,2 - 2,2019,2019-20
+140,14,01/12/2019 14:00,Molineux Stadium,Wolves,Sheffield United,1 - 1,2019,2019-20
+133,14,01/12/2019 16:30,King Power Stadium,Leicester,Everton,2 - 1,2019,2019-20
+135,14,01/12/2019 16:30,Old Trafford,Man United,Aston Villa,2 - 2,2019,2019-20
+149,15,03/12/2019 19:30,Selhurst Park,Crystal Palace,Bournemouth,1 - 0,2019,2019-20
+142,15,03/12/2019 20:15,Turf Moor,Burnley,Man City,1 - 4,2019,2019-20
+143,15,04/12/2019 19:30,King Power Stadium,Leicester,Watford,2 - 0,2019,2019-20
+145,15,04/12/2019 19:30,Molineux Stadium,Wolves,West Ham,2 - 0,2019,2019-20
+146,15,04/12/2019 19:30,Old Trafford,Man United,Tottenham,2 - 1,2019,2019-20
+147,15,04/12/2019 19:30,Stamford Bridge,Chelsea,Aston Villa,2 - 1,2019,2019-20
+148,15,04/12/2019 19:30,St. Mary's Stadium,Southampton,Norwich,2 - 1,2019,2019-20
+150,15,04/12/2019 20:15,Anfield,Liverpool,Everton,5 - 2,2019,2019-20
+144,15,05/12/2019 19:30,Bramall Lane,Sheffield United,Newcastle,0 - 2,2019,2019-20
+141,15,05/12/2019 20:15,Emirates Stadium,Arsenal,Brighton,1 - 2,2019,2019-20
+154,16,07/12/2019 12:30,Goodison Park,Everton,Chelsea,3 - 1,2019,2019-20
+151,16,07/12/2019 15:00,Vitality Stadium,Bournemouth,Liverpool,0 - 3,2019,2019-20
+158,16,07/12/2019 15:00,Tottenham Hotspur Stadium,Tottenham,Burnley,5 - 0,2019,2019-20
+159,16,07/12/2019 15:00,Vicarage Road,Watford,Crystal Palace,0 - 0,2019,2019-20
+155,16,07/12/2019 17:30,Etihad Stadium,Man City,Man United,1 - 2,2019,2019-20
+152,16,08/12/2019 14:00,Villa Park,Aston Villa,Leicester,1 - 4,2019,2019-20
+156,16,08/12/2019 14:00,St. James' Park,Newcastle,Southampton,2 - 1,2019,2019-20
+157,16,08/12/2019 14:00,Carrow Road,Norwich,Sheffield United,1 - 2,2019,2019-20
+153,16,08/12/2019 16:30,Amex Stadium,Brighton,Wolves,2 - 2,2019,2019-20
+160,16,09/12/2019 20:00,London Stadium,West Ham,Arsenal,1 - 3,2019,2019-20
+166,17,14/12/2019 12:30,Anfield,Liverpool,Watford,2 - 0,2019,2019-20
+162,17,14/12/2019 15:00,Turf Moor,Burnley,Newcastle,1 - 0,2019,2019-20
+163,17,14/12/2019 15:00,Stamford Bridge,Chelsea,Bournemouth,0 - 1,2019,2019-20
+165,17,14/12/2019 15:00,King Power Stadium,Leicester,Norwich,1 - 1,2019,2019-20
+168,17,14/12/2019 15:00,Bramall Lane,Sheffield United,Aston Villa,2 - 0,2019,2019-20
+169,17,14/12/2019 17:30,St. Mary's Stadium,Southampton,West Ham,0 - 1,2019,2019-20
+167,17,15/12/2019 14:00,Old Trafford,Man United,Everton,1 - 1,2019,2019-20
+170,17,15/12/2019 14:00,Molineux Stadium,Wolves,Tottenham,1 - 2,2019,2019-20
+161,17,15/12/2019 16:30,Emirates Stadium,Arsenal,Man City,0 - 3,2019,2019-20
+164,17,16/12/2019 19:45,Selhurst Park,Crystal Palace,Brighton,1 - 1,2019,2019-20
+174,18,21/12/2019 12:30,Goodison Park,Everton,Arsenal,0 - 0,2019,2019-20
+171,18,21/12/2019 15:00,Vitality Stadium,Bournemouth,Burnley,0 - 1,2019,2019-20
+172,18,21/12/2019 15:00,Villa Park,Aston Villa,Southampton,1 - 3,2019,2019-20
+173,18,21/12/2019 15:00,Amex Stadium,Brighton,Sheffield United,0 - 1,2019,2019-20
+176,18,21/12/2019 15:00,St. James' Park,Newcastle,Crystal Palace,1 - 0,2019,2019-20
+177,18,21/12/2019 15:00,Carrow Road,Norwich,Wolves,1 - 2,2019,2019-20
+175,18,21/12/2019 17:30,Etihad Stadium,Man City,Leicester,3 - 1,2019,2019-20
+179,18,22/12/2019 14:00,Vicarage Road,Watford,Man United,2 - 0,2019,2019-20
+178,18,22/12/2019 16:30,Tottenham Hotspur Stadium,Tottenham,Chelsea,0 - 2,2019,2019-20
+189,19,26/12/2019 12:30,Tottenham Hotspur Stadium,Tottenham,Brighton,2 - 1,2019,2019-20
+181,19,26/12/2019 15:00,Vitality Stadium,Bournemouth,Arsenal,1 - 1,2019,2019-20
+182,19,26/12/2019 15:00,Villa Park,Aston Villa,Norwich,1 - 0,2019,2019-20
+183,19,26/12/2019 15:00,Stamford Bridge,Chelsea,Southampton,0 - 2,2019,2019-20
+184,19,26/12/2019 15:00,Selhurst Park,Crystal Palace,West Ham,2 - 1,2019,2019-20
+185,19,26/12/2019 15:00,Goodison Park,Everton,Burnley,1 - 0,2019,2019-20
+188,19,26/12/2019 15:00,Bramall Lane,Sheffield United,Watford,1 - 1,2019,2019-20
+187,19,26/12/2019 17:30,Old Trafford,Man United,Newcastle,4 - 1,2019,2019-20
+186,19,26/12/2019 20:00,King Power Stadium,Leicester,Liverpool,0 - 4,2019,2019-20
+190,19,27/12/2019 19:45,Molineux Stadium,Wolves,Man City,3 - 2,2019,2019-20
+192,20,28/12/2019 12:30,Amex Stadium,Brighton,Bournemouth,2 - 0,2019,2019-20
+196,20,28/12/2019 15:00,St. James' Park,Newcastle,Everton,1 - 2,2019,2019-20
+198,20,28/12/2019 15:00,St. Mary's Stadium,Southampton,Crystal Palace,1 - 1,2019,2019-20
+199,20,28/12/2019 15:00,Vicarage Road,Watford,Aston Villa,3 - 0,2019,2019-20
+197,20,28/12/2019 17:30,Carrow Road,Norwich,Tottenham,2 - 2,2019,2019-20
+200,20,28/12/2019 17:30,London Stadium,West Ham,Leicester,1 - 2,2019,2019-20
+193,20,28/12/2019 19:45,Turf Moor,Burnley,Man United,0 - 2,2019,2019-20
+191,20,29/12/2019 14:00,Emirates Stadium,Arsenal,Chelsea,1 - 2,2019,2019-20
+194,20,29/12/2019 16:30,Anfield,Liverpool,Wolves,1 - 0,2019,2019-20
+195,20,29/12/2019 18:00,Etihad Stadium,Man City,Sheffield United,2 - 0,2019,2019-20
+202,21,01/01/2020 12:30,Amex Stadium,Brighton,Chelsea,1 - 1,2019,2019-20
+203,21,01/01/2020 12:30,Turf Moor,Burnley,Aston Villa,1 - 2,2019,2019-20
+206,21,01/01/2020 15:00,St. James' Park,Newcastle,Leicester,0 - 3,2019,2019-20
+208,21,01/01/2020 15:00,St. Mary's Stadium,Southampton,Tottenham,1 - 0,2019,2019-20
+209,21,01/01/2020 15:00,Vicarage Road,Watford,Wolves,2 - 1,2019,2019-20
+205,21,01/01/2020 17:30,Etihad Stadium,Man City,Everton,2 - 1,2019,2019-20
+207,21,01/01/2020 17:30,Carrow Road,Norwich,Crystal Palace,1 - 1,2019,2019-20
+210,21,01/01/2020 17:30,London Stadium,West Ham,Bournemouth,4 - 0,2019,2019-20
+201,21,01/01/2020 20:00,Emirates Stadium,Arsenal,Man United,2 - 0,2019,2019-20
+204,21,02/01/2020 20:00,Anfield,Liverpool,Sheffield United,2 - 0,2019,2019-20
+218,22,10/01/2020 20:00,Bramall Lane,Sheffield United,West Ham,1 - 0,2019,2019-20
+214,22,11/01/2020 12:30,Selhurst Park,Crystal Palace,Arsenal,1 - 1,2019,2019-20
+213,22,11/01/2020 15:00,Stamford Bridge,Chelsea,Burnley,3 - 0,2019,2019-20
+215,22,11/01/2020 15:00,Goodison Park,Everton,Brighton,1 - 0,2019,2019-20
+216,22,11/01/2020 15:00,King Power Stadium,Leicester,Southampton,1 - 2,2019,2019-20
+217,22,11/01/2020 15:00,Old Trafford,Man United,Norwich,4 - 0,2019,2019-20
+220,22,11/01/2020 15:00,Molineux Stadium,Wolves,Newcastle,1 - 1,2019,2019-20
+219,22,11/01/2020 17:30,Tottenham Hotspur Stadium,Tottenham,Liverpool,0 - 1,2019,2019-20
+211,22,12/01/2020 14:00,Vitality Stadium,Bournemouth,Watford,0 - 3,2019,2019-20
+212,22,12/01/2020 16:30,Villa Park,Aston Villa,Man City,1 - 6,2019,2019-20
+229,23,18/01/2020 12:30,Vicarage Road,Watford,Tottenham,0 - 0,2019,2019-20
+221,23,18/01/2020 15:00,Emirates Stadium,Arsenal,Sheffield United,1 - 1,2019,2019-20
+222,23,18/01/2020 15:00,Amex Stadium,Brighton,Aston Villa,1 - 1,2019,2019-20
+225,23,18/01/2020 15:00,Etihad Stadium,Man City,Crystal Palace,2 - 2,2019,2019-20
+227,23,18/01/2020 15:00,Carrow Road,Norwich,Bournemouth,1 - 0,2019,2019-20
+228,23,18/01/2020 15:00,St. Mary's Stadium,Southampton,Wolves,2 - 3,2019,2019-20
+230,23,18/01/2020 15:00,London Stadium,West Ham,Everton,1 - 1,2019,2019-20
+226,23,18/01/2020 17:30,St. James' Park,Newcastle,Chelsea,1 - 0,2019,2019-20
+223,23,19/01/2020 14:00,Turf Moor,Burnley,Leicester,2 - 1,2019,2019-20
+224,23,19/01/2020 16:30,Anfield,Liverpool,Man United,2 - 0,2019,2019-20
+231,24,21/01/2020 19:30,Vitality Stadium,Bournemouth,Brighton,3 - 1,2019,2019-20
+232,24,21/01/2020 19:30,Villa Park,Aston Villa,Watford,2 - 1,2019,2019-20
+233,24,21/01/2020 19:30,Goodison Park,Everton,Newcastle,2 - 2,2019,2019-20
+235,24,21/01/2020 19:30,Bramall Lane,Sheffield United,Man City,0 - 1,2019,2019-20
+240,24,21/01/2020 19:30,Selhurst Park,Crystal Palace,Southampton,0 - 2,2019,2019-20
+238,24,21/01/2020 20:15,Stamford Bridge,Chelsea,Arsenal,2 - 2,2019,2019-20
+234,24,22/01/2020 19:30,King Power Stadium,Leicester,West Ham,4 - 1,2019,2019-20
+239,24,22/01/2020 19:30,Tottenham Hotspur Stadium,Tottenham,Norwich,2 - 1,2019,2019-20
+237,24,22/01/2020 20:15,Old Trafford,Man United,Burnley,0 - 2,2019,2019-20
+236,24,23/01/2020 20:00,Molineux Stadium,Wolves,Liverpool,1 - 2,2019,2019-20
+180,25,29/01/2020 19:45,London Stadium,West Ham,Liverpool,0 - 2,2019,2019-20
+244,25,01/02/2020 12:30,King Power Stadium,Leicester,Chelsea,2 - 2,2019,2019-20
+241,25,01/02/2020 15:00,Vitality Stadium,Bournemouth,Aston Villa,2 - 1,2019,2019-20
+243,25,01/02/2020 15:00,Selhurst Park,Crystal Palace,Sheffield United,0 - 1,2019,2019-20
+245,25,01/02/2020 15:00,Anfield,Liverpool,Southampton,4 - 0,2019,2019-20
+247,25,01/02/2020 15:00,St. James' Park,Newcastle,Norwich,0 - 0,2019,2019-20
+249,25,01/02/2020 15:00,Vicarage Road,Watford,Everton,2 - 3,2019,2019-20
+250,25,01/02/2020 15:00,London Stadium,West Ham,Brighton,3 - 3,2019,2019-20
+246,25,01/02/2020 17:30,Old Trafford,Man United,Wolves,0 - 0,2019,2019-20
+242,25,02/02/2020 14:00,Turf Moor,Burnley,Arsenal,0 - 0,2019,2019-20
+248,25,02/02/2020 16:30,Tottenham Hotspur Stadium,Tottenham,Man City,2 - 0,2019,2019-20
+255,26,08/02/2020 12:30,Goodison Park,Everton,Crystal Palace,3 - 1,2019,2019-20
+253,26,08/02/2020 17:30,Amex Stadium,Brighton,Watford,1 - 1,2019,2019-20
+258,26,09/02/2020 14:00,Bramall Lane,Sheffield United,Bournemouth,2 - 1,2019,2019-20
+260,26,14/02/2020 20:00,Molineux Stadium,Wolves,Leicester,0 - 0,2019,2019-20
+259,26,15/02/2020 12:30,St. Mary's Stadium,Southampton,Burnley,1 - 2,2019,2019-20
+257,26,15/02/2020 17:30,Carrow Road,Norwich,Liverpool,0 - 1,2019,2019-20
+252,26,16/02/2020 14:00,Villa Park,Aston Villa,Tottenham,2 - 3,2019,2019-20
+251,26,16/02/2020 16:30,Emirates Stadium,Arsenal,Newcastle,4 - 0,2019,2019-20
+254,26,17/02/2020 20:00,Stamford Bridge,Chelsea,Man United,0 - 2,2019,2019-20
+256,26,19/02/2020 19:30,Etihad Stadium,Man City,West Ham,2 - 0,2019,2019-20
+263,27,22/02/2020 12:30,Stamford Bridge,Chelsea,Tottenham,2 - 1,2019,2019-20
+262,27,22/02/2020 15:00,Turf Moor,Burnley,Bournemouth,3 - 0,2019,2019-20
+264,27,22/02/2020 15:00,Selhurst Park,Crystal Palace,Newcastle,1 - 0,2019,2019-20
+268,27,22/02/2020 15:00,Bramall Lane,Sheffield United,Brighton,1 - 1,2019,2019-20
+269,27,22/02/2020 15:00,St. Mary's Stadium,Southampton,Aston Villa,2 - 0,2019,2019-20
+265,27,22/02/2020 17:30,King Power Stadium,Leicester,Man City,0 - 1,2019,2019-20
+267,27,23/02/2020 14:00,Old Trafford,Man United,Watford,3 - 0,2019,2019-20
+270,27,23/02/2020 14:00,Molineux Stadium,Wolves,Norwich,3 - 0,2019,2019-20
+261,27,23/02/2020 16:30,Emirates Stadium,Arsenal,Everton,3 - 2,2019,2019-20
+266,27,24/02/2020 20:00,Anfield,Liverpool,West Ham,3 - 2,2019,2019-20
+277,28,28/02/2020 20:00,Carrow Road,Norwich,Leicester,1 - 0,2019,2019-20
+273,28,29/02/2020 12:30,Amex Stadium,Brighton,Crystal Palace,0 - 1,2019,2019-20
+271,28,29/02/2020 15:00,Vitality Stadium,Bournemouth,Chelsea,2 - 2,2019,2019-20
+276,28,29/02/2020 15:00,St. James' Park,Newcastle,Burnley,0 - 0,2019,2019-20
+280,28,29/02/2020 15:00,London Stadium,West Ham,Southampton,3 - 1,2019,2019-20
+279,28,29/02/2020 17:30,Vicarage Road,Watford,Liverpool,3 - 0,2019,2019-20
+274,28,01/03/2020 14:00,Goodison Park,Everton,Man United,1 - 1,2019,2019-20
+278,28,01/03/2020 14:00,Tottenham Hotspur Stadium,Tottenham,Wolves,2 - 3,2019,2019-20
+286,29,07/03/2020 12:30,Anfield,Liverpool,Bournemouth,2 - 1,2019,2019-20
+281,29,07/03/2020 15:00,Emirates Stadium,Arsenal,West Ham,1 - 0,2019,2019-20
+284,29,07/03/2020 15:00,Selhurst Park,Crystal Palace,Watford,1 - 0,2019,2019-20
+288,29,07/03/2020 15:00,Bramall Lane,Sheffield United,Norwich,1 - 0,2019,2019-20
+289,29,07/03/2020 15:00,St. Mary's Stadium,Southampton,Newcastle,0 - 1,2019,2019-20
+290,29,07/03/2020 15:00,Molineux Stadium,Wolves,Brighton,0 - 0,2019,2019-20
+282,29,07/03/2020 17:30,Turf Moor,Burnley,Tottenham,1 - 1,2019,2019-20
+283,29,08/03/2020 14:00,Stamford Bridge,Chelsea,Everton,4 - 0,2019,2019-20
+287,29,08/03/2020 16:30,Old Trafford,Man United,Man City,2 - 0,2019,2019-20
+285,29,09/03/2020 20:00,King Power Stadium,Leicester,Aston Villa,4 - 0,2019,2019-20
+272,30,17/06/2020 18:00,Villa Park,Aston Villa,Sheffield United,0 - 0,2019,2019-20
+275,30,17/06/2020 20:15,Etihad Stadium,Man City,Arsenal,3 - 0,2019,2019-20
+297,30,19/06/2020 18:00,Carrow Road,Norwich,Southampton,0 - 3,2019,2019-20
+298,30,19/06/2020 20:15,Tottenham Hotspur Stadium,Tottenham,Man United,1 - 1,2019,2019-20
+299,30,20/06/2020 12:30,Vicarage Road,Watford,Leicester,1 - 1,2019,2019-20
+293,30,20/06/2020 15:00,Amex Stadium,Brighton,Arsenal,2 - 1,2019,2019-20
+300,30,20/06/2020 17:30,London Stadium,West Ham,Wolves,0 - 2,2019,2019-20
+291,30,20/06/2020 19:45,Vitality Stadium,Bournemouth,Crystal Palace,0 - 2,2019,2019-20
+296,30,21/06/2020 14:00,St. James' Park,Newcastle,Sheffield United,3 - 0,2019,2019-20
+292,30,21/06/2020 16:15,Villa Park,Aston Villa,Chelsea,1 - 2,2019,2019-20
+294,30,21/06/2020 19:00,Goodison Park,Everton,Liverpool,0 - 0,2019,2019-20
+295,30,22/06/2020 20:00,Etihad Stadium,Man City,Burnley,5 - 0,2019,2019-20
+303,31,23/06/2020 18:00,King Power Stadium,Leicester,Brighton,0 - 0,2019,2019-20
+309,31,23/06/2020 20:15,Tottenham Hotspur Stadium,Tottenham,West Ham,2 - 0,2019,2019-20
+305,31,24/06/2020 18:00,Old Trafford,Man United,Sheffield United,3 - 0,2019,2019-20
+306,31,24/06/2020 18:00,St. James' Park,Newcastle,Aston Villa,1 - 1,2019,2019-20
+307,31,24/06/2020 18:00,Carrow Road,Norwich,Everton,0 - 1,2019,2019-20
+310,31,24/06/2020 18:00,Molineux Stadium,Wolves,Bournemouth,1 - 0,2019,2019-20
+304,31,24/06/2020 20:15,Anfield,Liverpool,Crystal Palace,4 - 0,2019,2019-20
+301,31,25/06/2020 18:00,Turf Moor,Burnley,Watford,1 - 0,2019,2019-20
+308,31,25/06/2020 18:00,St. Mary's Stadium,Southampton,Arsenal,0 - 2,2019,2019-20
+302,31,25/06/2020 20:15,Stamford Bridge,Chelsea,Man City,2 - 1,2019,2019-20
+313,32,27/06/2020 12:30,Villa Park,Aston Villa,Wolves,0 - 1,2019,2019-20
+319,32,28/06/2020 16:30,Vicarage Road,Watford,Southampton,1 - 3,2019,2019-20
+315,32,29/06/2020 20:00,Selhurst Park,Crystal Palace,Burnley,0 - 1,2019,2019-20
+314,32,30/06/2020 20:15,Amex Stadium,Brighton,Man United,0 - 3,2019,2019-20
+311,32,01/07/2020 18:00,Vitality Stadium,Bournemouth,Newcastle,1 - 4,2019,2019-20
+312,32,01/07/2020 18:00,Emirates Stadium,Arsenal,Norwich,4 - 0,2019,2019-20
+316,32,01/07/2020 18:00,Goodison Park,Everton,Leicester,2 - 1,2019,2019-20
+320,32,01/07/2020 20:15,London Stadium,West Ham,Chelsea,3 - 2,2019,2019-20
+318,32,02/07/2020 18:00,Bramall Lane,Sheffield United,Tottenham,3 - 1,2019,2019-20
+317,32,02/07/2020 20:15,Etihad Stadium,Man City,Liverpool,4 - 0,2019,2019-20
+327,33,04/07/2020 12:30,Carrow Road,Norwich,Brighton,0 - 1,2019,2019-20
+323,33,04/07/2020 15:00,King Power Stadium,Leicester,Crystal Palace,3 - 0,2019,2019-20
+325,33,04/07/2020 15:00,Old Trafford,Man United,Bournemouth,5 - 2,2019,2019-20
+330,33,04/07/2020 17:30,Molineux Stadium,Wolves,Arsenal,0 - 2,2019,2019-20
+322,33,04/07/2020 20:00,Stamford Bridge,Chelsea,Watford,3 - 0,2019,2019-20
+321,33,05/07/2020 12:00,Turf Moor,Burnley,Sheffield United,1 - 1,2019,2019-20
+326,33,05/07/2020 14:15,St. James' Park,Newcastle,West Ham,2 - 2,2019,2019-20
+324,33,05/07/2020 16:30,Anfield,Liverpool,Aston Villa,2 - 0,2019,2019-20
+328,33,05/07/2020 19:00,St. Mary's Stadium,Southampton,Man City,1 - 0,2019,2019-20
+329,33,06/07/2020 20:00,Tottenham Hotspur Stadium,Tottenham,Everton,1 - 0,2019,2019-20
+335,34,07/07/2020 18:00,Selhurst Park,Crystal Palace,Chelsea,2 - 3,2019,2019-20
+339,34,07/07/2020 18:00,Vicarage Road,Watford,Norwich,2 - 1,2019,2019-20
+332,34,07/07/2020 20:15,Emirates Stadium,Arsenal,Leicester,1 - 1,2019,2019-20
+337,34,08/07/2020 18:00,Etihad Stadium,Man City,Newcastle,5 - 0,2019,2019-20
+338,34,08/07/2020 18:00,Bramall Lane,Sheffield United,Wolves,1 - 0,2019,2019-20
+340,34,08/07/2020 18:00,London Stadium,West Ham,Burnley,0 - 1,2019,2019-20
+334,34,08/07/2020 20:15,Amex Stadium,Brighton,Liverpool,1 - 3,2019,2019-20
+331,34,09/07/2020 18:00,Vitality Stadium,Bournemouth,Tottenham,0 - 0,2019,2019-20
+336,34,09/07/2020 18:00,Goodison Park,Everton,Southampton,1 - 1,2019,2019-20
+333,34,09/07/2020 20:15,Villa Park,Aston Villa,Man United,0 - 3,2019,2019-20
+346,35,11/07/2020 12:30,Carrow Road,Norwich,West Ham,0 - 4,2019,2019-20
+349,35,11/07/2020 12:30,Vicarage Road,Watford,Newcastle,2 - 1,2019,2019-20
+344,35,11/07/2020 15:00,Anfield,Liverpool,Burnley,1 - 1,2019,2019-20
+347,35,11/07/2020 17:30,Bramall Lane,Sheffield United,Chelsea,3 - 0,2019,2019-20
+343,35,11/07/2020 20:00,Amex Stadium,Brighton,Man City,0 - 5,2019,2019-20
+350,35,12/07/2020 12:00,Molineux Stadium,Wolves,Everton,3 - 0,2019,2019-20
+342,35,12/07/2020 14:15,Villa Park,Aston Villa,Crystal Palace,2 - 0,2019,2019-20
+348,35,12/07/2020 16:30,Tottenham Hotspur Stadium,Tottenham,Arsenal,2 - 1,2019,2019-20
+341,35,12/07/2020 19:00,Vitality Stadium,Bournemouth,Leicester,4 - 1,2019,2019-20
+345,35,13/07/2020 20:00,Old Trafford,Man United,Southampton,2 - 2,2019,2019-20
+353,36,14/07/2020 20:15,Stamford Bridge,Chelsea,Norwich,1 - 0,2019,2019-20
+352,36,15/07/2020 18:00,Turf Moor,Burnley,Wolves,1 - 1,2019,2019-20
+357,36,15/07/2020 18:00,Etihad Stadium,Man City,Bournemouth,2 - 1,2019,2019-20
+358,36,15/07/2020 18:00,St. James' Park,Newcastle,Tottenham,1 - 3,2019,2019-20
+351,36,15/07/2020 20:15,Emirates Stadium,Arsenal,Liverpool,2 - 1,2019,2019-20
+355,36,16/07/2020 18:00,Goodison Park,Everton,Aston Villa,1 - 1,2019,2019-20
+356,36,16/07/2020 18:00,King Power Stadium,Leicester,Sheffield United,2 - 0,2019,2019-20
+354,36,16/07/2020 20:15,Selhurst Park,Crystal Palace,Man United,0 - 2,2019,2019-20
+359,36,16/07/2020 20:15,St. Mary's Stadium,Southampton,Brighton,1 - 1,2019,2019-20
+360,36,17/07/2020 20:00,London Stadium,West Ham,Watford,3 - 1,2019,2019-20
+366,37,18/07/2020 17:30,Carrow Road,Norwich,Burnley,0 - 2,2019,2019-20
+361,37,19/07/2020 14:00,Vitality Stadium,Bournemouth,Southampton,0 - 2,2019,2019-20
+368,37,19/07/2020 16:00,Tottenham Hotspur Stadium,Tottenham,Leicester,3 - 0,2019,2019-20
+363,37,20/07/2020 18:00,Amex Stadium,Brighton,Newcastle,0 - 0,2019,2019-20
+367,37,20/07/2020 18:00,Bramall Lane,Sheffield United,Everton,0 - 1,2019,2019-20
+370,37,20/07/2020 20:15,Molineux Stadium,Wolves,Crystal Palace,2 - 0,2019,2019-20
+369,37,21/07/2020 18:00,Vicarage Road,Watford,Man City,0 - 4,2019,2019-20
+362,37,21/07/2020 20:15,Villa Park,Aston Villa,Arsenal,1 - 0,2019,2019-20
+365,37,22/07/2020 18:00,Old Trafford,Man United,West Ham,1 - 1,2019,2019-20
+364,37,22/07/2020 20:15,Anfield,Liverpool,Chelsea,5 - 3,2019,2019-20
+371,38,26/07/2020 16:00,Emirates Stadium,Arsenal,Watford,3 - 2,2019,2019-20
+372,38,26/07/2020 16:00,Turf Moor,Burnley,Brighton,1 - 2,2019,2019-20
+373,38,26/07/2020 16:00,Stamford Bridge,Chelsea,Wolves,2 - 0,2019,2019-20
+374,38,26/07/2020 16:00,Selhurst Park,Crystal Palace,Tottenham,1 - 1,2019,2019-20
+375,38,26/07/2020 16:00,Goodison Park,Everton,Bournemouth,1 - 3,2019,2019-20
+376,38,26/07/2020 16:00,King Power Stadium,Leicester,Man United,0 - 2,2019,2019-20
+377,38,26/07/2020 16:00,Etihad Stadium,Man City,Norwich,5 - 0,2019,2019-20
+378,38,26/07/2020 16:00,St. James' Park,Newcastle,Liverpool,1 - 3,2019,2019-20
+379,38,26/07/2020 16:00,St. Mary's Stadium,Southampton,Sheffield United,3 - 1,2019,2019-20
+380,38,26/07/2020 16:00,London Stadium,West Ham,Aston Villa,1 - 1,2019,2019-20
