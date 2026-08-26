@@ -572,21 +572,64 @@ Brier Score > 穩定性 > Accuracy > 勝率——這五個階段的每一個決�
 
 ---
 
+---
+
+## 雲端自動化（GitHub Actions + GitHub Pages）
+
+專案已放上 GitHub：**https://github.com/JM05326-debug/ballfoot**（公開倉庫）
+
+自動更新的預測儀表板：**https://jm05326-debug.github.io/ballfoot/**
+（每天自動重新產生，不需要手動操作、也不需要自己的電腦開機）
+
+### 兩個排程（`.github/workflows/`）
+
+| Workflow | 排程 | 做什麼 |
+|---|---|---|
+| `daily.yml` | 每天 06:00 UTC | `update_data.py` -> `predict.py`（用最新資料重新訓練上線模型並預測下一輪）-> `generate_dashboard.py` -> 把 `data/` 和 `docs/` 的變動 commit 回 repo |
+| `weekly-retrain.yml` | 每週一 07:00 UTC | `update_data.py` -> `train.py`（重新比較模型、選 Ensemble 權重、fit 校準器，產生新的 `model_vNNN`）-> `evaluate.py`（backtest）-> commit `data/` 和 `models/` 的變動 |
+
+兩者都額外可以在 GitHub 網頁上手動觸發（Actions 分頁 -> 選 workflow -> Run workflow），
+不用等排程時間到。
+
+**為什麼分成「每天」跟「每週」兩個頻率**：`predict.py` 每次執行都會用「目前所有已知資料」
+重新訓練 ML 模型（這是必要的，才能反映最新賽果），但 Ensemble 權重／校準方法這種
+「方法論」層級的決定，不需要每天重選——每週重新跑一次 `train.py`/`evaluate.py`，
+產生新的 `model_vNNN` 版本，`predict.py` 會自動抓最新版本使用，兩個排程互相搭配。
+
+### 兩個部署已實際驗證跑過一次成功（2026-08-26）
+
+- `daily.yml`：1 分 25 秒完成，成功 commit 回 `data/predictions/latest.json` 與 `docs/index.html`
+- `weekly-retrain.yml`：1 分 50 秒完成，成功產生 `models/model_v004/` 並 commit 回 repo
+- GitHub Pages 已設定為服務 `master` 分支的 `/docs` 資料夾，`generate_dashboard.py`
+  每次執行都會覆寫 `docs/index.html`，網頁跟 repo 資料保持同步
+
+### 如果想暫停或調整排程
+
+編輯 `.github/workflows/daily.yml` / `weekly-retrain.yml` 裡的 `cron:` 那一行
+（用 [crontab.guru](https://crontab.guru/) 產生新的排程表達式），或直接刪除 `schedule:`
+區塊只保留 `workflow_dispatch:`（只能手動觸發，不會自動排程）。
+
+---
+
 ## 持續學習（規格第十三節）
 
-目前**尚未建立** `prediction_history.csv`（賽後自動比對真實結果、累積誤差、觸發重新訓練）。
-概念上的作法：每輪比賽結束後，`update_data.py` 會抓到新的真實比分（因為目前賽季的
-`results_<year>.csv` 每次都會重新下載），此時可以：
-1. 把上一輪 `predict.py` 存的 `data/predictions/predictions_*.json` 跟新抓到的真實結果比對，
-   算出每場的 Brier Score / Log Loss，累積寫進 `prediction_history.csv`
-2. 定期（例如每月，或每累積 50 場新比賽）重新執行 `python train.py`，
-   會自動產生新的 `model_vNNN`（不覆蓋舊版本），並可用 `comparison_table_validation.csv`
-   比較新舊版本的 Validation 表現，確認沒有「越訓練越差」
+**已自動化的部分**（透過上面的 GitHub Actions）：資料每天自動更新、模型每週自動用
+「目前所有已知資料」重新比較/選權重/校準，產生新的 `model_vNNN` 並自動被 `predict.py`
+採用——這解決了規格第十三節裡「Update Dataset -> Retrain」的自動化部分。
+
+**目前仍**尚未建立** `prediction_history.csv`**（逐場記錄「預測 vs 實際結果」的誤差，
+例如每場的 Brier Score / Log Loss 累積趨勢圖，用來監控模型是否隨時間變好或變差）。
+概念上的作法：每次 `predict.py` 執行時，把上一輪已經存在 `data/predictions/` 裡的
+預測，跟這次 `update_data.py` 新抓到的真實比分比對，算出誤差後累積寫進
+`prediction_history.csv`，可以在 `daily.yml` 裡加一個步驟自動做這件事。
 這部分尚未實作，是誠實列出的待補項目。
 
 ## 電腦不會一直開機
 
-整套系統設計上不依賴任何常駐程式或背景排程：
+整套系統設計上不依賴任何常駐程式或背景排程——**現在已經有 GitHub Actions 幫你在雲端
+每天自動跑（見上方「雲端自動化」章節），所以你的電腦完全不需要開機**，預測結果會自己
+出現在 https://jm05326-debug.github.io/ballfoot/ 。以下是「如果沒有雲端、只能在本機跑」
+時的備用做法：
 
 1. **每次要更新預測時**，依序手動執行：
    ```bash
