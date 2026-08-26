@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matchday Predictions</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg: #F5F3EC;
+    --surface: #FFFFFF;
+    --surface-2: #ECE7D8;
+    --border: #DDD5BE;
+    --text: #17251D;
+    --text-muted: #5A6A5C;
+    --text-faint: #8B9389;
+    --accent: #1E6B3F;
+    --home: #1E6B3F;
+    --draw: #B8860B;
+    --away: #35618C;
+    --conf-high: #1E6B3F;
+    --conf-med: #A9791F;
+    --conf-low: #8B8478;
+    --shadow: 0 1px 2px rgba(23,37,29,0.06), 0 6px 20px -8px rgba(23,37,29,0.15);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0E1712; --surface: #15201A; --surface-2: #1B2820; --border: #2A392E;
+      --text: #ECF2EC; --text-muted: #9FB1A2; --text-faint: #6E7E70;
+      --accent: #55BC80; --home: #55BC80; --draw: #E3BE55; --away: #7CACDA;
+      --conf-high: #55BC80; --conf-med: #E3BE55; --conf-low: #8B9689;
+      --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 28px -10px rgba(0,0,0,0.55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0E1712; --surface: #15201A; --surface-2: #1B2820; --border: #2A392E;
+    --text: #ECF2EC; --text-muted: #9FB1A2; --text-faint: #6E7E70;
+    --accent: #55BC80; --home: #55BC80; --draw: #E3BE55; --away: #7CACDA;
+    --conf-high: #55BC80; --conf-med: #E3BE55; --conf-low: #8B9689;
+    --shadow: 0 1px 2px rgba(0,0,0,0.3), 0 10px 28px -10px rgba(0,0,0,0.55);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    line-height: 1.5; -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }
+  .masthead {
+    display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
+    gap: 1.5rem; padding-bottom: 1.75rem; margin-bottom: 2rem; border-bottom: 2px solid var(--text);
+  }
+  .masthead-title {
+    font-family: 'Bebas Neue', 'IBM Plex Sans', sans-serif;
+    font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 0.9; letter-spacing: 0.01em; margin: 0;
+    text-wrap: balance;
+  }
+  .masthead-title .accent { color: var(--accent); }
+  .masthead-meta {
+    display: flex; flex-direction: column; gap: 0.35rem; align-items: flex-start;
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.8rem; color: var(--text-muted);
+  }
+  .masthead-meta a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; }
+  .masthead-meta a:hover, .masthead-meta a:focus-visible { border-bottom-color: var(--accent); }
+  .summary-strip { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 2.25rem; }
+  .summary-chip {
+    display: flex; align-items: baseline; gap: 0.4rem; background: var(--surface);
+    border: 1px solid var(--border); border-radius: 999px; padding: 0.45rem 1rem; box-shadow: var(--shadow);
+  }
+  .summary-chip .num { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 0.95rem; }
+  .summary-chip .label { font-size: 0.78rem; color: var(--text-muted); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+  .dot.high { background: var(--conf-high); } .dot.med { background: var(--conf-med); } .dot.low { background: var(--conf-low); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 1.1rem; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 1.35rem 1.4rem 1.2rem; box-shadow: var(--shadow);
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.75rem; }
+  .kickoff {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; letter-spacing: 0.04em;
+    text-transform: uppercase; color: var(--text-faint);
+  }
+  .confidence-pill {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.68rem; letter-spacing: 0.06em;
+    text-transform: uppercase; padding: 0.28rem 0.6rem; border-radius: 999px; white-space: nowrap;
+    border: 1px solid transparent; display: inline-flex; align-items: center; gap: 0.35rem;
+  }
+  .confidence-pill.High { color: var(--conf-high); border-color: var(--conf-high); background: color-mix(in srgb, var(--conf-high) 12%, transparent); }
+  .confidence-pill.Medium { color: var(--conf-med); border-color: var(--conf-med); background: color-mix(in srgb, var(--conf-med) 12%, transparent); }
+  .confidence-pill.Low { color: var(--conf-low); border-color: var(--conf-low); background: color-mix(in srgb, var(--conf-low) 12%, transparent); }
+  .matchup { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.75rem; }
+  .team-name { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.01em; line-height: 1.05; }
+  .team-name.away-side { text-align: right; }
+  .score-badge {
+    font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 1.15rem;
+    background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px;
+    padding: 0.35rem 0.7rem; white-space: nowrap;
+  }
+  .prob-bar { display: flex; height: 10px; border-radius: 999px; overflow: hidden; background: var(--surface-2); }
+  .prob-bar span { display: block; height: 100%; }
+  .seg-home { background: var(--home); } .seg-draw { background: var(--draw); } .seg-away { background: var(--away); }
+  .prob-labels { display: flex; justify-content: space-between; font-family: 'IBM Plex Mono', monospace; font-size: 0.78rem; font-variant-numeric: tabular-nums; }
+  .prob-labels .lab { display: flex; align-items: center; gap: 0.4rem; color: var(--text-muted); }
+  .prob-labels .lab strong { color: var(--text); font-weight: 600; }
+  .swatch { width: 8px; height: 8px; border-radius: 2px; }
+  .swatch.home { background: var(--home); } .swatch.draw { background: var(--draw); } .swatch.away { background: var(--away); }
+  .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; }
+  .stat { background: var(--surface-2); border-radius: 8px; padding: 0.5rem 0.6rem; display: flex; flex-direction: column; gap: 0.15rem; }
+  .stat .stat-label { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint); }
+  .stat .stat-value { font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+  details.factors { border-top: 1px dashed var(--border); padding-top: 0.75rem; }
+  details.factors summary {
+    cursor: pointer; font-size: 0.8rem; color: var(--accent); font-weight: 600; list-style: none;
+    display: flex; align-items: center; gap: 0.4rem; user-select: none;
+  }
+  details.factors summary::-webkit-details-marker { display: none; }
+  details.factors summary::before { content: "▸"; display: inline-block; transition: transform 0.15s ease; font-size: 0.7rem; }
+  details.factors[open] summary::before { transform: rotate(90deg); }
+  summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .factor-list { list-style: none; margin: 0.7rem 0 0; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+  .factor-list li { display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; font-size: 0.82rem; }
+  .factor-list .f-label { color: var(--text-muted); }
+  .factor-list .f-side {
+    font-family: 'IBM Plex Mono', monospace; font-size: 0.72rem; font-weight: 600;
+    padding: 0.1rem 0.5rem; border-radius: 999px; white-space: nowrap;
+  }
+  .factor-list .f-side.home { color: var(--home); background: color-mix(in srgb, var(--home) 14%, transparent); }
+  .factor-list .f-side.away { color: var(--away); background: color-mix(in srgb, var(--away) 14%, transparent); }
+  .sub-heading { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-faint); margin: 0.9rem 0 0.4rem; }
+  .scoreline-table, .model-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+  .scoreline-table td, .model-table td, .model-table th { padding: 0.28rem 0.3rem; font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; }
+  .scoreline-table td:first-child { color: var(--text); font-weight: 600; width: 3.2rem; }
+  .scoreline-table td:last-child { color: var(--text-muted); text-align: right; }
+  .model-table { table-layout: fixed; }
+  .model-table th { text-align: right; color: var(--text-faint); font-weight: 500; font-size: 0.66rem; text-transform: uppercase; }
+  .model-table th:first-child, .model-table td:first-child { text-align: left; font-family: 'IBM Plex Sans', sans-serif; color: var(--text-muted); }
+  .model-table td { text-align: right; color: var(--text); }
+  .model-table tbody tr:nth-child(odd) { background: var(--surface-2); }
+  .table-scroll { overflow-x: auto; }
+  footer {
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+    font-size: 0.78rem; color: var(--text-faint); display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem;
+  }
+  footer a { color: var(--text-muted); }
+  .empty-state { padding: 3rem 1rem; text-align: center; color: var(--text-muted); font-size: 1rem; }
+  @media (max-width: 520px) { .stat-row { grid-template-columns: repeat(2, 1fr); } .team-name { font-size: 1.2rem; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <h1 class="masthead-title">Matchday <span class="accent">Predictions</span></h1>
+    <div class="masthead-meta">
+      <span>Premier League 2026-27 — Round 2</span>
+      <span>Ensemble + Poisson · calibrated on validation · updated 2026-08-26 10:43:01</span>
+      <a href="https://github.com/JM05326-debug/ballfoot" target="_blank" rel="noopener">github.com/JM05326-debug/ballfoot</a>
+    </div>
+  </header>
+
+  <div class="summary-strip" id="summaryStrip"></div>
+  <main class="grid" id="matchGrid"></main>
+
+  <footer>
+    <span>1X2 probabilities: 7-model ensemble (LogReg, RandomForest, XGBoost, LightGBM, CatBoost, Dixon-Coles Poisson, Fuzzy logic), weighted by validation log loss, Platt-calibrated.</span>
+    <span>Score / xG / Over-Under / BTTS: independent Dixon-Coles Poisson goal model.</span>
+    <span>Regenerated automatically once a day from live pre-match features — no post-match data used.</span>
+  </footer>
+</div>
+
+<script>
+const MATCHES = [{"home_team": "Crystal Palace", "away_team": "Man City", "date": "2026-08-28 20:00:00", "round": 2, "p_home_win": 0.2295272256695328, "p_draw": 0.24089755952233127, "p_away_win": 0.529575214808136, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.1179986672829176}, {"score": "0-1", "probability": 0.11208174697628749}, {"score": "0-2", "probability": 0.10993341669539222}, {"score": "1-2", "probability": 0.09796027971322746}, {"score": "0-0", "probability": 0.07690892814508772}], "expected_home_goals": 0.891087375048659, "expected_away_goals": 1.80713944798804, "p_over_2_5": 0.5059394411643959, "p_under_2_5": 0.49406055883560407, "p_btts_yes": 0.5025759879740065, "p_btts_no": 0.4974240120259935, "confidence": "Medium", "top_influencing_factors": [{"label": "整體實力差距（Elo）", "score": -0.1616893354575316, "favors": "Away"}, {"label": "近期戰績（近 10 場加權勝率）", "score": -0.06334622964554525, "favors": "Away"}, {"label": "近期進攻火力（近 10 場場均進球）", "score": -0.04427834399538802, "favors": "Away"}, {"label": "近期防守穩定度（近 10 場場均失球，越低越穩）", "score": -0.04055807116056166, "favors": "Away"}, {"label": "近期戰績（近 5 場加權勝率）", "score": -0.037430091063991054, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.13908157950618813, 0.24214799164856549, 0.6187704288452464], "RandomForest": [0.20460947437676677, 0.19900287157192337, 0.5963876540513106], "XGBoost": [0.32355743646621704, 0.14859139919281006, 0.5278511643409729], "LightGBM": [0.2493112792040408, 0.35688498184352163, 0.3938037389524376], "CatBoost": [0.21171519439104738, 0.24378385306135913, 0.5445009525475935], "Poisson": [0.17245737775339032, 0.24720136669007223, 0.5803412555565375], "Fuzzy": [0.16147307668691668, 0.16147307668691668, 0.6770538466261665]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Liverpool", "away_team": "Nott'm Forest", "date": "2026-08-29 12:30:00", "round": 2, "p_home_win": 0.45346309545492275, "p_draw": 0.24808227573971708, "p_away_win": 0.2984546288053601, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.11221622944035388}, {"score": "2-1", "probability": 0.0986528285657991}, {"score": "2-0", "probability": 0.08757527862617913}, {"score": "1-0", "probability": 0.08241055301608108}, {"score": "3-1", "probability": 0.0629304603784625}], "expected_home_goals": 1.913694557774065, "expected_away_goals": 1.1264917464539874, "p_over_2_5": 0.5857504634456696, "p_under_2_5": 0.4142495365543304, "p_btts_yes": 0.585236855145622, "p_btts_no": 0.41476314485437804, "confidence": "Medium", "top_influencing_factors": [{"label": "整體實力差距（Elo）", "score": 0.07466388273421198, "favors": "Home"}, {"label": "近期射門量（近 5 場）", "score": 0.05012809016689268, "favors": "Home"}, {"label": "近期防守穩定度（近 10 場場均失球，越低越穩）", "score": -0.02723046641645378, "favors": "Away"}, {"label": "近期射正量（近 5 場）", "score": 0.02660063837398933, "favors": "Home"}, {"label": "近期戰績（近 10 場加權勝率）", "score": -0.0032271198802758454, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.5669372780220289, 0.1844638567022026, 0.2485988652757686], "RandomForest": [0.5965054160415963, 0.19767662634983715, 0.20581795760856664], "XGBoost": [0.5658224821090698, 0.1759602129459381, 0.25821733474731445], "LightGBM": [0.3666026880632576, 0.2432380398102299, 0.39015927212651264], "CatBoost": [0.6243067964923954, 0.17765312535752148, 0.19804007815008307], "Poisson": [0.5480344037632878, 0.23998975303303507, 0.2119758432036769], "Fuzzy": [0.41146824402913984, 0.4200725400941083, 0.16845921587675175]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Bournemouth", "away_team": "Everton", "date": "2026-08-29 15:00:00", "round": 2, "p_home_win": 0.45627452107466265, "p_draw": 0.2513161794684147, "p_away_win": 0.2924092994569226, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.13559464928470857}, {"score": "1-0", "probability": 0.10693708233089967}, {"score": "0-0", "probability": 0.09185223736617569}, {"score": "2-1", "probability": 0.09088674887891426}, {"score": "2-0", "probability": 0.08604889881368342}], "expected_home_goals": 1.4590721512105087, "expected_away_goals": 1.0562221031521386, "p_over_2_5": 0.46010381898162483, "p_under_2_5": 0.5398961810183751, "p_btts_yes": 0.5116331180922103, "p_btts_no": 0.48836688190778965, "confidence": "Medium", "top_influencing_factors": [{"label": "整體實力差距（Elo）", "score": 0.0462940796092091, "favors": "Home"}, {"label": "主/客場近況（近 5 個主場或客場）", "score": 0.0306776776152667, "favors": "Home"}, {"label": "近期戰績（近 10 場加權勝率）", "score": 0.026285937673017273, "favors": "Home"}, {"label": "近期防守穩定度（近 10 場場均失球，越低越穩）", "score": 0.021206949696461617, "favors": "Home"}, {"label": "近期射正量（近 5 場）", "score": -0.010450009086515938, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.5537425584261465, 0.22526710751417442, 0.22099033405967902], "RandomForest": [0.5036100980014762, 0.22840383650244458, 0.26798606549607895], "XGBoost": [0.6337257027626038, 0.17138488590717316, 0.1948893964290619], "LightGBM": [0.6676397315602022, 0.1375175262537394, 0.19484274218605843], "CatBoost": [0.5271224018790365, 0.22208319273361832, 0.2507944053873453], "Poisson": [0.4528269488097301, 0.28450670984679244, 0.2626663413434775], "Fuzzy": [0.37699799399550704, 0.4663164179019321, 0.15668558810256086]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Coventry", "away_team": "Hull", "date": "2026-08-29 15:00:00", "round": 2, "p_home_win": 0.2719628441465921, "p_draw": 0.2533593883799315, "p_away_win": 0.47467776747347645, "predicted_score": "0-1", "top_scorelines": [{"score": "0-1", "probability": 0.2478702039548991}, {"score": "0-0", "probability": 0.20188404332002133}, {"score": "0-2", "probability": 0.16739347209175376}, {"score": "1-1", "probability": 0.09035013693733158}, {"score": "0-3", "probability": 0.07319655573039344}], "expected_home_goals": 0.3252706880910185, "expected_away_goals": 1.3118173871847054, "p_over_2_5": 0.22626883770942247, "p_under_2_5": 0.7737311622905776, "p_btts_yes": 0.21022206821657027, "p_btts_no": 0.7897779317834297, "confidence": "Medium", "top_influencing_factors": [{"label": "近期戰績（近 10 場加權勝率）", "score": -0.12874434296416964, "favors": "Away"}, {"label": "近期防守穩定度（近 10 場場均失球，越低越穩）", "score": -0.119302021649775, "favors": "Away"}, {"label": "近期進攻火力（近 10 場場均進球）", "score": -0.07749714933151895, "favors": "Away"}, {"label": "近期戰績（近 5 場加權勝率）", "score": -0.07402929088392986, "favors": "Away"}, {"label": "近期射正量（近 5 場）", "score": -0.04257052486331841, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.29530675402791967, 0.25794068077806287, 0.4467525651940174], "RandomForest": [0.33741761907664986, 0.27420266680601935, 0.38837971411733113], "XGBoost": [0.35065802931785583, 0.1616247445344925, 0.48771724104881287], "LightGBM": [0.25576237956325587, 0.21682188580367456, 0.5274157346330695], "CatBoost": [0.28074905061565975, 0.30583071219445895, 0.41342023718988125], "Poisson": [0.08361861789726117, 0.30152060066260067, 0.6148607814401381], "Fuzzy": [0.23488500997557085, 0.36064193754808066, 0.4044730524763485]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Tottenham", "away_team": "Newcastle", "date": "2026-08-29 17:30:00", "round": 2, "p_home_win": 0.3450053801158194, "p_draw": 0.2511686868641317, "p_away_win": 0.40382593302004893, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.11484849832337259}, {"score": "1-2", "probability": 0.08750171413922718}, {"score": "2-1", "probability": 0.07941473358812028}, {"score": "2-2", "probability": 0.06585383624329061}, {"score": "0-1", "probability": 0.0607758139402868}], "expected_home_goals": 1.5052010555703665, "expected_away_goals": 1.6584790571693548, "p_over_2_5": 0.6124639036219103, "p_under_2_5": 0.3875360963780897, "p_btts_yes": 0.6391965943900109, "p_btts_no": 0.36080340560998914, "confidence": "Low", "top_influencing_factors": [{"label": "整體實力差距（Elo）", "score": -0.06316762264434153, "favors": "Away"}, {"label": "近期進攻火力（近 10 場場均進球）", "score": -0.020909516540641066, "favors": "Away"}, {"label": "主/客場近況（近 5 個主場或客場）", "score": 0.016639843078764174, "favors": "Home"}, {"label": "近期戰績（近 5 場加權勝率）", "score": -0.007435603325152332, "favors": "Away"}, {"label": "近期射正量（近 5 場）", "score": -0.007095338575311896, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.3535400742595738, 0.27826263851921884, 0.3681972872212073], "RandomForest": [0.3779943853534895, 0.22662714729738023, 0.3953784673491308], "XGBoost": [0.4599647521972656, 0.14567697048187256, 0.3943583071231842], "LightGBM": [0.4659257430502679, 0.1435526057105144, 0.39052165123921767], "CatBoost": [0.40181226239708123, 0.188564434254789, 0.40962330334812985], "Poisson": [0.3402557303374833, 0.2537216030898239, 0.4060226665726929], "Fuzzy": [0.24876360574247716, 0.45928832829647476, 0.291948065961048]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Chelsea", "away_team": "Brighton", "date": "2026-08-30 14:00:00", "round": 2, "p_home_win": 0.3763002204678962, "p_draw": 0.2526319664092091, "p_away_win": 0.3710678131228947, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.12406697629937237}, {"score": "2-1", "probability": 0.09045978120183462}, {"score": "1-2", "probability": 0.07617125697337604}, {"score": "1-0", "probability": 0.07521627797850751}, {"score": "2-0", "probability": 0.06768646865181537}], "expected_home_goals": 1.5871504148876594, "expected_away_goals": 1.3364529573431732, "p_over_2_5": 0.5594774060459458, "p_under_2_5": 0.44052259395405424, "p_btts_yes": 0.5965326695979873, "p_btts_no": 0.40346733040201266, "confidence": "Low", "top_influencing_factors": [{"label": "近期防守穩定度（近 10 場場均失球，越低越穩）", "score": -0.03309943050544234, "favors": "Away"}, {"label": "近期射門量（近 5 場）", "score": -0.027771397706251023, "favors": "Away"}, {"label": "近期戰績（近 10 場加權勝率）", "score": -0.02504416371706864, "favors": "Away"}, {"label": "近期進攻火力（近 10 場場均進球）", "score": -0.024869634385305102, "favors": "Away"}, {"label": "近期射正量（近 5 場）", "score": -0.01936226954256457, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.33056727763663185, 0.27174886525939174, 0.39768385710397636], "RandomForest": [0.39269310241641625, 0.2545245325982794, 0.3527823649853045], "XGBoost": [0.5125186443328857, 0.19054824113845825, 0.2969330847263336], "LightGBM": [0.46339439891975875, 0.18776670843238016, 0.348838892647861], "CatBoost": [0.4773638646026231, 0.20968377766648597, 0.312952357730891], "Poisson": [0.4233133900888778, 0.26463645742363834, 0.3120501524874838], "Fuzzy": [0.3332482506100713, 0.355885828990689, 0.31086592039923966]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Leeds", "away_team": "Brentford", "date": "2026-08-30 14:00:00", "round": 2, "p_home_win": 0.33098759776683917, "p_draw": 0.25398072283174494, "p_away_win": 0.41503167940141594, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.1311012730027274}, {"score": "2-1", "probability": 0.08423470173518181}, {"score": "1-2", "probability": 0.08209926909129776}, {"score": "1-0", "probability": 0.07771417579520541}, {"score": "0-1", "probability": 0.07547410443507202}], "expected_home_goals": 1.3986301487498203, "expected_away_goals": 1.363173497098695, "p_over_2_5": 0.5213917142565768, "p_under_2_5": 0.4786082857434232, "p_btts_yes": 0.5710431950409754, "p_btts_no": 0.42895680495902455, "confidence": "Low", "top_influencing_factors": [{"label": "整體實力差距（Elo）", "score": -0.041473067313457034, "favors": "Away"}, {"label": "主/客場近況（近 5 個主場或客場）", "score": 0.03591688795736838, "favors": "Home"}, {"label": "近期射門量（近 5 場）", "score": -0.02460342832695863, "favors": "Away"}, {"label": "近期戰績（近 10 場加權勝率）", "score": 0.019573817514706434, "favors": "Home"}, {"label": "近期進攻火力（近 10 場場均進球）", "score": -0.013362947422037781, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.39319700249997885, 0.23486328153386768, 0.37193971596615344], "RandomForest": [0.3614987016012971, 0.2465824340882987, 0.39191886431040507], "XGBoost": [0.3245016634464264, 0.20182906091213226, 0.4736693203449249], "LightGBM": [0.26685066706940386, 0.23311068688782197, 0.5000386460427741], "CatBoost": [0.33422741215340185, 0.24885806416289347, 0.41691452368370463], "Poisson": [0.3700546652210309, 0.2760688396029433, 0.3538764951760257], "Fuzzy": [0.39577043724677075, 0.36878714638961013, 0.2354424163636192]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Sunderland", "away_team": "Fulham", "date": "2026-08-30 14:00:00", "round": 2, "p_home_win": 0.3436063579089668, "p_draw": 0.2575302079336982, "p_away_win": 0.39886343415733505, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.1437044499710592}, {"score": "0-0", "probability": 0.11060906527017074}, {"score": "1-0", "probability": 0.10844152591778049}, {"score": "0-1", "probability": 0.09708354476285061}, {"score": "2-1", "probability": 0.08014611259822249}], "expected_home_goals": 1.2140344129179683, "expected_away_goals": 1.0992346262480857, "p_over_2_5": 0.40747678054331377, "p_under_2_5": 0.5925232194566863, "p_btts_yes": 0.4804864318457275, "p_btts_no": 0.5195135681542725, "confidence": "Low", "top_influencing_factors": [{"label": "近期射正量（近 5 場）", "score": -0.019493797114646272, "favors": "Away"}, {"label": "近期戰績（近 5 場加權勝率）", "score": 0.018550395574136968, "favors": "Home"}, {"label": "主/客場近況（近 5 個主場或客場）", "score": 0.018178990458174133, "favors": "Home"}, {"label": "近期射門量（近 5 場）", "score": -0.015560580124209548, "favors": "Away"}, {"label": "整體實力差距（Elo）", "score": -0.01242337783905341, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.26112404816395685, 0.32068638530545013, 0.41818956653059314], "RandomForest": [0.3870108177949378, 0.24751300836135187, 0.3654761738437108], "XGBoost": [0.37386149168014526, 0.16451534628868103, 0.4616231322288513], "LightGBM": [0.503826050760144, 0.1347191779053928, 0.3614547713344633], "CatBoost": [0.34463552767015254, 0.22525886288575914, 0.4301056094440883], "Poisson": [0.37553517909250805, 0.30546981021457514, 0.31899501069291686], "Fuzzy": [0.3211799280118784, 0.49845942522147, 0.18036064676665142]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Man United", "away_team": "Ipswich", "date": "2026-08-30 16:30:00", "round": 2, "p_home_win": 0.5634274929209039, "p_draw": 0.2292402510351337, "p_away_win": 0.2073322560439624, "predicted_score": "2-0", "top_scorelines": [{"score": "2-0", "probability": 0.10275083437917906}, {"score": "2-1", "probability": 0.09143254221974055}, {"score": "3-0", "probability": 0.08957515935905251}, {"score": "3-1", "probability": 0.07970820470141267}, {"score": "1-1", "probability": 0.0761019982051107}], "expected_home_goals": 2.6153118823880885, "expected_away_goals": 0.8898471995110923, "p_over_2_5": 0.6800767753528811, "p_under_2_5": 0.31992322464711886, "p_btts_yes": 0.5523556321550328, "p_btts_no": 0.4476443678449672, "confidence": "High", "top_influencing_factors": [{"label": "整體實力差距（Elo）", "score": 0.17194943854849126, "favors": "Home"}, {"label": "近期戰績（近 10 場加權勝率）", "score": 0.046585431786849055, "favors": "Home"}, {"label": "近期射門量（近 5 場）", "score": 0.037169533875281505, "favors": "Home"}, {"label": "主/客場近況（近 5 個主場或客場）", "score": 0.036490699151793544, "favors": "Home"}, {"label": "近期防守穩定度（近 10 場場均失球，越低越穩）", "score": 0.03386974408812126, "favors": "Home"}], "per_model_raw_proba": {"LogisticRegression": [0.7104230826715406, 0.2077015069547096, 0.08187541037374961], "RandomForest": [0.7216250886400466, 0.15030432106955366, 0.1280705902903997], "XGBoost": [0.7459597587585449, 0.14022117853164673, 0.11381901800632477], "LightGBM": [0.8491785555343875, 0.08376309801264532, 0.06705834645296724], "CatBoost": [0.746775699286437, 0.14489404350121146, 0.10833025721235148], "Poisson": [0.7365668287319005, 0.16520960507825722, 0.09822356618984236], "Fuzzy": [0.5921329747243544, 0.24690434035623737, 0.16096268491940827]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}, {"home_team": "Aston Villa", "away_team": "Arsenal", "date": "2026-08-31 20:00:00", "round": 2, "p_home_win": 0.2361202620359586, "p_draw": 0.2397570028565577, "p_away_win": 0.5241227351074838, "predicted_score": "1-1", "top_scorelines": [{"score": "1-1", "probability": 0.1261647750040104}, {"score": "0-1", "probability": 0.11430160600391873}, {"score": "0-2", "probability": 0.10324638763575304}, {"score": "1-2", "probability": 0.09609144568472071}, {"score": "0-0", "probability": 0.08537039034520752}], "expected_home_goals": 0.9307003168355436, "expected_away_goals": 1.6579268377137573, "p_over_2_5": 0.47871084776032496, "p_under_2_5": 0.521289152239675, "p_btts_yes": 0.5005590419709651, "p_btts_no": 0.4994409580290349, "confidence": "Medium", "top_influencing_factors": [{"label": "整體實力差距（Elo）", "score": -0.11904191899510927, "favors": "Away"}, {"label": "近期防守穩定度（近 10 場場均失球，越低越穩）", "score": -0.06619551656479787, "favors": "Away"}, {"label": "近期戰績（近 10 場加權勝率）", "score": -0.047296599641086054, "favors": "Away"}, {"label": "近期射門量（近 5 場）", "score": -0.046185547290209274, "favors": "Away"}, {"label": "近期戰績（近 5 場加權勝率）", "score": -0.03651068370317377, "favors": "Away"}], "per_model_raw_proba": {"LogisticRegression": [0.2563626779928672, 0.2990061779197298, 0.444631144087403], "RandomForest": [0.24140244290847085, 0.2205939271676411, 0.5380036299238884], "XGBoost": [0.17448143661022186, 0.11756518483161926, 0.7079533934593201], "LightGBM": [0.3707532089487618, 0.1309300945165444, 0.4983166965346939], "CatBoost": [0.164615441547382, 0.22843696407657568, 0.6069475943760423], "Poisson": [0.20074220381837254, 0.2647048449737759, 0.5345529512078516], "Fuzzy": [0.15495092097090551, 0.2430055481558257, 0.6020435308732689]}, "ensemble_weights_used": {"LogisticRegression": 0.14679497927487442, "RandomForest": 0.1499258205221622, "XGBoost": 0.13700019759801393, "LightGBM": 0.12490155316814196, "CatBoost": 0.14964076536565676, "Poisson": 0.148736796625559, "Fuzzy": 0.1429998874455918}}];
+
+function pct(x) { return (x * 100).toFixed(1) + '%'; }
+
+function renderSummary() {
+  const strip = document.getElementById('summaryStrip');
+  if (MATCHES.length === 0) return;
+  const counts = { High: 0, Medium: 0, Low: 0 };
+  MATCHES.forEach(m => counts[m.confidence]++);
+  strip.innerHTML = [
+    `<div class="summary-chip"><span class="num">${MATCHES.length}</span><span class="label">matches</span></div>`,
+    `<div class="summary-chip"><span class="dot high"></span><span class="num">${counts.High}</span><span class="label">high confidence</span></div>`,
+    `<div class="summary-chip"><span class="dot med"></span><span class="num">${counts.Medium}</span><span class="label">medium</span></div>`,
+    `<div class="summary-chip"><span class="dot low"></span><span class="num">${counts.Low}</span><span class="label">low</span></div>`,
+  ].join('');
+}
+
+function formatKickoff(dateStr) {
+  const d = new Date(dateStr.replace(' ', 'T'));
+  const opts = { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' };
+  return d.toLocaleString('en-GB', opts).replace(',', ' ·');
+}
+
+function renderCard(m) {
+  const home = pct(m.p_home_win), draw = pct(m.p_draw), away = pct(m.p_away_win);
+  const factors = m.top_influencing_factors.map(f => `
+    <li><span class="f-label">${f.label}</span><span class="f-side ${f.favors.toLowerCase()}">${f.favors === 'Home' ? m.home_team : m.away_team}</span></li>`).join('');
+  const scorelines = m.top_scorelines.map(s => `<tr><td>${s.score}</td><td>${pct(s.probability)}</td></tr>`).join('');
+  const modelNames = Object.keys(m.per_model_raw_proba);
+  const modelRows = modelNames.map(name => {
+    const [h, d, a] = m.per_model_raw_proba[name];
+    return `<tr><td>${name}</td><td>${pct(h)}</td><td>${pct(d)}</td><td>${pct(a)}</td></tr>`;
+  }).join('');
+
+  return `
+  <article class="card">
+    <div class="card-top">
+      <span class="kickoff">${formatKickoff(m.date)}</span>
+      <span class="confidence-pill ${m.confidence}">${m.confidence} confidence</span>
+    </div>
+    <div class="matchup">
+      <span class="team-name home-side">${m.home_team}</span>
+      <span class="score-badge">${m.predicted_score}</span>
+      <span class="team-name away-side">${m.away_team}</span>
+    </div>
+    <div>
+      <div class="prob-bar">
+        <span class="seg-home" style="width:${m.p_home_win * 100}%"></span>
+        <span class="seg-draw" style="width:${m.p_draw * 100}%"></span>
+        <span class="seg-away" style="width:${m.p_away_win * 100}%"></span>
+      </div>
+      <div class="prob-labels" style="margin-top:0.4rem;">
+        <span class="lab"><span class="swatch home"></span>Home <strong>${home}</strong></span>
+        <span class="lab"><span class="swatch draw"></span>Draw <strong>${draw}</strong></span>
+        <span class="lab"><span class="swatch away"></span>Away <strong>${away}</strong></span>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat"><span class="stat-label">xG</span><span class="stat-value">${m.expected_home_goals.toFixed(2)} – ${m.expected_away_goals.toFixed(2)}</span></div>
+      <div class="stat"><span class="stat-label">Over 2.5</span><span class="stat-value">${pct(m.p_over_2_5)}</span></div>
+      <div class="stat"><span class="stat-label">BTTS Yes</span><span class="stat-value">${pct(m.p_btts_yes)}</span></div>
+      <div class="stat"><span class="stat-label">Under 2.5</span><span class="stat-value">${pct(m.p_under_2_5)}</span></div>
+    </div>
+    <details class="factors">
+      <summary>Top influencing factors &amp; model breakdown</summary>
+      <ul class="factor-list">${factors}</ul>
+      <div class="sub-heading">Most likely scorelines</div>
+      <div class="table-scroll"><table class="scoreline-table"><tbody>${scorelines}</tbody></table></div>
+      <div class="sub-heading">Per-model raw probability (pre-ensemble, pre-calibration)</div>
+      <div class="table-scroll">
+        <table class="model-table"><thead><tr><th>Model</th><th>Home</th><th>Draw</th><th>Away</th></tr></thead><tbody>${modelRows}</tbody></table>
+      </div>
+    </details>
+  </article>`;
+}
+
+const grid = document.getElementById('matchGrid');
+if (MATCHES.length === 0) {
+  grid.innerHTML = '<div class="empty-state">No upcoming fixtures right now — check back once the next round is scheduled.</div>';
+} else {
+  grid.innerHTML = MATCHES.map(renderCard).join('');
+}
+renderSummary();
+</script>
+</body>
+</html>

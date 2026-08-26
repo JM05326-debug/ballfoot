@@ -1,0 +1,57 @@
+name: Daily data update + predictions
+
+on:
+  schedule:
+    # 06:00 UTC 每天執行一次；英超比賽多在英國時間週末/平日晚間，
+    # 隔天早上（UTC 06:00 約為英國 06:00-07:00）足球數據來源通常已同步完前一天的結果。
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-update
+  cancel-in-progress: false
+
+jobs:
+  update-and-predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update data (download latest results + fixtures)
+        run: python update_data.py
+
+      - name: Rebuild fuzzy outputs
+        run: python -m src.fuzzy_model
+
+      - name: Predict next round
+        run: python predict.py
+
+      - name: Generate dashboard (docs/index.html for GitHub Pages)
+        run: python generate_dashboard.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ docs/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated daily update: data + predictions ($(date -u +%Y-%m-%d))"
+            git push
+          fi

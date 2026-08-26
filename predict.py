@@ -140,7 +140,21 @@ def main():
         })
     pd.DataFrame(flat_rows).to_csv(csv_path, index=False)
 
+    # 額外存一份固定檔名的「最新一輪」複本，方便自動化流程（例如 GitHub Actions +
+    # generate_dashboard.py）不用去猜檔名，永遠讀 latest.json 就是目前最新的預測。
+    latest_json_path = out_dir / "latest.json"
+    latest_meta_path = out_dir / "latest_meta.json"
+    latest_json_path.write_text(json.dumps(predictions, ensure_ascii=False, indent=2), encoding="utf-8")
+    latest_meta_path.write_text(json.dumps({
+        "season_label": season_label_str,
+        "round": round_number,
+        "generated_at": _dt.datetime.now().isoformat(timespec="seconds"),
+        "model_version": model_dir.name,
+        "n_matches": len(predictions),
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
+
     print(f"\n已儲存: {json_path.name}, {csv_path.name}（於 {out_dir}）")
+    print(f"已更新: latest.json / latest_meta.json（供自動化流程讀取最新一輪）")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,57 @@
+name: Weekly retrain + backtest
+
+on:
+  schedule:
+    # 每週一 07:00 UTC——重新選擇 Ensemble 權重/校準方法這種「方法論」層級的更新，
+    # 不需要跟每天的資料/預測更新一樣頻繁，一週一次足夠跟上球隊近況的變化。
+    - cron: "0 7 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-retrain
+  cancel-in-progress: false
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update data
+        run: python update_data.py
+
+      - name: Rebuild fuzzy outputs
+        run: python -m src.fuzzy_model
+
+      - name: Train + compare models (new model_vNNN)
+        run: python train.py
+
+      - name: Walk-forward backtest on latest model version
+        run: python evaluate.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ models/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Automated weekly retrain: new model version ($(date -u +%Y-%m-%d))"
+            git push
+          fi
