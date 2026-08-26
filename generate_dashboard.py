@@ -24,6 +24,65 @@ from src import config
 
 REPO_URL = "https://github.com/JM05326-debug/ballfoot"
 
+# 球隊名稱中文化對照表（僅供網頁顯示用；data/predictions/*.json 等原始資料仍保留
+# 英文名稱，因為那是資料來源、其他程式模組共用的正規名稱，翻譯只發生在這個
+# 展示層）。目前涵蓋 2018/19~2026/27 這 9 個賽季出現過的所有球隊（含升降級球隊）；
+# 未來如果有新球隊第一次打進英超、這裡沒有對照到，會照英文原名顯示，並在畫面上
+# 印出警告，不會被無聲吞掉或亂猜譯名。
+TEAM_NAME_ZH: dict[str, str] = {
+    "Arsenal": "阿森納",
+    "Aston Villa": "阿斯頓維拉",
+    "Bournemouth": "伯恩茅斯",
+    "Brentford": "布倫特福特",
+    "Brighton": "布萊頓",
+    "Burnley": "伯恩利",
+    "Cardiff": "卡迪夫城",
+    "Chelsea": "切爾西",
+    "Coventry": "考文垂",
+    "Crystal Palace": "水晶宮",
+    "Everton": "埃弗頓",
+    "Fulham": "富勒姆",
+    "Huddersfield": "哈德斯菲爾德",
+    "Hull": "赫爾城",
+    "Ipswich": "伊普斯維奇",
+    "Leeds": "里茲聯",
+    "Leicester": "萊斯特城",
+    "Liverpool": "利物浦",
+    "Luton": "盧頓",
+    "Man City": "曼城",
+    "Man United": "曼聯",
+    "Newcastle": "紐卡斯爾聯",
+    "Norwich": "諾維奇",
+    "Nott'm Forest": "諾丁漢森林",
+    "Sheffield United": "謝菲爾德聯",
+    "Southampton": "南安普敦",
+    "Sunderland": "桑德蘭",
+    "Tottenham": "托特納姆熱刺",
+    "Watford": "沃特福德",
+    "West Brom": "西布羅姆維奇",
+    "West Ham": "西漢姆聯",
+    "Wolves": "狼隊",
+}
+
+
+def translate_team_name(name: str) -> str:
+    zh = TEAM_NAME_ZH.get(name)
+    if zh is None:
+        print(f"警告：球隊「{name}」沒有中文對照，網頁上會顯示英文原名。", file=sys.stderr)
+        return name
+    return zh
+
+
+def localize_team_names(matches: list[dict]) -> list[dict]:
+    """回傳一份翻譯過球隊名稱的複本，不動到原始 matches（保留英文正規名稱）。"""
+    out = []
+    for m in matches:
+        m2 = dict(m)
+        m2["home_team"] = translate_team_name(m["home_team"])
+        m2["away_team"] = translate_team_name(m["away_team"])
+        out.append(m2)
+    return out
+
 PAGE_TEMPLATE = """<!doctype html>
 <html lang="zh-Hant">
 <head>
@@ -33,7 +92,7 @@ PAGE_TEMPLATE = """<!doctype html>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root {{
@@ -124,7 +183,7 @@ PAGE_TEMPLATE = """<!doctype html>
   .confidence-pill.Medium {{ color: var(--conf-med); border-color: var(--conf-med); background: color-mix(in srgb, var(--conf-med) 12%, transparent); }}
   .confidence-pill.Low {{ color: var(--conf-low); border-color: var(--conf-low); background: color-mix(in srgb, var(--conf-low) 12%, transparent); }}
   .matchup {{ display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 0.75rem; }}
-  .team-name {{ font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.01em; line-height: 1.05; }}
+  .team-name {{ font-family: 'Noto Sans TC', sans-serif; font-weight: 700; font-size: 1.25rem; letter-spacing: 0.01em; line-height: 1.3; }}
   .team-name.away-side {{ text-align: right; }}
   .score-badge {{
     font-family: 'IBM Plex Mono', monospace; font-weight: 600; font-size: 1.15rem;
@@ -305,13 +364,15 @@ def main():
     matches = json.loads(latest_path.read_text(encoding="utf-8"))
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
 
+    matches_zh = localize_team_names(matches)
+
     html = PAGE_TEMPLATE.format(
         season_label=meta["season_label"],
         round_number=meta["round"],
         generated_at=meta["generated_at"].replace("T", " "),
         repo_url=REPO_URL,
         repo_url_display=REPO_URL.replace("https://", ""),
-        matches_json=json.dumps(matches, ensure_ascii=False),
+        matches_json=json.dumps(matches_zh, ensure_ascii=False),
     )
 
     docs_dir = config.PROJECT_ROOT / "docs"
