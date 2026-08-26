@@ -2,9 +2,15 @@ name: Daily data update + predictions
 
 on:
   schedule:
-    # 06:00 UTC 每天執行一次；英超比賽多在英國時間週末/平日晚間，
-    # 隔天早上（UTC 06:00 約為英國 06:00-07:00）足球數據來源通常已同步完前一天的結果。
+    # 一天四次，時間依台灣/中國時區 UTC+8 換算成 UTC（cron 一律用 UTC）：
+    #   UTC+8 03:00 -> UTC 19:00（前一天）
+    #   UTC+8 09:00 -> UTC 01:00
+    #   UTC+8 14:00 -> UTC 06:00
+    #   UTC+8 18:00 -> UTC 10:00
+    - cron: "0 19 * * *"
+    - cron: "0 1 * * *"
     - cron: "0 6 * * *"
+    - cron: "0 10 * * *"
   workflow_dispatch: {}
 
 permissions:

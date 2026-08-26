@@ -25,15 +25,15 @@ from src import config
 REPO_URL = "https://github.com/JM05326-debug/ballfoot"
 
 PAGE_TEMPLATE = """<!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Matchday Predictions</title>
+<title>英超賽事預測</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚽</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+TC:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
   :root {{
@@ -74,8 +74,8 @@ PAGE_TEMPLATE = """<!doctype html>
   * {{ box-sizing: border-box; }}
   body {{
     margin: 0; background: var(--bg); color: var(--text);
-    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
-    line-height: 1.5; -webkit-font-smoothing: antialiased;
+    font-family: 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+    line-height: 1.6; -webkit-font-smoothing: antialiased;
   }}
   .wrap {{ max-width: 1180px; margin: 0 auto; padding: 2.5rem 1.5rem 5rem; }}
   .masthead {{
@@ -83,8 +83,9 @@ PAGE_TEMPLATE = """<!doctype html>
     gap: 1.5rem; padding-bottom: 1.75rem; margin-bottom: 2rem; border-bottom: 2px solid var(--text);
   }}
   .masthead-title {{
-    font-family: 'Bebas Neue', 'IBM Plex Sans', sans-serif;
-    font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 0.9; letter-spacing: 0.01em; margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 900;
+    font-size: clamp(2.2rem, 5.4vw, 3.6rem); line-height: 1.15; letter-spacing: 0.01em; margin: 0;
     text-wrap: balance;
   }}
   .masthead-title .accent {{ color: var(--accent); }}
@@ -167,7 +168,7 @@ PAGE_TEMPLATE = """<!doctype html>
   .scoreline-table td:last-child {{ color: var(--text-muted); text-align: right; }}
   .model-table {{ table-layout: fixed; }}
   .model-table th {{ text-align: right; color: var(--text-faint); font-weight: 500; font-size: 0.66rem; text-transform: uppercase; }}
-  .model-table th:first-child, .model-table td:first-child {{ text-align: left; font-family: 'IBM Plex Sans', sans-serif; color: var(--text-muted); }}
+  .model-table th:first-child, .model-table td:first-child {{ text-align: left; font-family: 'Noto Sans TC', sans-serif; color: var(--text-muted); }}
   .model-table td {{ text-align: right; color: var(--text); }}
   .model-table tbody tr:nth-child(odd) {{ background: var(--surface-2); }}
   .table-scroll {{ overflow-x: auto; }}
@@ -183,10 +184,10 @@ PAGE_TEMPLATE = """<!doctype html>
 <body>
 <div class="wrap">
   <header class="masthead">
-    <h1 class="masthead-title">Matchday <span class="accent">Predictions</span></h1>
+    <h1 class="masthead-title">英超<span class="accent">賽事預測</span></h1>
     <div class="masthead-meta">
-      <span>Premier League {season_label} — Round {round_number}</span>
-      <span>Ensemble + Poisson · calibrated on validation · updated {generated_at}</span>
+      <span>英格蘭超級聯賽 {season_label} 賽季 — 第 {round_number} 輪</span>
+      <span>集成模型 + Poisson 模型 · 已用驗證集校準 · 最後更新 {generated_at}</span>
       <a href="{repo_url}" target="_blank" rel="noopener">{repo_url_display}</a>
     </div>
   </header>
@@ -195,9 +196,9 @@ PAGE_TEMPLATE = """<!doctype html>
   <main class="grid" id="matchGrid"></main>
 
   <footer>
-    <span>1X2 probabilities: 7-model ensemble (LogReg, RandomForest, XGBoost, LightGBM, CatBoost, Dixon-Coles Poisson, Fuzzy logic), weighted by validation log loss, Platt-calibrated.</span>
-    <span>Score / xG / Over-Under / BTTS: independent Dixon-Coles Poisson goal model.</span>
-    <span>Regenerated automatically once a day from live pre-match features — no post-match data used.</span>
+    <span>主/和/客機率：7 個模型（Logistic Regression、Random Forest、XGBoost、LightGBM、CatBoost、Dixon-Coles Poisson、模糊邏輯）依驗證集 Log Loss 加權集成，並用 Platt Scaling 校準。</span>
+    <span>比分／預期進球／大小球／雙方進球：獨立的 Dixon-Coles Poisson 進球模型。</span>
+    <span>由 GitHub Actions 每天自動重新產生，只使用賽前已知資料，不使用任何賽後資訊。</span>
   </footer>
 </div>
 
@@ -206,29 +207,31 @@ const MATCHES = {matches_json};
 
 function pct(x) {{ return (x * 100).toFixed(1) + '%'; }}
 
+const CONF_LABEL = {{ High: '高', Medium: '中', Low: '低' }};
+
 function renderSummary() {{
   const strip = document.getElementById('summaryStrip');
   if (MATCHES.length === 0) return;
   const counts = {{ High: 0, Medium: 0, Low: 0 }};
   MATCHES.forEach(m => counts[m.confidence]++);
   strip.innerHTML = [
-    `<div class="summary-chip"><span class="num">${{MATCHES.length}}</span><span class="label">matches</span></div>`,
-    `<div class="summary-chip"><span class="dot high"></span><span class="num">${{counts.High}}</span><span class="label">high confidence</span></div>`,
-    `<div class="summary-chip"><span class="dot med"></span><span class="num">${{counts.Medium}}</span><span class="label">medium</span></div>`,
-    `<div class="summary-chip"><span class="dot low"></span><span class="num">${{counts.Low}}</span><span class="label">low</span></div>`,
+    `<div class="summary-chip"><span class="num">${{MATCHES.length}}</span><span class="label">場比賽</span></div>`,
+    `<div class="summary-chip"><span class="dot high"></span><span class="num">${{counts.High}}</span><span class="label">高信心</span></div>`,
+    `<div class="summary-chip"><span class="dot med"></span><span class="num">${{counts.Medium}}</span><span class="label">中信心</span></div>`,
+    `<div class="summary-chip"><span class="dot low"></span><span class="num">${{counts.Low}}</span><span class="label">低信心</span></div>`,
   ].join('');
 }}
 
 function formatKickoff(dateStr) {{
   const d = new Date(dateStr.replace(' ', 'T'));
-  const opts = {{ weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }};
-  return d.toLocaleString('en-GB', opts).replace(',', ' ·');
+  const opts = {{ month: 'numeric', day: 'numeric', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false }};
+  return d.toLocaleString('zh-TW', opts);
 }}
 
 function renderCard(m) {{
   const home = pct(m.p_home_win), draw = pct(m.p_draw), away = pct(m.p_away_win);
   const factors = m.top_influencing_factors.map(f => `
-    <li><span class="f-label">${{f.label}}</span><span class="f-side ${{f.favors.toLowerCase()}}">${{f.favors === 'Home' ? m.home_team : m.away_team}}</span></li>`).join('');
+    <li><span class="f-label">${{f.label}}</span><span class="f-side ${{f.favors.toLowerCase()}}">有利 ${{f.favors === 'Home' ? m.home_team : m.away_team}}</span></li>`).join('');
   const scorelines = m.top_scorelines.map(s => `<tr><td>${{s.score}}</td><td>${{pct(s.probability)}}</td></tr>`).join('');
   const modelNames = Object.keys(m.per_model_raw_proba);
   const modelRows = modelNames.map(name => {{
@@ -240,7 +243,7 @@ function renderCard(m) {{
   <article class="card">
     <div class="card-top">
       <span class="kickoff">${{formatKickoff(m.date)}}</span>
-      <span class="confidence-pill ${{m.confidence}}">${{m.confidence}} confidence</span>
+      <span class="confidence-pill ${{m.confidence}}">信心：${{CONF_LABEL[m.confidence]}}</span>
     </div>
     <div class="matchup">
       <span class="team-name home-side">${{m.home_team}}</span>
@@ -254,25 +257,25 @@ function renderCard(m) {{
         <span class="seg-away" style="width:${{m.p_away_win * 100}}%"></span>
       </div>
       <div class="prob-labels" style="margin-top:0.4rem;">
-        <span class="lab"><span class="swatch home"></span>Home <strong>${{home}}</strong></span>
-        <span class="lab"><span class="swatch draw"></span>Draw <strong>${{draw}}</strong></span>
-        <span class="lab"><span class="swatch away"></span>Away <strong>${{away}}</strong></span>
+        <span class="lab"><span class="swatch home"></span>主勝 <strong>${{home}}</strong></span>
+        <span class="lab"><span class="swatch draw"></span>和局 <strong>${{draw}}</strong></span>
+        <span class="lab"><span class="swatch away"></span>客勝 <strong>${{away}}</strong></span>
       </div>
     </div>
     <div class="stat-row">
-      <div class="stat"><span class="stat-label">xG</span><span class="stat-value">${{m.expected_home_goals.toFixed(2)}} – ${{m.expected_away_goals.toFixed(2)}}</span></div>
-      <div class="stat"><span class="stat-label">Over 2.5</span><span class="stat-value">${{pct(m.p_over_2_5)}}</span></div>
-      <div class="stat"><span class="stat-label">BTTS Yes</span><span class="stat-value">${{pct(m.p_btts_yes)}}</span></div>
-      <div class="stat"><span class="stat-label">Under 2.5</span><span class="stat-value">${{pct(m.p_under_2_5)}}</span></div>
+      <div class="stat"><span class="stat-label">預期進球 xG</span><span class="stat-value">${{m.expected_home_goals.toFixed(2)}} – ${{m.expected_away_goals.toFixed(2)}}</span></div>
+      <div class="stat"><span class="stat-label">大 2.5 球</span><span class="stat-value">${{pct(m.p_over_2_5)}}</span></div>
+      <div class="stat"><span class="stat-label">雙方進球：是</span><span class="stat-value">${{pct(m.p_btts_yes)}}</span></div>
+      <div class="stat"><span class="stat-label">小 2.5 球</span><span class="stat-value">${{pct(m.p_under_2_5)}}</span></div>
     </div>
     <details class="factors">
-      <summary>Top influencing factors &amp; model breakdown</summary>
+      <summary>關鍵影響因素與各模型明細</summary>
       <ul class="factor-list">${{factors}}</ul>
-      <div class="sub-heading">Most likely scorelines</div>
+      <div class="sub-heading">最可能比分</div>
       <div class="table-scroll"><table class="scoreline-table"><tbody>${{scorelines}}</tbody></table></div>
-      <div class="sub-heading">Per-model raw probability (pre-ensemble, pre-calibration)</div>
+      <div class="sub-heading">各模型原始機率（尚未集成、尚未校準）</div>
       <div class="table-scroll">
-        <table class="model-table"><thead><tr><th>Model</th><th>Home</th><th>Draw</th><th>Away</th></tr></thead><tbody>${{modelRows}}</tbody></table>
+        <table class="model-table"><thead><tr><th>模型</th><th>主勝</th><th>和局</th><th>客勝</th></tr></thead><tbody>${{modelRows}}</tbody></table>
       </div>
     </details>
   </article>`;
@@ -280,7 +283,7 @@ function renderCard(m) {{
 
 const grid = document.getElementById('matchGrid');
 if (MATCHES.length === 0) {{
-  grid.innerHTML = '<div class="empty-state">No upcoming fixtures right now — check back once the next round is scheduled.</div>';
+  grid.innerHTML = '<div class="empty-state">目前沒有即將開踢的賽程，等下一輪賽程公布後再回來看。</div>';
 }} else {{
   grid.innerHTML = MATCHES.map(renderCard).join('');
 }}
