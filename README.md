@@ -32,6 +32,10 @@ premier_league_predictor/
 ├── train.py                       # 第三+四階段主要入口（切分->訓練->Ensemble->校準->Test 檢查->存版本）
 ├── evaluate.py                    # 第五階段：Walk-forward Backtest（最近 1/2/3 個賽季）
 ├── predict.py                     # 第五階段：對下一輪比賽產生完整預測
+├── collect_results.py             # 比對預測 vs 真實結果，累積寫進 prediction_history.csv
+├── generate_dashboard.py          # 把最新預測轉成 docs/index.html（GitHub Pages 用）
+├── .github/workflows/             # GitHub Actions：daily.yml（4x/天）+ weekly-retrain.yml
+├── docs/index.html                # GitHub Pages 網站（中文化儀表板）
 ├── requirements.txt
 └── README.md
 ```
@@ -613,16 +617,61 @@ Brier Score > 穩定性 > Accuracy > 勝率——這五個階段的每一個決�
 
 ## 持續學習（規格第十三節）
 
-**已自動化的部分**（透過上面的 GitHub Actions）：資料每天自動更新、模型每週自動用
-「目前所有已知資料」重新比較/選權重/校準，產生新的 `model_vNNN` 並自動被 `predict.py`
-採用——這解決了規格第十三節裡「Update Dataset -> Retrain」的自動化部分。
+完整迴圈 **Prediction -> Actual Result -> Error -> Save -> Update Dataset -> Retrain** 現在全部自動化：
 
-**目前仍**尚未建立** `prediction_history.csv`**（逐場記錄「預測 vs 實際結果」的誤差，
-例如每場的 Brier Score / Log Loss 累積趨勢圖，用來監控模型是否隨時間變好或變差）。
-概念上的作法：每次 `predict.py` 執行時，把上一輪已經存在 `data/predictions/` 裡的
-預測，跟這次 `update_data.py` 新抓到的真實比分比對，算出誤差後累積寫進
-`prediction_history.csv`，可以在 `daily.yml` 裡加一個步驟自動做這件事。
-這部分尚未實作，是誠實列出的待補項目。
+```
+predict.py（產生預測，存進 data/predictions/predictions_*.json）
+      ↓（等比賽開踢...）
+update_data.py（每天 4 次，抓最新真實比分）
+      ↓
+collect_results.py（比對預測 vs 真實結果，算 Brier/Log Loss，寫進 prediction_history.csv）
+      ↓
+train.py + evaluate.py（每週一次，用最新全部資料重新比較模型、選權重、校準，產生新 model_vNNN）
+      ↓
+predict.py 自動採用最新版模型繼續預測下一輪
+```
+
+### `collect_results.py`
+
+```bash
+python collect_results.py
+```
+
+掃描 `data/predictions/predictions_*.json`（同一場比賽因為一天預測 4 次，常常有好幾個
+版本，只取「最接近賽前、最後一次」的預測來計分），跟 `matches_clean.csv` 的真實結果
+比對，把還沒記錄過的比賽算出 Brier Score / Log Loss / 是否猜對勝負，append 進
+`data/predictions/prediction_history.csv`。已經記錄過的比賽不會重複寫入，可以放心
+每天重複執行。已經在 GitHub Actions 的真實環境裡跑過，行為正確（見下方測試方式）。
+
+`prediction_history.csv` 欄位：`prediction_time, match_date, home_team, away_team,
+predicted_home, predicted_draw, predicted_away, predicted_result, predicted_score,
+actual_home, actual_away, actual_result, correct, brier_score, log_loss, model_version`
+
+已經接到 `daily.yml`：`update_data.py` 之後、`predict.py` 之前執行，每天自動跑 4 次。
+
+### 如何測試
+
+因為撰寫當下 2026-27 賽季第 2 輪還沒開踢完，還沒有真實資料可以驗證「端對端」流程，
+所以改用**隔離測試**驗證邏輯正確性（完全不碰真實專案資料——一開始有嘗試手動塞一筆
+假比賽結果進 `matches_clean.csv` 來測試，被權限分類器正確擋下，改用隔離的暫存目錄
++ 記憶體資料測試，不會有任何造假資料混進真實資料集）：
+
+```bash
+python -c "
+import collect_results as cr
+pred = {'_prediction_time':'2026-08-27T10:00:00','_match_date':'2026-08-28',
+        'home_team':'Crystal Palace','away_team':'Man City',
+        'p_home_win':0.229,'p_draw':0.241,'p_away_win':0.530,
+        'predicted_score':'1-1','model_version':'model_v004'}
+actual = {'FTHG':1,'FTAG':2,'FTR':'A'}
+print(cr.compute_row(pred, actual))
+"
+```
+
+**驗收標準**：目前（沒有真實新結果時）執行 `python collect_results.py` 應該印出
+「沒有新的比賽結果可以回收」+ 列出目前有幾場「已預測、尚未開踢」的比賽數，
+不會產生任何錯誤或假資料列——已在本機與 GitHub Actions 上都驗證過這個行為正確。
+等實際賽果出來後，`prediction_history.csv` 會自動開始累積。
 
 ## 電腦不會一直開機
 
