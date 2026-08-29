@@ -108,6 +108,7 @@ def main():
         pred = prediction.predict_one_match(
             match_row, feature_row, feature_cols, fitted_models, dc_model,
             ensemble_weights, calibrator, rf_importances, feature_std,
+            model_version=model_dir.name,
         )
         predictions.append(pred)
 

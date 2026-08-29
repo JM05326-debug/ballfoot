@@ -41,6 +41,9 @@ jobs:
       - name: Update data (download latest results + fixtures)
         run: python update_data.py
 
+      - name: Collect results for matches that have finished
+        run: python collect_results.py
+
       - name: Rebuild fuzzy outputs
         run: python -m src.fuzzy_model
 

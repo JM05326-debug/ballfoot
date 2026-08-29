@@ -134,6 +134,7 @@ def predict_one_match(
     calibrator,
     rf_importances: dict[str, float],
     feature_std: dict[str, float],
+    model_version: str | None = None,
 ) -> dict:
     X = feature_row[feature_cols].to_numpy(dtype=float).reshape(1, -1)
 
@@ -160,10 +161,12 @@ def predict_one_match(
     factors = top_influencing_factors(feature_row, feature_cols, rf_importances, feature_std)
 
     return {
+        "match_id": match_row.get("MatchID"),
         "home_team": match_row["HomeTeam"],
         "away_team": match_row["AwayTeam"],
         "date": str(match_row["Date"]),
         "round": int(match_row.get("RoundNumber")) if pd.notna(match_row.get("RoundNumber")) else None,
+        "model_version": model_version,
         "p_home_win": float(calibrated_proba[0]),
         "p_draw": float(calibrated_proba[1]),
         "p_away_win": float(calibrated_proba[2]),
