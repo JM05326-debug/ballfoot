@@ -16,6 +16,8 @@ from __future__ import annotations
 import json
 import sys
 
+import pandas as pd
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")
@@ -237,6 +239,35 @@ PAGE_TEMPLATE = """<!doctype html>
   }}
   footer a {{ color: var(--text-muted); }}
   .empty-state {{ padding: 3rem 1rem; text-align: center; color: var(--text-muted); font-size: 1rem; }}
+
+  .section-heading {{
+    display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+    margin: 3rem 0 1rem;
+  }}
+  .section-heading h2 {{
+    font-family: 'Noto Sans TC', sans-serif; font-weight: 700; font-size: 1.35rem; margin: 0;
+  }}
+  .section-heading .section-sub {{ font-size: 0.78rem; color: var(--text-faint); }}
+
+  .history-table-wrap {{
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    box-shadow: var(--shadow); overflow: hidden;
+  }}
+  .history-table {{ width: 100%; border-collapse: collapse; font-size: 0.85rem; }}
+  .history-table th, .history-table td {{ padding: 0.6rem 0.9rem; text-align: left; }}
+  .history-table thead th {{
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-faint);
+    border-bottom: 1px solid var(--border); font-weight: 500;
+  }}
+  .history-table tbody tr:nth-child(odd) {{ background: var(--surface-2); }}
+  .history-table td.num {{ font-family: 'IBM Plex Mono', monospace; font-variant-numeric: tabular-nums; }}
+  .result-badge {{
+    display: inline-flex; align-items: center; gap: 0.3rem; font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.7rem; font-weight: 600; padding: 0.15rem 0.55rem; border-radius: 999px;
+  }}
+  .result-badge.hit {{ color: var(--conf-high); background: color-mix(in srgb, var(--conf-high) 14%, transparent); }}
+  .result-badge.miss {{ color: var(--away); background: color-mix(in srgb, var(--away) 14%, transparent); }}
+
   @media (max-width: 520px) {{ .stat-row {{ grid-template-columns: repeat(2, 1fr); }} .team-name {{ font-size: 1.2rem; }} }}
 </style>
 </head>
@@ -254,6 +285,16 @@ PAGE_TEMPLATE = """<!doctype html>
   <div class="summary-strip" id="summaryStrip"></div>
   <main class="grid" id="matchGrid"></main>
 
+  <div class="section-heading">
+    <h2>歷史預測回顧</h2>
+    <span class="section-sub">比賽結束後自動回收比對，見 collect_results.py</span>
+  </div>
+  <div class="summary-strip" id="historySummary"></div>
+  <div class="history-table-wrap"><div class="table-scroll"><table class="history-table">
+    <thead><tr><th>日期</th><th>對戰</th><th>預測</th><th>實際</th><th>結果</th><th>Brier</th><th>版本</th></tr></thead>
+    <tbody id="historyBody"></tbody>
+  </table></div></div>
+
   <footer>
     <span>主/和/客機率：7 個模型（Logistic Regression、Random Forest、XGBoost、LightGBM、CatBoost、Dixon-Coles Poisson、模糊邏輯）依驗證集 Log Loss 加權集成，並用 Platt Scaling 校準。</span>
     <span>比分／預期進球／大小球／雙方進球：獨立的 Dixon-Coles Poisson 進球模型。</span>
@@ -263,6 +304,7 @@ PAGE_TEMPLATE = """<!doctype html>
 
 <script>
 const MATCHES = {matches_json};
+const HISTORY = {history_json};
 
 function pct(x) {{ return (x * 100).toFixed(1) + '%'; }}
 
@@ -347,10 +389,81 @@ if (MATCHES.length === 0) {{
   grid.innerHTML = MATCHES.map(renderCard).join('');
 }}
 renderSummary();
+
+const RESULT_LABEL = {{ H: '主勝', D: '和局', A: '客勝' }};
+
+function renderHistorySummary() {{
+  const strip = document.getElementById('historySummary');
+  if (HISTORY.length === 0) {{ strip.innerHTML = ''; return; }}
+  const hits = HISTORY.filter(h => h.correct).length;
+  const avgBrier = HISTORY.reduce((s, h) => s + h.brier_score, 0) / HISTORY.length;
+  const avgLogLoss = HISTORY.reduce((s, h) => s + h.log_loss, 0) / HISTORY.length;
+  strip.innerHTML = [
+    `<div class="summary-chip"><span class="num">${{HISTORY.length}}</span><span class="label">場已比對</span></div>`,
+    `<div class="summary-chip"><span class="num">${{pct(hits / HISTORY.length)}}</span><span class="label">命中率</span></div>`,
+    `<div class="summary-chip"><span class="num">${{avgBrier.toFixed(3)}}</span><span class="label">平均 Brier</span></div>`,
+    `<div class="summary-chip"><span class="num">${{avgLogLoss.toFixed(3)}}</span><span class="label">平均 Log Loss</span></div>`,
+  ].join('');
+}}
+
+function renderHistoryRow(h) {{
+  const badge = h.correct
+    ? `<span class="result-badge hit">✓ 猜中</span>`
+    : `<span class="result-badge miss">✕ 未猜中</span>`;
+  return `<tr>
+    <td>${{h.match_date}}</td>
+    <td>${{h.home_team}} vs ${{h.away_team}}</td>
+    <td class="num">${{pct(h.predicted_home)}} / ${{pct(h.predicted_draw)}} / ${{pct(h.predicted_away)}}（${{RESULT_LABEL[h.predicted_result]}}）</td>
+    <td class="num">${{h.actual_home}}–${{h.actual_away}}（${{RESULT_LABEL[h.actual_result]}}）</td>
+    <td>${{badge}}</td>
+    <td class="num">${{h.brier_score.toFixed(3)}}</td>
+    <td class="num">${{h.model_version}}</td>
+  </tr>`;
+}}
+
+const historyBody = document.getElementById('historyBody');
+if (HISTORY.length === 0) {{
+  historyBody.innerHTML = `<tr><td colspan="7"><div class="empty-state">目前還沒有已結束並回收比對的比賽，等下一場比賽結束、資料自動更新後，這裡會顯示預測 vs 實際結果。</div></td></tr>`;
+}} else {{
+  historyBody.innerHTML = HISTORY.map(renderHistoryRow).join('');
+}}
+renderHistorySummary();
 </script>
 </body>
 </html>
 """
+
+
+def load_prediction_history(max_rows: int = 100) -> list[dict]:
+    """讀取 collect_results.py 產生的 prediction_history.csv，回傳翻譯過球隊名稱、
+    依比賽日期新到舊排序的清單；檔案還不存在（還沒有任何比賽被回收）時回傳空清單，
+    網頁會顯示「還沒有資料」的空狀態，而不是報錯。"""
+    path = config.PREDICTIONS_DIR / "prediction_history.csv"
+    if not path.exists():
+        return []
+
+    df = pd.read_csv(path)
+    df = df.sort_values("match_date", ascending=False).head(max_rows)
+
+    rows = []
+    for _, r in df.iterrows():
+        rows.append({
+            "match_date": r["match_date"],
+            "home_team": translate_team_name(r["home_team"]),
+            "away_team": translate_team_name(r["away_team"]),
+            "predicted_home": float(r["predicted_home"]),
+            "predicted_draw": float(r["predicted_draw"]),
+            "predicted_away": float(r["predicted_away"]),
+            "predicted_result": r["predicted_result"],
+            "actual_home": int(r["actual_home"]),
+            "actual_away": int(r["actual_away"]),
+            "actual_result": r["actual_result"],
+            "correct": bool(r["correct"]),
+            "brier_score": float(r["brier_score"]),
+            "log_loss": float(r["log_loss"]),
+            "model_version": r["model_version"],
+        })
+    return rows
 
 
 def main():
@@ -365,6 +478,7 @@ def main():
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
 
     matches_zh = localize_team_names(matches)
+    history = load_prediction_history()
 
     html = PAGE_TEMPLATE.format(
         season_label=meta["season_label"],
@@ -373,13 +487,15 @@ def main():
         repo_url=REPO_URL,
         repo_url_display=REPO_URL.replace("https://", ""),
         matches_json=json.dumps(matches_zh, ensure_ascii=False),
+        history_json=json.dumps(history, ensure_ascii=False),
     )
 
     docs_dir = config.PROJECT_ROOT / "docs"
     docs_dir.mkdir(exist_ok=True)
     out_path = docs_dir / "index.html"
     out_path.write_text(html, encoding="utf-8")
-    print(f"已產生: {out_path}（{meta['n_matches']} 場比賽，{meta['season_label']} 第 {meta['round']} 輪）")
+    print(f"已產生: {out_path}（{meta['n_matches']} 場比賽，{meta['season_label']} 第 {meta['round']} 輪；"
+          f"歷史回顧 {len(history)} 場已回收比對的比賽）")
 
 
 if __name__ == "__main__":
