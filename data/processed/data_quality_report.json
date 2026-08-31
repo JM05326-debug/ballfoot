@@ -41,11 +41,16 @@
     "Lineups": "預計/實際先發陣容 -- 同上，未串接",
     "EuropeanFixtures": "歐戰賽程（影響疲勞） -- 目前只抓取英超賽程，未整合歐冠/歐霸賽程"
   },
-  "schedule_gaps_count": 1,
+  "schedule_gaps_count": 2,
   "schedule_gaps_sample": [
     {
       "date": "2023-01-19",
       "match": "Crystal Palace vs Man United",
+      "note": "賽程顯示應已開踢但結果資料中找不到對應比賽（可能延賽或尚未同步）"
+    },
+    {
+      "date": "2026-08-28",
+      "match": "Crystal Palace vs Man City",
       "note": "賽程顯示應已開踢但結果資料中找不到對應比賽（可能延賽或尚未同步）"
     }
   ]
