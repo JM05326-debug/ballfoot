@@ -1,0 +1,11 @@
+prediction_time,match_date,home_team,away_team,predicted_home,predicted_draw,predicted_away,predicted_result,predicted_score,actual_home,actual_away,actual_result,correct,brier_score,log_loss,model_version
+2026-08-31T19:04:31,2026-08-28,Crystal Palace,Man City,0.2258,0.2413,0.533,A,1-1,1,4,A,True,0.3273,0.6293,model_v005
+2026-08-31T19:04:31,2026-08-29,Liverpool,Nott'm Forest,0.4537,0.2477,0.2986,H,1-1,2,2,D,False,0.861,1.3956,model_v005
+2026-08-31T19:04:31,2026-08-29,Bournemouth,Everton,0.4586,0.2499,0.2915,H,1-1,1,1,D,False,0.8579,1.3866,model_v005
+2026-08-31T19:04:31,2026-08-29,Coventry,Hull,0.274,0.2538,0.4722,A,0-1,0,1,A,True,0.418,0.7503,model_v005
+2026-08-31T19:04:31,2026-08-29,Tottenham,Newcastle,0.3423,0.2507,0.407,A,1-1,0,2,A,True,0.5316,0.8988,model_v005
+2026-08-31T19:04:31,2026-08-30,Chelsea,Brighton,0.3827,0.251,0.3663,H,1-1,4,3,H,True,0.5783,0.9606,model_v005
+2026-08-31T19:04:31,2026-08-30,Leeds,Brentford,0.3285,0.2533,0.4182,A,1-1,1,1,D,False,0.8404,1.3733,model_v005
+2026-08-31T19:04:31,2026-08-30,Sunderland,Fulham,0.3492,0.2581,0.3928,A,1-1,1,0,H,False,0.6445,1.0522,model_v005
+2026-08-31T19:04:31,2026-08-30,Man United,Ipswich,0.5603,0.2297,0.21,H,2-0,5,2,H,True,0.2903,0.5794,model_v005
+2026-08-31T19:04:31,2026-08-31,Aston Villa,Arsenal,0.2424,0.2407,0.5169,A,1-1,0,1,A,True,0.3501,0.6599,model_v005

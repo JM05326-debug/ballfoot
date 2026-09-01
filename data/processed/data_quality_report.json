@@ -10,8 +10,8 @@
     "2025-26",
     "2026-27"
   ],
-  "rows_in": 3050,
-  "rows_out": 3050,
+  "rows_in": 3060,
+  "rows_out": 3060,
   "duplicates_removed": 0,
   "missing_core_dropped": 0,
   "ftr_mismatches_fixed": 0,
@@ -19,8 +19,8 @@
   "outlier_flags_sample": [],
   "unknown_team_names": [],
   "stat_column_coverage_pct": {
-    "HxG": 0.3,
-    "AxG": 0.3,
+    "HxG": 0.7,
+    "AxG": 0.7,
     "HS": 100.0,
     "AS": 100.0,
     "HST": 100.0,
@@ -41,16 +41,11 @@
     "Lineups": "預計/實際先發陣容 -- 同上，未串接",
     "EuropeanFixtures": "歐戰賽程（影響疲勞） -- 目前只抓取英超賽程，未整合歐冠/歐霸賽程"
   },
-  "schedule_gaps_count": 2,
+  "schedule_gaps_count": 1,
   "schedule_gaps_sample": [
     {
       "date": "2023-01-19",
       "match": "Crystal Palace vs Man United",
-      "note": "賽程顯示應已開踢但結果資料中找不到對應比賽（可能延賽或尚未同步）"
-    },
-    {
-      "date": "2026-08-28",
-      "match": "Crystal Palace vs Man City",
       "note": "賽程顯示應已開踢但結果資料中找不到對應比賽（可能延賽或尚未同步）"
     }
   ]

@@ -3049,16 +3049,16 @@ Season,SeasonStartYear,RoundNumber,Date,HomeTeam,AwayTeam,Venue,Played
 2026-27,2026,1,2026-08-23 14:00:00,Man City,Bournemouth,Etihad Stadium,True
 2026-27,2026,1,2026-08-23 16:30:00,Newcastle,Liverpool,St. James' Park,True
 2026-27,2026,1,2026-08-24 20:00:00,Fulham,Chelsea,Craven Cottage,True
-2026-27,2026,2,2026-08-28 20:00:00,Crystal Palace,Man City,Selhurst Park,False
-2026-27,2026,2,2026-08-29 12:30:00,Liverpool,Nott'm Forest,Anfield,False
-2026-27,2026,2,2026-08-29 15:00:00,Bournemouth,Everton,Vitality Stadium,False
-2026-27,2026,2,2026-08-29 15:00:00,Coventry,Hull,Coventry Building Society Arena,False
-2026-27,2026,2,2026-08-29 17:30:00,Tottenham,Newcastle,Tottenham Hotspur Stadium,False
-2026-27,2026,2,2026-08-30 14:00:00,Chelsea,Brighton,Stamford Bridge,False
-2026-27,2026,2,2026-08-30 14:00:00,Leeds,Brentford,Elland Road,False
-2026-27,2026,2,2026-08-30 14:00:00,Sunderland,Fulham,Stadium of Light,False
-2026-27,2026,2,2026-08-30 16:30:00,Man United,Ipswich,Old Trafford,False
-2026-27,2026,2,2026-08-31 20:00:00,Aston Villa,Arsenal,Villa Park,False
+2026-27,2026,2,2026-08-28 20:00:00,Crystal Palace,Man City,Selhurst Park,True
+2026-27,2026,2,2026-08-29 12:30:00,Liverpool,Nott'm Forest,Anfield,True
+2026-27,2026,2,2026-08-29 15:00:00,Bournemouth,Everton,Vitality Stadium,True
+2026-27,2026,2,2026-08-29 15:00:00,Coventry,Hull,Coventry Building Society Arena,True
+2026-27,2026,2,2026-08-29 17:30:00,Tottenham,Newcastle,Tottenham Hotspur Stadium,True
+2026-27,2026,2,2026-08-30 14:00:00,Chelsea,Brighton,Stamford Bridge,True
+2026-27,2026,2,2026-08-30 14:00:00,Leeds,Brentford,Elland Road,True
+2026-27,2026,2,2026-08-30 14:00:00,Sunderland,Fulham,Stadium of Light,True
+2026-27,2026,2,2026-08-30 16:30:00,Man United,Ipswich,Old Trafford,True
+2026-27,2026,2,2026-08-31 20:00:00,Aston Villa,Arsenal,Villa Park,True
 2026-27,2026,3,2026-09-04 20:00:00,Ipswich,Liverpool,Portman Road,False
 2026-27,2026,3,2026-09-05 12:30:00,Newcastle,Bournemouth,St. James' Park,False
 2026-27,2026,3,2026-09-05 15:00:00,Brentford,Sunderland,Gtech Community Stadium,False
