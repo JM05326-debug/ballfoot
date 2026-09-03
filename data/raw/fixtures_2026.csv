@@ -43,10 +43,10 @@ Match Number,Round Number,Date,Location,Home Team,Away Team,Result,SeasonStartYe
 50,5,19/09/2026 12:30,Tottenham Hotspur Stadium,Tottenham,Aston Villa,,2026,2026-27
 43,5,19/09/2026 15:00,American Express Stadium,Brighton,Arsenal,,2026,2026-27
 44,5,19/09/2026 15:00,Hill Dickinson Stadium,Everton,Ipswich,,2026,2026-27
-46,5,19/09/2026 15:00,Elland Road,Leeds,Crystal Palace,,2026,2026-27
 48,5,19/09/2026 15:00,St. James' Park,Newcastle,Hull,,2026,2026-27
 49,5,19/09/2026 17:30,The City Ground,Nott'm Forest,Coventry,,2026,2026-27
 41,5,20/09/2026 14:00,Vitality Stadium,Bournemouth,Liverpool,,2026,2026-27
+46,5,20/09/2026 14:00,Elland Road,Leeds,Crystal Palace,,2026,2026-27
 47,5,20/09/2026 14:00,Etihad Stadium,Man City,Sunderland,,2026,2026-27
 45,5,20/09/2026 16:30,Craven Cottage,Fulham,Man United,,2026,2026-27
 51,6,10/10/2026 12:30,Emirates Stadium,Arsenal,Leeds,,2026,2026-27
@@ -73,10 +73,10 @@ Match Number,Round Number,Date,Location,Home Team,Away Team,Result,SeasonStartYe
 72,8,24/10/2026 12:30,Villa Park,Aston Villa,Man City,,2026,2026-27
 71,8,24/10/2026 15:00,Emirates Stadium,Arsenal,Everton,,2026,2026-27
 74,8,24/10/2026 15:00,Coventry Building Society Arena,Coventry,Fulham,,2026,2026-27
-78,8,24/10/2026 15:00,Anfield,Liverpool,Brighton,,2026,2026-27
 73,8,24/10/2026 17:30,Stamford Bridge,Chelsea,Tottenham,,2026,2026-27
 75,8,25/10/2026 14:00,Selhurst Park,Crystal Palace,Newcastle,,2026,2026-27
 76,8,25/10/2026 14:00,MKM Stadium,Hull,Brentford,,2026,2026-27
+78,8,25/10/2026 14:00,Anfield,Liverpool,Brighton,,2026,2026-27
 79,8,25/10/2026 14:00,Old Trafford,Man United,Bournemouth,,2026,2026-27
 80,8,25/10/2026 16:30,Stadium of Light,Sunderland,Leeds,,2026,2026-27
 84,9,31/10/2026 12:30,Stamford Bridge,Chelsea,Man United,,2026,2026-27
@@ -86,7 +86,7 @@ Match Number,Round Number,Date,Location,Home Team,Away Team,Result,SeasonStartYe
 86,9,31/10/2026 15:00,MKM Stadium,Hull,Ipswich,,2026,2026-27
 88,9,31/10/2026 15:00,Etihad Stadium,Man City,Brighton,,2026,2026-27
 90,9,31/10/2026 17:30,Tottenham Hotspur Stadium,Tottenham,Crystal Palace,,2026,2026-27
-82,9,01/11/2026 14:00,Villa Park,Aston Villa,Fulham,,2026,2026-27
+82,9,31/10/2026 20:00,Villa Park,Aston Villa,Fulham,,2026,2026-27
 87,9,01/11/2026 16:30,Anfield,Liverpool,Arsenal,,2026,2026-27
 89,9,02/11/2026 20:00,St. James' Park,Newcastle,Everton,,2026,2026-27
 91,10,07/11/2026 15:00,Emirates Stadium,Arsenal,Hull,,2026,2026-27
