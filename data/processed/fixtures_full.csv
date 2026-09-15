@@ -3069,16 +3069,16 @@ Season,SeasonStartYear,RoundNumber,Date,HomeTeam,AwayTeam,Venue,Played
 2026-27,2026,3,2026-09-05 17:30:00,Hull,Aston Villa,MKM Stadium,True
 2026-27,2026,3,2026-09-06 14:00:00,Everton,Man United,Hill Dickinson Stadium,True
 2026-27,2026,3,2026-09-06 16:30:00,Arsenal,Chelsea,Emirates Stadium,True
-2026-27,2026,4,2026-09-12 15:00:00,Bournemouth,Brentford,Vitality Stadium,False
-2026-27,2026,4,2026-09-12 15:00:00,Aston Villa,Nott'm Forest,Villa Park,False
-2026-27,2026,4,2026-09-12 15:00:00,Chelsea,Hull,Stamford Bridge,False
-2026-27,2026,4,2026-09-12 15:00:00,Crystal Palace,Ipswich,Selhurst Park,False
-2026-27,2026,4,2026-09-12 15:00:00,Liverpool,Fulham,Anfield,False
-2026-27,2026,4,2026-09-12 17:30:00,Tottenham,Everton,Tottenham Hotspur Stadium,False
-2026-27,2026,4,2026-09-12 20:00:00,Sunderland,Arsenal,Stadium of Light,False
-2026-27,2026,4,2026-09-13 14:00:00,Coventry,Brighton,Coventry Building Society Arena,False
-2026-27,2026,4,2026-09-13 16:30:00,Man United,Man City,Old Trafford,False
-2026-27,2026,4,2026-09-14 20:00:00,Leeds,Newcastle,Elland Road,False
+2026-27,2026,4,2026-09-12 15:00:00,Bournemouth,Brentford,Vitality Stadium,True
+2026-27,2026,4,2026-09-12 15:00:00,Aston Villa,Nott'm Forest,Villa Park,True
+2026-27,2026,4,2026-09-12 15:00:00,Chelsea,Hull,Stamford Bridge,True
+2026-27,2026,4,2026-09-12 15:00:00,Crystal Palace,Ipswich,Selhurst Park,True
+2026-27,2026,4,2026-09-12 15:00:00,Liverpool,Fulham,Anfield,True
+2026-27,2026,4,2026-09-12 17:30:00,Tottenham,Everton,Tottenham Hotspur Stadium,True
+2026-27,2026,4,2026-09-12 20:00:00,Sunderland,Arsenal,Stadium of Light,True
+2026-27,2026,4,2026-09-13 14:00:00,Coventry,Brighton,Coventry Building Society Arena,True
+2026-27,2026,4,2026-09-13 16:30:00,Man United,Man City,Old Trafford,True
+2026-27,2026,4,2026-09-14 20:00:00,Leeds,Newcastle,Elland Road,True
 2026-27,2026,5,2026-09-18 20:00:00,Brentford,Chelsea,Gtech Community Stadium,False
 2026-27,2026,5,2026-09-19 12:30:00,Tottenham,Aston Villa,Tottenham Hotspur Stadium,False
 2026-27,2026,5,2026-09-19 15:00:00,Brighton,Arsenal,American Express Stadium,False
