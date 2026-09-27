@@ -3129,36 +3129,36 @@ Season,SeasonStartYear,RoundNumber,Date,HomeTeam,AwayTeam,Venue,Played
 2026-27,2026,9,2026-10-31 20:00:00,Aston Villa,Fulham,Villa Park,False
 2026-27,2026,9,2026-11-01 16:30:00,Liverpool,Arsenal,Anfield,False
 2026-27,2026,9,2026-11-02 20:00:00,Newcastle,Everton,St. James' Park,False
+2026-27,2026,10,2026-11-06 20:00:00,Everton,Coventry,Hill Dickinson Stadium,False
+2026-27,2026,10,2026-11-07 12:30:00,Leeds,Tottenham,Elland Road,False
 2026-27,2026,10,2026-11-07 15:00:00,Arsenal,Hull,Emirates Stadium,False
-2026-27,2026,10,2026-11-07 15:00:00,Brighton,Brentford,American Express Stadium,False
-2026-27,2026,10,2026-11-07 15:00:00,Crystal Palace,Liverpool,Selhurst Park,False
-2026-27,2026,10,2026-11-07 15:00:00,Everton,Coventry,Hill Dickinson Stadium,False
 2026-27,2026,10,2026-11-07 15:00:00,Fulham,Newcastle,Craven Cottage,False
-2026-27,2026,10,2026-11-07 15:00:00,Ipswich,Bournemouth,Portman Road,False
-2026-27,2026,10,2026-11-07 15:00:00,Leeds,Tottenham,Elland Road,False
-2026-27,2026,10,2026-11-07 15:00:00,Man United,Aston Villa,Old Trafford,False
-2026-27,2026,10,2026-11-07 15:00:00,Nott'm Forest,Man City,The City Ground,False
-2026-27,2026,10,2026-11-07 15:00:00,Sunderland,Chelsea,Stadium of Light,False
+2026-27,2026,10,2026-11-07 17:30:00,Nott'm Forest,Man City,The City Ground,False
+2026-27,2026,10,2026-11-08 14:00:00,Brighton,Brentford,American Express Stadium,False
+2026-27,2026,10,2026-11-08 14:00:00,Crystal Palace,Liverpool,Selhurst Park,False
+2026-27,2026,10,2026-11-08 14:00:00,Ipswich,Bournemouth,Portman Road,False
+2026-27,2026,10,2026-11-08 14:00:00,Sunderland,Chelsea,Stadium of Light,False
+2026-27,2026,10,2026-11-08 16:30:00,Man United,Aston Villa,Old Trafford,False
+2026-27,2026,11,2026-11-21 12:30:00,Man City,Fulham,Etihad Stadium,False
 2026-27,2026,11,2026-11-21 15:00:00,Bournemouth,Nott'm Forest,Vitality Stadium,False
 2026-27,2026,11,2026-11-21 15:00:00,Aston Villa,Sunderland,Villa Park,False
-2026-27,2026,11,2026-11-21 15:00:00,Brentford,Everton,Gtech Community Stadium,False
 2026-27,2026,11,2026-11-21 15:00:00,Chelsea,Leeds,Stamford Bridge,False
 2026-27,2026,11,2026-11-21 15:00:00,Coventry,Crystal Palace,Coventry Building Society Arena,False
-2026-27,2026,11,2026-11-21 15:00:00,Hull,Brighton,MKM Stadium,False
-2026-27,2026,11,2026-11-21 15:00:00,Liverpool,Man United,Anfield,False
-2026-27,2026,11,2026-11-21 15:00:00,Man City,Fulham,Etihad Stadium,False
-2026-27,2026,11,2026-11-21 15:00:00,Newcastle,Arsenal,St. James' Park,False
 2026-27,2026,11,2026-11-21 15:00:00,Tottenham,Ipswich,Tottenham Hotspur Stadium,False
-2026-27,2026,12,2026-11-28 15:00:00,Arsenal,Man City,Emirates Stadium,False
-2026-27,2026,12,2026-11-28 15:00:00,Brighton,Newcastle,American Express Stadium,False
-2026-27,2026,12,2026-11-28 15:00:00,Crystal Palace,Hull,Selhurst Park,False
-2026-27,2026,12,2026-11-28 15:00:00,Everton,Liverpool,Hill Dickinson Stadium,False
-2026-27,2026,12,2026-11-28 15:00:00,Fulham,Bournemouth,Craven Cottage,False
-2026-27,2026,12,2026-11-28 15:00:00,Ipswich,Aston Villa,Portman Road,False
+2026-27,2026,11,2026-11-21 17:30:00,Newcastle,Arsenal,St. James' Park,False
+2026-27,2026,11,2026-11-22 14:00:00,Hull,Brighton,MKM Stadium,False
+2026-27,2026,11,2026-11-22 16:30:00,Liverpool,Man United,Anfield,False
+2026-27,2026,11,2026-11-23 20:00:00,Brentford,Everton,Gtech Community Stadium,False
+2026-27,2026,12,2026-11-27 20:00:00,Nott'm Forest,Chelsea,The City Ground,False
 2026-27,2026,12,2026-11-28 15:00:00,Leeds,Coventry,Elland Road,False
 2026-27,2026,12,2026-11-28 15:00:00,Man United,Brentford,Old Trafford,False
-2026-27,2026,12,2026-11-28 15:00:00,Nott'm Forest,Chelsea,The City Ground,False
-2026-27,2026,12,2026-11-28 15:00:00,Sunderland,Tottenham,Stadium of Light,False
+2026-27,2026,12,2026-11-28 17:30:00,Ipswich,Aston Villa,Portman Road,False
+2026-27,2026,12,2026-11-29 12:00:00,Everton,Liverpool,Hill Dickinson Stadium,False
+2026-27,2026,12,2026-11-29 14:05:00,Brighton,Newcastle,American Express Stadium,False
+2026-27,2026,12,2026-11-29 14:05:00,Crystal Palace,Hull,Selhurst Park,False
+2026-27,2026,12,2026-11-29 14:05:00,Fulham,Bournemouth,Craven Cottage,False
+2026-27,2026,12,2026-11-29 14:05:00,Sunderland,Tottenham,Stadium of Light,False
+2026-27,2026,12,2026-11-29 16:30:00,Arsenal,Man City,Emirates Stadium,False
 2026-27,2026,13,2026-12-02 20:00:00,Bournemouth,Brighton,Vitality Stadium,False
 2026-27,2026,13,2026-12-02 20:00:00,Aston Villa,Everton,Villa Park,False
 2026-27,2026,13,2026-12-02 20:00:00,Brentford,Arsenal,Gtech Community Stadium,False
