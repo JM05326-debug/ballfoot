@@ -5,9 +5,9 @@
     "away_team": "Leeds",
     "date": "2026-10-10 12:30:00",
     "round": 6,
-    "model_version": "model_v009",
-    "p_home_win": 0.5433286544319659,
-    "p_draw": 0.2352098641627965,
+    "model_version": "model_v010",
+    "p_home_win": 0.5433286544319658,
+    "p_draw": 0.23520986416279643,
     "p_away_win": 0.22146148140523778,
     "predicted_score": "1-0",
     "top_scorelines": [
@@ -74,7 +74,7 @@
       ],
       "RandomForest": [
         0.6679932782247678,
-        0.18363296277400662,
+        0.18363296277400665,
         0.14837375900122624
       ],
       "XGBoost": [
@@ -119,8 +119,8 @@
     "away_team": "Brentford",
     "date": "2026-10-10 15:00:00",
     "round": 6,
-    "model_version": "model_v009",
-    "p_home_win": 0.3697078863036146,
+    "model_version": "model_v010",
+    "p_home_win": 0.3697078863036147,
     "p_draw": 0.2647361908094562,
     "p_away_win": 0.3655559228869291,
     "predicted_score": "1-1",
@@ -187,7 +187,7 @@
         0.27887013922901416
       ],
       "RandomForest": [
-        0.4334403196793469,
+        0.4334403196793468,
         0.253929817068824,
         0.3126298632518293
       ],
@@ -233,7 +233,7 @@
     "away_team": "Bournemouth",
     "date": "2026-10-10 15:00:00",
     "round": 6,
-    "model_version": "model_v009",
+    "model_version": "model_v010",
     "p_home_win": 0.3528375666109615,
     "p_draw": 0.26380493177822023,
     "p_away_win": 0.3833575016108183,
@@ -347,7 +347,7 @@
     "away_team": "Fulham",
     "date": "2026-10-10 15:00:00",
     "round": 6,
-    "model_version": "model_v009",
+    "model_version": "model_v010",
     "p_home_win": 0.27752217474010205,
     "p_draw": 0.24956252531131204,
     "p_away_win": 0.47291529994858594,
@@ -417,7 +417,7 @@
       "RandomForest": [
         0.2667317729383226,
         0.24707995040101033,
-        0.48618827666066733
+        0.4861882766606673
       ],
       "XGBoost": [
         0.28965824842453003,
@@ -461,10 +461,10 @@
     "away_team": "Brighton",
     "date": "2026-10-10 15:00:00",
     "round": 6,
-    "model_version": "model_v009",
-    "p_home_win": 0.2433677075287409,
-    "p_draw": 0.25568076158331576,
-    "p_away_win": 0.5009515308879434,
+    "model_version": "model_v010",
+    "p_home_win": 0.24336770752874096,
+    "p_draw": 0.2556807615833157,
+    "p_away_win": 0.5009515308879433,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -575,10 +575,10 @@
     "away_team": "Tottenham",
     "date": "2026-10-10 17:30:00",
     "round": 6,
-    "model_version": "model_v009",
+    "model_version": "model_v010",
     "p_home_win": 0.47139873372218116,
     "p_draw": 0.2510133410284933,
-    "p_away_win": 0.27758792524932546,
+    "p_away_win": 0.2775879252493255,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -689,7 +689,7 @@
     "away_team": "Nott'm Forest",
     "date": "2026-10-11 14:00:00",
     "round": 6,
-    "model_version": "model_v009",
+    "model_version": "model_v010",
     "p_home_win": 0.2739514303115455,
     "p_draw": 0.26447777022493285,
     "p_away_win": 0.4615707994635217,
@@ -803,7 +803,7 @@
     "away_team": "Everton",
     "date": "2026-10-11 14:00:00",
     "round": 6,
-    "model_version": "model_v009",
+    "model_version": "model_v010",
     "p_home_win": 0.3274596293198006,
     "p_draw": 0.2518056098312254,
     "p_away_win": 0.420734760848974,
@@ -917,7 +917,7 @@
     "away_team": "Man City",
     "date": "2026-10-11 16:30:00",
     "round": 6,
-    "model_version": "model_v009",
+    "model_version": "model_v010",
     "p_home_win": 0.3240558715551753,
     "p_draw": 0.26041416269253737,
     "p_away_win": 0.41552996575228734,
@@ -1031,9 +1031,9 @@
     "away_team": "Newcastle",
     "date": "2026-10-12 20:00:00",
     "round": 6,
-    "model_version": "model_v009",
-    "p_home_win": 0.24104515517840672,
-    "p_draw": 0.26189689030525604,
+    "model_version": "model_v010",
+    "p_home_win": 0.24104515517840683,
+    "p_draw": 0.2618968903052559,
     "p_away_win": 0.49705795451633716,
     "predicted_score": "0-1",
     "top_scorelines": [
@@ -1101,7 +1101,7 @@
       "RandomForest": [
         0.2763272737047927,
         0.23791633512434576,
-        0.4857563911708619
+        0.485756391170862
       ],
       "XGBoost": [
         0.18326357007026672,
