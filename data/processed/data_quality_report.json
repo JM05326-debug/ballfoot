@@ -10,8 +10,8 @@
     "2025-26",
     "2026-27"
   ],
-  "rows_in": 3090,
-  "rows_out": 3090,
+  "rows_in": 3100,
+  "rows_out": 3100,
   "duplicates_removed": 0,
   "missing_core_dropped": 0,
   "ftr_mismatches_fixed": 0,
@@ -19,8 +19,8 @@
   "outlier_flags_sample": [],
   "unknown_team_names": [],
   "stat_column_coverage_pct": {
-    "HxG": 1.6,
-    "AxG": 1.6,
+    "HxG": 1.9,
+    "AxG": 1.9,
     "HS": 100.0,
     "AS": 100.0,
     "HST": 100.0,

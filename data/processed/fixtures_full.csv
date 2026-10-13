@@ -3089,16 +3089,16 @@ Season,SeasonStartYear,RoundNumber,Date,HomeTeam,AwayTeam,Venue,Played
 2026-27,2026,5,2026-09-20 14:00:00,Leeds,Crystal Palace,Elland Road,True
 2026-27,2026,5,2026-09-20 14:00:00,Man City,Sunderland,Etihad Stadium,True
 2026-27,2026,5,2026-09-20 16:30:00,Fulham,Man United,Craven Cottage,True
-2026-27,2026,6,2026-10-10 12:30:00,Arsenal,Leeds,Emirates Stadium,False
-2026-27,2026,6,2026-10-10 15:00:00,Aston Villa,Brentford,Villa Park,False
-2026-27,2026,6,2026-10-10 15:00:00,Chelsea,Bournemouth,Stamford Bridge,False
-2026-27,2026,6,2026-10-10 15:00:00,Ipswich,Fulham,Portman Road,False
-2026-27,2026,6,2026-10-10 15:00:00,Sunderland,Brighton,Stadium of Light,False
-2026-27,2026,6,2026-10-10 17:30:00,Man United,Tottenham,Old Trafford,False
-2026-27,2026,6,2026-10-11 14:00:00,Crystal Palace,Nott'm Forest,Selhurst Park,False
-2026-27,2026,6,2026-10-11 14:00:00,Hull,Everton,MKM Stadium,False
-2026-27,2026,6,2026-10-11 16:30:00,Liverpool,Man City,Anfield,False
-2026-27,2026,6,2026-10-12 20:00:00,Coventry,Newcastle,Coventry Building Society Arena,False
+2026-27,2026,6,2026-10-10 12:30:00,Arsenal,Leeds,Emirates Stadium,True
+2026-27,2026,6,2026-10-10 15:00:00,Aston Villa,Brentford,Villa Park,True
+2026-27,2026,6,2026-10-10 15:00:00,Chelsea,Bournemouth,Stamford Bridge,True
+2026-27,2026,6,2026-10-10 15:00:00,Ipswich,Fulham,Portman Road,True
+2026-27,2026,6,2026-10-10 15:00:00,Sunderland,Brighton,Stadium of Light,True
+2026-27,2026,6,2026-10-10 17:30:00,Man United,Tottenham,Old Trafford,True
+2026-27,2026,6,2026-10-11 14:00:00,Crystal Palace,Nott'm Forest,Selhurst Park,True
+2026-27,2026,6,2026-10-11 14:00:00,Hull,Everton,MKM Stadium,True
+2026-27,2026,6,2026-10-11 16:30:00,Liverpool,Man City,Anfield,True
+2026-27,2026,6,2026-10-12 20:00:00,Coventry,Newcastle,Coventry Building Society Arena,True
 2026-27,2026,7,2026-10-17 12:30:00,Everton,Chelsea,Hill Dickinson Stadium,False
 2026-27,2026,7,2026-10-17 15:00:00,Brentford,Liverpool,Gtech Community Stadium,False
 2026-27,2026,7,2026-10-17 15:00:00,Fulham,Hull,Craven Cottage,False
