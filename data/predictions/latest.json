@@ -5,10 +5,10 @@
     "away_team": "Nott'm Forest",
     "date": "2026-10-23 20:00:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.25051412404842943,
-    "p_draw": 0.25389634373710795,
-    "p_away_win": 0.49558953221446256,
+    "model_version": "model_v012",
+    "p_home_win": 0.251645613465687,
+    "p_draw": 0.25466076636151913,
+    "p_away_win": 0.49369362017279395,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -104,13 +104,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -119,10 +119,10 @@
     "away_team": "Man City",
     "date": "2026-10-24 12:30:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.26883171813131945,
-    "p_draw": 0.24901488832711038,
-    "p_away_win": 0.48215339354157016,
+    "model_version": "model_v012",
+    "p_home_win": 0.270127485480829,
+    "p_draw": 0.2494607225863238,
+    "p_away_win": 0.48041179193284717,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -218,13 +218,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -233,10 +233,10 @@
     "away_team": "Everton",
     "date": "2026-10-24 15:00:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.5182183248595263,
-    "p_draw": 0.24254134734887028,
-    "p_away_win": 0.23924032779160342,
+    "model_version": "model_v012",
+    "p_home_win": 0.5186571610567164,
+    "p_draw": 0.24246105951371066,
+    "p_away_win": 0.2388817794295729,
     "predicted_score": "1-0",
     "top_scorelines": [
       {
@@ -303,7 +303,7 @@
       "RandomForest": [
         0.5815729241587191,
         0.2167835245653546,
-        0.20164355127592565
+        0.20164355127592562
       ],
       "XGBoost": [
         0.6509270668029785,
@@ -332,13 +332,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -347,10 +347,10 @@
     "away_team": "Fulham",
     "date": "2026-10-24 15:00:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.2779367949573947,
-    "p_draw": 0.2691110678593295,
-    "p_away_win": 0.4529521371832758,
+    "model_version": "model_v012",
+    "p_home_win": 0.27864125110899746,
+    "p_draw": 0.27058658411451814,
+    "p_away_win": 0.45077216477648435,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -446,13 +446,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -461,10 +461,10 @@
     "away_team": "Tottenham",
     "date": "2026-10-24 17:30:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.44410748005878714,
-    "p_draw": 0.25697072164219087,
-    "p_away_win": 0.29892179829902205,
+    "model_version": "model_v012",
+    "p_home_win": 0.44437134124054267,
+    "p_draw": 0.25740439788629715,
+    "p_away_win": 0.2982242608731602,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -560,13 +560,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -575,10 +575,10 @@
     "away_team": "Newcastle",
     "date": "2026-10-25 14:00:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.32880661940124406,
-    "p_draw": 0.2643412308546596,
-    "p_away_win": 0.4068521497440963,
+    "model_version": "model_v012",
+    "p_home_win": 0.3294414552014678,
+    "p_draw": 0.26531311446354783,
+    "p_away_win": 0.40524543033498434,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -643,7 +643,7 @@
         0.2854275349286299
       ],
       "RandomForest": [
-        0.34000524662894144,
+        0.3400052466289415,
         0.2532857511217593,
         0.40670900224929923
       ],
@@ -674,13 +674,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -689,10 +689,10 @@
     "away_team": "Brentford",
     "date": "2026-10-25 14:00:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.31838077938197534,
-    "p_draw": 0.26610226749790405,
-    "p_away_win": 0.4155169531201207,
+    "model_version": "model_v012",
+    "p_home_win": 0.31935360067054647,
+    "p_draw": 0.2672326000798857,
+    "p_away_win": 0.4134137992495678,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -788,13 +788,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -803,10 +803,10 @@
     "away_team": "Brighton",
     "date": "2026-10-25 14:00:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.31971557808608453,
-    "p_draw": 0.254563000064903,
-    "p_away_win": 0.42572142184901246,
+    "model_version": "model_v012",
+    "p_home_win": 0.32045146697051785,
+    "p_draw": 0.2550181890893595,
+    "p_away_win": 0.4245303439401227,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -871,7 +871,7 @@
         0.3457602468900901
       ],
       "RandomForest": [
-        0.37571486904284285,
+        0.3757148690428428,
         0.2572945509177643,
         0.366990580039393
       ],
@@ -902,13 +902,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -917,10 +917,10 @@
     "away_team": "Bournemouth",
     "date": "2026-10-25 14:00:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.42208383278383876,
-    "p_draw": 0.2518016819222871,
-    "p_away_win": 0.32611448529387416,
+    "model_version": "model_v012",
+    "p_home_win": 0.4227013697330157,
+    "p_draw": 0.25193341809917486,
+    "p_away_win": 0.3253652121678094,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -1016,13 +1016,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   },
   {
@@ -1031,10 +1031,10 @@
     "away_team": "Leeds",
     "date": "2026-10-25 16:30:00",
     "round": 8,
-    "model_version": "model_v011",
-    "p_home_win": 0.3264962605549043,
-    "p_draw": 0.2463761775483779,
-    "p_away_win": 0.42712756189671786,
+    "model_version": "model_v012",
+    "p_home_win": 0.32788391401146133,
+    "p_draw": 0.2463668686624382,
+    "p_away_win": 0.42574921732610044,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -1101,7 +1101,7 @@
       "RandomForest": [
         0.3570461924555523,
         0.22472894553114067,
-        0.41822486201330683
+        0.4182248620133068
       ],
       "XGBoost": [
         0.4515587091445923,
@@ -1130,13 +1130,13 @@
       ]
     },
     "ensemble_weights_used": {
-      "LogisticRegression": 0.14684218378134864,
-      "RandomForest": 0.1504502670209065,
-      "XGBoost": 0.13522890458056386,
-      "LightGBM": 0.12494171980141551,
-      "CatBoost": 0.1506599543407622,
-      "Poisson": 0.1488310962190677,
-      "Fuzzy": 0.14304587425593562
+      "LogisticRegression": 0.14658612429916518,
+      "RandomForest": 0.14954936825936324,
+      "XGBoost": 0.13776053747285186,
+      "LightGBM": 0.12584734159359454,
+      "CatBoost": 0.1488889025348044,
+      "Poisson": 0.1485712917519238,
+      "Fuzzy": 0.14279643408829715
     }
   }
 ]
