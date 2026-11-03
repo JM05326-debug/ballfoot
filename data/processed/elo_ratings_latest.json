@@ -1,5 +1,5 @@
 {
-  "as_of_date": "2026-11-01",
+  "as_of_date": "2026-11-02",
   "home_advantage": 100.0,
   "k_factor": 20.0,
   "ratings": {
@@ -12,9 +12,9 @@
     "Brentford": 1613.0,
     "Chelsea": 1612.8,
     "Man United": 1609.6,
-    "Newcastle": 1578.3,
+    "Newcastle": 1564.7,
+    "Everton": 1561.6,
     "Fulham": 1550.6,
-    "Everton": 1548.0,
     "Leeds": 1539.7,
     "Nott'm Forest": 1537.8,
     "Tottenham": 1519.1,
