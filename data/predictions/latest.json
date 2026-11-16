@@ -5,10 +5,10 @@
     "away_team": "Fulham",
     "date": "2026-11-21 12:30:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.508291186786117,
-    "p_draw": 0.2376550820567785,
-    "p_away_win": 0.2540537311571046,
+    "p_draw": 0.23765508205677843,
+    "p_away_win": 0.25405373115710456,
     "predicted_score": "2-0",
     "top_scorelines": [
       {
@@ -75,7 +75,7 @@
       "RandomForest": [
         0.6102878638170348,
         0.19602393250428243,
-        0.19368820367868253
+        0.1936882036786825
       ],
       "XGBoost": [
         0.6687584519386292,
@@ -119,7 +119,7 @@
     "away_team": "Nott'm Forest",
     "date": "2026-11-21 15:00:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.4328360354003156,
     "p_draw": 0.26140385114980047,
     "p_away_win": 0.30576011344988396,
@@ -233,7 +233,7 @@
     "away_team": "Sunderland",
     "date": "2026-11-21 15:00:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.4278211650574638,
     "p_draw": 0.2544338122497604,
     "p_away_win": 0.31774502269277577,
@@ -347,7 +347,7 @@
     "away_team": "Leeds",
     "date": "2026-11-21 15:00:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.4125658704683393,
     "p_draw": 0.2568103844554401,
     "p_away_win": 0.33062374507622055,
@@ -416,7 +416,7 @@
       ],
       "RandomForest": [
         0.5013806518797344,
-        0.24701458052804018,
+        0.2470145805280402,
         0.25160476759222516
       ],
       "XGBoost": [
@@ -461,10 +461,10 @@
     "away_team": "Crystal Palace",
     "date": "2026-11-21 15:00:00",
     "round": 11,
-    "model_version": "model_v014",
-    "p_home_win": 0.39083381324505423,
-    "p_draw": 0.25752617243158915,
-    "p_away_win": 0.3516400143233565,
+    "model_version": "model_v015",
+    "p_home_win": 0.3908338132450543,
+    "p_draw": 0.2575261724315892,
+    "p_away_win": 0.3516400143233566,
     "predicted_score": "1-1",
     "top_scorelines": [
       {
@@ -575,7 +575,7 @@
     "away_team": "Ipswich",
     "date": "2026-11-21 15:00:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.4983872341490031,
     "p_draw": 0.23960607172137868,
     "p_away_win": 0.26200669412961813,
@@ -689,10 +689,10 @@
     "away_team": "Arsenal",
     "date": "2026-11-21 17:30:00",
     "round": 11,
-    "model_version": "model_v014",
-    "p_home_win": 0.19699027660758742,
-    "p_draw": 0.23794719457583818,
-    "p_away_win": 0.5650625288165744,
+    "model_version": "model_v015",
+    "p_home_win": 0.19699027660758744,
+    "p_draw": 0.23794719457583816,
+    "p_away_win": 0.5650625288165745,
     "predicted_score": "0-1",
     "top_scorelines": [
       {
@@ -803,7 +803,7 @@
     "away_team": "Brighton",
     "date": "2026-11-22 14:00:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.2301935374820145,
     "p_draw": 0.24511114913697726,
     "p_away_win": 0.5246953133810084,
@@ -917,7 +917,7 @@
     "away_team": "Man United",
     "date": "2026-11-22 16:30:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.450325074674323,
     "p_draw": 0.2457803786494024,
     "p_away_win": 0.3038945466762747,
@@ -987,7 +987,7 @@
       "RandomForest": [
         0.49058325908167205,
         0.2676277500397978,
-        0.2417889908785305
+        0.24178899087853048
       ],
       "XGBoost": [
         0.6455851197242737,
@@ -1031,7 +1031,7 @@
     "away_team": "Everton",
     "date": "2026-11-23 20:00:00",
     "round": 11,
-    "model_version": "model_v014",
+    "model_version": "model_v015",
     "p_home_win": 0.3907560553114294,
     "p_draw": 0.2682676156789203,
     "p_away_win": 0.3409763290096504,
@@ -1100,7 +1100,7 @@
       ],
       "RandomForest": [
         0.4074206130321313,
-        0.2737955180649737,
+        0.27379551806497376,
         0.3187838689028951
       ],
       "XGBoost": [
