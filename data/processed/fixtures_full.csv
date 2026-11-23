@@ -3139,15 +3139,15 @@ Season,SeasonStartYear,RoundNumber,Date,HomeTeam,AwayTeam,Venue,Played
 2026-27,2026,10,2026-11-08 14:00:00,Ipswich,Bournemouth,Portman Road,True
 2026-27,2026,10,2026-11-08 14:00:00,Sunderland,Chelsea,Stadium of Light,True
 2026-27,2026,10,2026-11-08 16:30:00,Man United,Aston Villa,Old Trafford,True
-2026-27,2026,11,2026-11-21 12:30:00,Man City,Fulham,Etihad Stadium,False
-2026-27,2026,11,2026-11-21 15:00:00,Bournemouth,Nott'm Forest,Vitality Stadium,False
-2026-27,2026,11,2026-11-21 15:00:00,Aston Villa,Sunderland,Villa Park,False
-2026-27,2026,11,2026-11-21 15:00:00,Chelsea,Leeds,Stamford Bridge,False
-2026-27,2026,11,2026-11-21 15:00:00,Coventry,Crystal Palace,Coventry Building Society Arena,False
-2026-27,2026,11,2026-11-21 15:00:00,Tottenham,Ipswich,Tottenham Hotspur Stadium,False
-2026-27,2026,11,2026-11-21 17:30:00,Newcastle,Arsenal,St. James' Park,False
-2026-27,2026,11,2026-11-22 14:00:00,Hull,Brighton,MKM Stadium,False
-2026-27,2026,11,2026-11-22 16:30:00,Liverpool,Man United,Anfield,False
+2026-27,2026,11,2026-11-21 12:30:00,Man City,Fulham,Etihad Stadium,True
+2026-27,2026,11,2026-11-21 15:00:00,Bournemouth,Nott'm Forest,Vitality Stadium,True
+2026-27,2026,11,2026-11-21 15:00:00,Aston Villa,Sunderland,Villa Park,True
+2026-27,2026,11,2026-11-21 15:00:00,Chelsea,Leeds,Stamford Bridge,True
+2026-27,2026,11,2026-11-21 15:00:00,Coventry,Crystal Palace,Coventry Building Society Arena,True
+2026-27,2026,11,2026-11-21 15:00:00,Tottenham,Ipswich,Tottenham Hotspur Stadium,True
+2026-27,2026,11,2026-11-21 17:30:00,Newcastle,Arsenal,St. James' Park,True
+2026-27,2026,11,2026-11-22 14:00:00,Hull,Brighton,MKM Stadium,True
+2026-27,2026,11,2026-11-22 16:30:00,Liverpool,Man United,Anfield,True
 2026-27,2026,11,2026-11-23 20:00:00,Brentford,Everton,Gtech Community Stadium,False
 2026-27,2026,12,2026-11-27 20:00:00,Nott'm Forest,Chelsea,The City Ground,False
 2026-27,2026,12,2026-11-28 15:00:00,Leeds,Coventry,Elland Road,False
