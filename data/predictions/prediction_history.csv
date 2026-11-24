@@ -98,3 +98,4 @@ prediction_time,match_date,home_team,away_team,predicted_home,predicted_draw,pre
 2026-11-23T08:35:14,2026-11-21,Newcastle,Arsenal,0.197,0.2379,0.5651,A,0-1,2,2,D,False,0.9388,1.4357,model_v015
 2026-11-23T08:35:14,2026-11-22,Hull,Brighton,0.2302,0.2451,0.5247,A,1-1,2,0,H,False,0.928,1.4688,model_v015
 2026-11-23T08:35:14,2026-11-22,Liverpool,Man United,0.4503,0.2458,0.3039,H,1-1,4,0,H,True,0.4549,0.7978,model_v015
+2026-11-23T21:58:48,2026-11-23,Brentford,Everton,0.3979,0.2702,0.3319,H,1-1,4,0,H,True,0.5458,0.9216,model_v016
